@@ -1,0 +1,426 @@
+/*! ui-pattern - v1.0.0 - 2014-08-06 */
+// Set the variables if not allready set.
+$page-width: 1200px                    !default
+$space-t-b: 1rem                       !default
+$space-l-r: 2rem                       !default
+$font-std: 'Droid Sans', helvetica     !default
+$font-highlight: Merriweather, helvetica   !default
+$font-size: 16px                       !default
+$font-color: #222                      !default
+$border-style: solid                   !default
+$border-width: 2px                     !default
+$border-color: #ddd                    !default
+$radius: 6px                           !default
+
+/* Colors [BEGIN] */
+
+// A signal-color
+$primary: #900                         !default
+
+// Another signal-color
+$secondary: #099                       !default
+
+// An unobtrusive color
+// It's used for e.g. borders.
+$tertiary: #999                        !default
+
+// A light color
+// It's used für e.g. the body-background, and labels of colored buttons.
+$quadrary: #fefefe                     !default
+
+/* Colors [END] */
+
+/* Fonts [BEGIN] */
+
+body
+  font-family: $font-std
+  font-size: $font-size
+
+/* Fonts [END] */
+
+/* Reset [BEGIN] */
+
+*
+  box-sizing: border-box
+
+\:focus
+  outline: 0
+
+/* Reset [END] */
+
+/* Selected Text [BEGIN] */
+
+\::-moz-selection
+  background: $primary
+  color: $quadrary
+
+\::selection
+  background: $primary
+  color: $quadrary
+
+/* Selected Text [END] */
+
+/* Headlines [BEGIN] */
+
+h1, h2, h3, h4, h5, h6
+  font-family: $font-highlight
+
+/* Headlines [END] */
+
+/* Paragraph [BEGIN] */
+
+p
+  line-height: 1.6em
+
+/* Paragraph [END] */
+
+/* Links [BEGIN] */
+
+a
+  color: $primary
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+/* Links [END] */
+
+/* Code & Pre [BEGIN] */
+
+code
+  background: $quadrary - #111
+  padding: 0.1em 0.2em
+  border-radius: $radius
+  // white-space: nowrap
+pre
+  background: $quadrary - #111
+  border: $border-width $quadrary - #222 $border-style
+  padding: 20px
+  overflow: scroll
+  border-radius: $radius
+  > code
+    white-space: pre
+  code
+    padding: 0
+    border: none
+    background: transparent
+
+/* Code & Pre [END] */
+
+/* Blockquote [BEGIN] */
+
+blockquote
+  padding: 0 0 0 2.5em
+  margin: 2em 0
+  border-left: $border-width $border-style $border-color
+  font-style: italic
+
+/* Blockquote [END] */
+
+/* Figure [BEGIN] */
+
+img
+  max-width: 100%
+
+/* Figure [END] */
+
+/* HR [BEGIN] */
+
+hr
+  border: none
+  background: $tertiary
+  height: $border-width
+
+/* HR [END] */
+
+
+/* Unordered List [BEGIN] */
+
+ul
+  li
+    padding: 0.2em 0
+
+/* Unordered List [END] */
+
+/* Ordered List [BEGIN] */
+
+ol
+  li
+    padding: 0.2em 0
+
+/* Ordered List [END] */
+
+
+/* Labels [BEGIN] */
+
+label
+  display: block
+  font-weight: bold
+  abbr
+    color: $primary
+
+
+/* Labels [END] */
+
+/* Inputs [BEGIN] */
+
+input,
+textarea
+  display: block
+  width: 100%
+  border:
+    width: $border-width
+    style: $border-style
+    color: $tertiary + #444
+  background: $quadrary
+  border-radius: $radius
+  padding: 0.3em 2%
+  font-size: 1em
+  line-height: 1.5em
+  transition: 0.2s
+  &:focus
+    border-color: $tertiary
+
+textarea
+  resize: vertical
+
+/* Inputs [END] */
+
+/* Inputs Disabled || Read-Only [BEGIN] */
+
+input,
+textarea
+  &[readonly],
+  &:disabled
+    background: $quadrary - #111
+    color: $border-color - #666
+    background: $quadrary - #111
+    color: $border-color - #666
+
+/* Inputs Disabled || Read-Only [END] */
+
+/* See "inputs-disabled" */
+
+/* Fieldset [BEGIN] */
+
+fieldset
+  padding: $space-l-r
+  border:
+    color: $border-color
+    style: $border-style
+    width: $border-width
+  legend
+    padding:
+      left: 1em
+      right: 1em
+    font-weight: bold
+
+/* Fieldset [END] */
+
+
+
+
+/* Radio-Buttons [BEGIN] */
+
+input[type="radio"]
+
+/* Radio-Buttons [END] */
+
+
+
+
+
+/* HTML5 Inputs [BEGIN] */
+
+input[type="color"]
+  min-height: 3em
+  padding: 0
+
+/* HTML5 Inputs [END] */
+
+
+
+
+/* Search-Input [BEGIN] */
+
+input[type="search"]
+  border-radius: 2em
+
+/* Search-Input [END] */
+
+
+/* Fields [BEGIN] */
+
+.field
+  margin-bottom: $space-t-b
+
+/* Fields [END] */
+
+/* Table [BEGIN] */
+
+table
+  width: 100%
+  th
+    text-align: left
+
+/* Table [END] */
+
+
+
+
+
+
+
+
+/* Button [BEGIN] */
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"]
+  display: block
+  box-sizing: border-box
+  width: 100%
+  padding: 0.5em 1em
+  cursor: pointer
+  color: $quadrary
+  text:
+    align: center
+    decoration: none
+  background: $secondary
+  border: none
+  font-size: 1em
+  font-family: $font-std
+  border-radius: $radius
+  transition: 0.3s
+  &:hover
+    text-decoration: none
+    color: $quadrary
+    background: $secondary - #222
+  a
+    text-decoration: none
+  &:disabled
+    background: $border-color + #111
+    cursor: default
+
+/* Button [END] */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Multi-Col-30-30-30 [BEGIN] */
+
+.multi-col-30-30-30
+  box-sizing: border-box
+  .col-1
+    width: 33%
+    float: left
+  .col-2
+    width: 34%
+    float: left
+  .col-3
+    width: 33%
+    float: left
+
+/* Multi-Col-30-30-30 [END] */
+
+/* Multi-Col-50-50 [BEGIN] */
+
+.multi-col-50-50
+  box-sizing: border-box
+  .col-1
+    width: 50%
+    float: left
+  .col-2
+    width: 50%
+    float: right
+
+/* Multi-Col-50-50 [END] */
+
+
+
+
+
+/* Floating [BEGIN] */
+
+.left
+  float: left
+
+.right
+  float: right
+
+.clearit
+  height: 0 !important
+  width: 0 !important
+  line-height: 0 !important
+  clear: both !important
+  float: none !important
+
+.clearfix:after
+  content: '.'
+  display: block
+  height: 0
+  clear: both
+  visibility: hidden
+  font-size: 0
+  clear: both
+
+/* Floating [END] */
+
+/* Body-Background [BEGIN] */
+
+body
+  background: $quadrary
+
+/* Body-Background [END] */
+
+
+
+
+
+
+
