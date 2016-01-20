@@ -8,21 +8,21 @@ $font-highlight: Merriweather, helvetica   !default
 $font-size: 16px                       !default
 $font-color: #222                      !default
 $border-style: solid                   !default
-$border-width: 2px                     !default
-$border-color: #ddd                    !default
-$radius: 6px                           !default
+$border-width: 1px                     !default
+$border-color: #ccc                    !default
+$radius: 0px                           !default
 
 /* Colors [BEGIN] */
 
 // A signal-color
-$primary: #900                         !default
+$primary: #477998                         !default
 
 // Another signal-color
-$secondary: #099                       !default
+$secondary: #F64740                       !default
 
 // An unobtrusive color
 // It's used for e.g. borders.
-$tertiary: #999                        !default
+$tertiary: #000                        !default
 
 // A light color
 // It's used für e.g. the body-background, and labels of colored buttons.
@@ -127,7 +127,7 @@ img
 
 hr
   border: none
-  background: $tertiary
+  background: $border-color
   height: $border-width
 
 /* HR [END] */
@@ -170,15 +170,34 @@ textarea
   border:
     width: $border-width
     style: $border-style
-    color: $tertiary + #444
-  background: $quadrary
+    color: #ccc
+    color: transparent
+  background: $quadrary - #111
   border-radius: $radius
   padding: 0.3em 2%
   font-size: 1em
   line-height: 1.5em
   transition: 0.2s
   &:focus
-    border-color: $tertiary
+    border-color: #999
+
+.input-group
+  display: table
+  width: 100%
+.input-group>*
+  display: table-cell
+
+.input-group-btn
+  spacing: 0
+  margin: 0
+  padding: 0
+
+.input-group input:first-child,
+.input-group button:first-child
+  border-radius: $radius 0 0 $radius
+.input-group button:last-child,
+.input-group input:last-child
+  border-radius: 0 $radius $radius 0
 
 textarea
   resize: vertical
@@ -243,7 +262,7 @@ input[type="color"]
 /* Search-Input [BEGIN] */
 
 input[type="search"]
-  border-radius: 2em
+  border-radius: $radius
 
 /* Search-Input [END] */
 
@@ -287,7 +306,7 @@ input[type="file"]
   text:
     align: center
     decoration: none
-  background: $secondary
+  background: $tertiary
   border: none
   font-size: 1em
   font-family: $font-std
@@ -307,7 +326,135 @@ input[type="file"]
 
 
 
+/* nav */
 
+nav
+  border-bottom: $border-width $border-style $border-color
+
+.collapsed_search_controls
+  padding-top: 18.2em
+
+.collapsed_search_controls nav
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  background: $quadrary
+
+nav ul
+  margin: 0.5em 0
+#search_controls_alternative
+  margin: 0
+#search_controls_alternative input
+  padding: 0 0.6em
+  background: $quadrary - #111
+  height: 54px
+#search_controls_alternative .input-group-btn
+  padding: 0
+  //border-bottom:0
+  //border-top:0
+
+#search_controls_alternative .input-group-btn button
+  height: 54px
+  //display: none
+#search_controls_alternative input
+  border-radius: 0
+  border-width: 0 $border-width 0 $border-width
+
+
+nav ul li a#logo
+  line-height: 0
+  display: block
+
+nav ul,
+nav ul li
+  padding: 0
+  list-style-type: none
+
+nav ul li
+  float: left
+  line-height: 4em
+  margin-right: 1.5em
+
+.collapsed_search_controls nav
+  ul li
+    line-height: 2em
+  .page_wrap
+    ul
+      width: 50%
+      float: left
+    #search_controls_alternative
+      width: 50%
+      float: right
+  a#logo img
+    height: 2em
+
+#search_controls
+  margin: 8em 10em
+  font-size: 1.3em
+
+.results
+  padding-top: 2em
+
+.results > ul
+  float: left
+.results > ul,
+.results > ul li
+  padding: 0
+  list-style-type: none
+
+.results > ul li
+  margin: 0 0 1.2em 0
+.results > ul li>*
+  padding: 0.2em 0
+
+.results > ul li .eg_name
+  font-size: 1.4em
+  font-family: $font-highlight
+  font-weight: bold
+
+.results > ul li .eg_location
+
+
+.result_counter
+  // font-size: 1.4em
+  text-align: center
+
+.result_counter .counter
+  font-weight: bold
+
+
+.highlightedtext
+  color: $secondary
+
+
+#searchparams
+  width: 20%
+  float: left
+
+#searchparams ul
+  list-style: none
+#searchparams > ul
+  padding: 0
+#searchparams > ul ul
+  padding-left: 1em
+#searchparams > ul > li
+  font-weight: bold
+#searchparams ul.selectors > li li
+  font-weight: normal
+
+
+
+
+
+
+
+
+.page_wrap
+  max-width: 1200px
+  margin: 0 auto
+
+/* nav */
 
 
 
@@ -417,6 +564,9 @@ body
   background: $quadrary
 
 /* Body-Background [END] */
+
+
+
 
 
 
