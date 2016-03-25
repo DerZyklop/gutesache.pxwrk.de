@@ -36,7 +36,7 @@ module.exports = (grunt) ->
     # eslint
     eslint:
       options:
-        config: '<%= pkg.esLintRules %>'
+        config: '.eslintrc'
       all: ['<%= pkg.paths.src.js %>*.js']
 
     # sass
