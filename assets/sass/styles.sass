@@ -292,6 +292,7 @@ table
 
 /* Button [BEGIN] */
 
+a.btn,
 button,
 input[type="button"],
 input[type="submit"],
@@ -307,7 +308,7 @@ input[type="file"]
     align: center
     decoration: none
   background: $tertiary
-  border: none
+  border: 1px solid transparent
   font-size: 1em
   font-family: $font-std
   border-radius: $radius
@@ -321,6 +322,13 @@ input[type="file"]
   &:disabled
     background: $border-color + #111
     cursor: default
+  &.btn-primary
+    background: $primary
+    color: $tertiary
+  &.btn-secondary
+    background: $quadrary
+    color: $tertiary
+    border: 1px solid $primary
 
 /* Button [END] */
 

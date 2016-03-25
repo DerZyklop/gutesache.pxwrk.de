@@ -59,5 +59,5 @@ var setResponsiveHeader = function () {
 $(document).ready(function () {
   "use strict";
   setHighlighting()
-  setResponsiveHeader()
+  //setResponsiveHeader()
 });

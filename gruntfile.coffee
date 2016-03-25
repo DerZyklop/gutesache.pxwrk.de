@@ -91,10 +91,10 @@ module.exports = (grunt) ->
 
     # watch
     watch:
-      # watch coffee
-      coffee:
-        files: ['<%= pkg.paths.src.coffee %>*.coffee']
-        tasks: ['newer:coffee', 'newer:eslint', 'concat:js']
+      # watch js
+      js:
+        files: ['<%= pkg.paths.src.js %>*.js']
+        tasks: ['newer:eslint', 'concat:js']
         options:
           livereload: true
       # watch sass
