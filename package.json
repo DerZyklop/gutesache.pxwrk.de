@@ -43,6 +43,9 @@
   "dependencies": {
     "time-grunt": "~0.2.10"
   },
+  "scripts": {
+    "start": "grunt"
+  },
   "description": "Project by @DerZyklop",
   "devDependencies": {
     "grunt": "~0.4.4",
