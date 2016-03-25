@@ -64,6 +64,7 @@ body
 
 h1, h2, h3, h4, h5, h6
   font-family: $font-highlight
+  text-transform: uppercase
 
 /* Headlines [END] */
 
@@ -337,8 +338,9 @@ input[type="file"]
 header
   display: flex
   flex-direction: row
-  justify-content: flex-end
+  justify-content: flex-start
   align-items: baseline
+  flex-wrap: wrap
   > *
     flex: 1
     padding: 1.5em 1em 0.5em 1em
@@ -347,7 +349,7 @@ header
   #search_controls_alternative
     display: none
   nav.mainnav
-    flex: 1
+    flex: 0 1 auto
   nav.usernav
     flex: 1
 
@@ -439,6 +441,7 @@ header
 
 
 nav
+  text-transform: uppercase
   ul,
   ul li
     padding: 0
@@ -638,7 +641,29 @@ body
 
 /* Body-Background [END] */
 
+/* advanced-search-controls [BEGIN] */
 
+.advanced-search-controls
+  section
+    // border: 1px solid #ccc
+    ul
+      padding: 0
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: baseline
+      flex-wrap: wrap
+      > li
+        flex: 1 1 auto
+        width: 30%
+        display: inline-block
+      > li a,
+      > li input
+        display: inline
+        width: auto
+
+
+/* advanced-search-controls [END] */
 
 
 
