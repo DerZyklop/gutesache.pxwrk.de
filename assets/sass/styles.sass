@@ -324,22 +324,68 @@ input[type="file"]
 
 /* Button [END] */
 
+/* Header [BEGIN] */
 
+header
+  padding: 1em
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  align-items: center
+  > *
+    flex: 1
+  #search_controls_alternative
+    display: none
+  #logo
+    flex: 0 1 auto
+  nav.mainnav
+    flex: 1
+  nav.usernav
+    flex: 1
+
+nav.mainnav,
+nav.usernav
+  ul
+    display: flex
+    flex-direction: row
+    li
+      flex: 0 1 auto
+    li:before
+      margin: 0 0.4em 0 0.6em
+      content: '|'
+    li:first-child:before
+      display: none
+
+nav.mainnav
+  ul
+    justify-content: flex-start
+nav.usernav
+  ul
+    justify-content: flex-end
+
+/* Header [END] */
+
+/* Icon [BEGIN] */
+
+.icon
+  width: 1em
+
+/* Icon [END] */
 
 /* nav */
 
-nav
+header
+  background: $quadrary
   border-bottom: $border-width $border-style $border-color
 
 .collapsed_search_controls
   padding-top: 18.2em
 
-.collapsed_search_controls nav
+.collapsed_search_controls header
   position: fixed
   left: 0
   right: 0
   top: 0
-  background: $quadrary
 
 nav ul
   margin: 0.5em 0
@@ -362,19 +408,10 @@ nav ul
   border-width: 0 $border-width 0 $border-width
 
 
-nav ul li a#logo
-  line-height: 0
-  display: block
-
 nav ul,
 nav ul li
   padding: 0
   list-style-type: none
-
-nav ul li
-  float: left
-  line-height: 4em
-  margin-right: 1.5em
 
 .collapsed_search_controls nav
   ul li
@@ -561,6 +598,7 @@ nav ul li
 /* Body-Background [BEGIN] */
 
 body
+  margin: 0
   background: $quadrary
 
 /* Body-Background [END] */
