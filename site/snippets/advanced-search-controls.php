@@ -54,4 +54,5 @@
       <li><input type="checkbox">Thüringen</li>
     </ul>
   </section>
+  <a href="/erweiterte-suche" class="btn btn-secondary">Go!</a>
 </div>

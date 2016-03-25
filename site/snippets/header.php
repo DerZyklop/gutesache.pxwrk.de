@@ -1,5 +1,5 @@
   <header>
-    <a href="#" id="logo">
+    <a href="/" id="logo">
       <img src="assets/images/logo.svg" width="230px" alt="">
     </a>
     <div id="search_controls_alternative"></div>
