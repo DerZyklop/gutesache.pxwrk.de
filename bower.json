@@ -1,0 +1,19 @@
+{
+  "name": "gutesache",
+  "version": "0.0.0",
+  "homepage": "http://der-zyklop.de/",
+  "authors": [
+    "Nils Neumann <mail@der-zyklop.de>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.1"
+  }
+}

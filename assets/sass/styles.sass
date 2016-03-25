@@ -5,7 +5,7 @@ $space-t-b: 1rem                       !default
 $space-l-r: 2rem                       !default
 $font-std: 'Droid Sans', helvetica     !default
 $font-highlight: Merriweather, helvetica   !default
-$font-size: 16px                       !default
+$font-size: 15px                       !default
 $font-color: #222                      !default
 $border-style: solid                   !default
 $border-width: 1px                     !default
@@ -15,7 +15,7 @@ $radius: 0px                           !default
 /* Colors [BEGIN] */
 
 // A signal-color
-$primary: #477998                         !default
+$primary: #38fd30
 
 // Another signal-color
 $secondary: #F64740                       !default
@@ -64,6 +64,7 @@ body
 
 h1, h2, h3, h4, h5, h6
   font-family: $font-highlight
+  text-transform: uppercase
 
 /* Headlines [END] */
 
@@ -292,6 +293,7 @@ table
 
 /* Button [BEGIN] */
 
+a.btn,
 button,
 input[type="button"],
 input[type="submit"],
@@ -307,7 +309,7 @@ input[type="file"]
     align: center
     decoration: none
   background: $tertiary
-  border: none
+  border: 1px solid transparent
   font-size: 1em
   font-family: $font-std
   border-radius: $radius
@@ -321,28 +323,112 @@ input[type="file"]
   &:disabled
     background: $border-color + #111
     cursor: default
+  &.btn-primary
+    background: $primary
+    color: $tertiary
+    &:hover
+      background: $primary - #222
+      color: $tertiary
+      text-decoration: none
+  &.btn-secondary
+    background: $quadrary
+    color: $tertiary
+    border: 1px solid $primary
+    &:hover
+      background: $primary
+      color: $tertiary
+      text-decoration: none
 
 /* Button [END] */
 
+/* Header [BEGIN] */
 
+header
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: baseline
+  flex-wrap: wrap
+  > *
+    flex: 1
+    padding: 1.5em 1em 0.5em 1em
+  #logo
+    flex: 0 1 auto
+  #search_controls_alternative
+    display: none
+  nav.mainnav
+    flex: 0 1 auto
+  nav.usernav
+    flex: 1
+
+nav.mainnav,
+nav.usernav
+  ul
+    display: flex
+    flex-direction: row
+    li
+      flex: 0 1 auto
+    li:before
+      margin: 0 0.4em 0 0.6em
+      content: '|'
+    li:first-child:before
+      display: none
+
+nav.mainnav
+  ul
+    justify-content: flex-start
+nav.usernav
+  ul
+    justify-content: flex-end
+
+nav.usernav
+  opacity: 0.3
+  &:hover
+    opacity: 1
+
+/* Header [END] */
+
+/* Icon [BEGIN] */
+
+.icon
+  width: 0.7em
+  margin-right: 0.4em
+
+/* Icon [END] */
 
 /* nav */
 
-nav
+header
+  background: $quadrary
   border-bottom: $border-width $border-style $border-color
 
 .collapsed_search_controls
-  padding-top: 18.2em
+  header
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
 
-.collapsed_search_controls nav
-  position: fixed
-  left: 0
-  right: 0
-  top: 0
-  background: $quadrary
+    // display: flex
+    // flex-direction: row
+    // justify-content: flex-end
+    // align-items: center
+    // > *
+    //   flex: 1
+    > *
+      padding: 0em
+    #logo
+      margin: 0.4em 0.4em 0.4em 0
+      width: 200px
+      padding: 0 1em 0 1em
+    #search_controls_alternative
+      display: block
+      flex: 2
+    nav.mainnav
+      display: none
+    nav.usernav
+      padding: 0 1em 0 1em
 
-nav ul
-  margin: 0.5em 0
 #search_controls_alternative
   margin: 0
 #search_controls_alternative input
@@ -362,36 +448,24 @@ nav ul
   border-width: 0 $border-width 0 $border-width
 
 
-nav ul li a#logo
-  line-height: 0
-  display: block
-
-nav ul,
-nav ul li
-  padding: 0
-  list-style-type: none
-
-nav ul li
-  float: left
-  line-height: 4em
-  margin-right: 1.5em
-
-.collapsed_search_controls nav
+nav
+  text-transform: uppercase
+  ul,
   ul li
-    line-height: 2em
-  .page_wrap
-    ul
-      width: 50%
-      float: left
-    #search_controls_alternative
-      width: 50%
-      float: right
-  a#logo img
-    height: 2em
+    padding: 0
+    list-style-type: none
+  ul li a
+    color: $tertiary
+    font-weight: bold
+    text-decoration: none
+    &:hover
+      color: $primary
+      text-decoration: none
+
 
 #search_controls
   margin: 8em 10em
-  font-size: 1.3em
+  font-size: 1.7em
 
 .results
   padding-top: 2em
@@ -425,7 +499,9 @@ nav ul li
 
 
 .highlightedtext
-  color: $secondary
+  // background: $secondary
+  border-radius: 8px 7px 9px 4px
+  box-shadow: 1px -0.175em white inset, 3px -1em 0 $primary inset
 
 
 #searchparams
@@ -456,7 +532,14 @@ nav ul li
 
 /* nav */
 
+/* Decoline [BEGIN] */
 
+.decoline
+  background: $primary
+  height: 0.5em
+  width: 100%
+
+/* Decoline [END] */
 
 
 
@@ -561,11 +644,35 @@ nav ul li
 /* Body-Background [BEGIN] */
 
 body
+  margin: 0
   background: $quadrary
 
 /* Body-Background [END] */
 
+/* advanced-search-controls [BEGIN] */
 
+.advanced-search-controls
+  margin: 8em 0
+  section
+    // border: 1px solid #ccc
+    ul
+      padding: 0
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: baseline
+      flex-wrap: wrap
+      > li
+        flex: 1 1 auto
+        width: 30%
+        display: inline-block
+      > li a,
+      > li input
+        display: inline
+        width: auto
+
+
+/* advanced-search-controls [END] */
 
 
 
