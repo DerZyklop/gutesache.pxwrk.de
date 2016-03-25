@@ -93,7 +93,7 @@ module.exports = (grunt) ->
     watch:
       # watch js
       js:
-        files: ['<%= pkg.paths.src.js %>*.js']
+        files: ['<%= pkg.paths.src.js %>*.js', '.eslintrc']
         tasks: ['newer:eslint', 'concat:js']
         options:
           livereload: true
