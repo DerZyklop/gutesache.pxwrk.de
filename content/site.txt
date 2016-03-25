@@ -1,0 +1,27 @@
+Title: DerZyklop
+
+----
+
+Twitter: DerZyklop
+
+----
+
+Authordescription: 
+
+Minimalistisch lebender Programmierer, Designer und Longboard fahrer. Gebürtig aus Gießen. Mag seine Wahl-Heimat Mainz. Schreibt ohne Rücksicht auf Deutsch-Lehrer.
+
+Mehr über mich: (link: /about text: hier)
+Mehr Artikel: Im (link: /blog/tags/ text: Schlagwort-Archiv).
+Diesen Blog abonnieren kannst du (link: /blog/subscribe text: hier).
+
+----
+
+Description: Code, Minimalismus und Kladderadatsch
+
+----
+
+Keywords: DerZyklop,Nils Neumann,kirby cms,weltretten,user experience
+
+----
+
+Copyright: (link: impressum/ text: Impressum & Lizenz)
