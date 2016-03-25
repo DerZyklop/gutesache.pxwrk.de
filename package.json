@@ -1,41 +1,4 @@
 {
-  "_args": [
-    [
-      "DerZyklop/boilerplate.pxwrk.de",
-      "/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de"
-    ]
-  ],
-  "_from": "derzyklop/boilerplate.pxwrk.de",
-  "_id": "boilerplate.pxwrk.de@1.0.0",
-  "_inCache": true,
-  "_installable": true,
-  "_location": "/boilerplate.pxwrk.de",
-  "_phantomChildren": {},
-  "_requested": {
-    "hosted": {
-      "directUrl": "https://raw.githubusercontent.com/derzyklop/boilerplate.pxwrk.de/master/package.json",
-      "gitUrl": "git://github.com/derzyklop/boilerplate.pxwrk.de.git",
-      "httpsUrl": "git+https://github.com/derzyklop/boilerplate.pxwrk.de.git",
-      "shortcut": "github:derzyklop/boilerplate.pxwrk.de",
-      "ssh": "git@github.com:derzyklop/boilerplate.pxwrk.de.git",
-      "sshUrl": "git+ssh://git@github.com/derzyklop/boilerplate.pxwrk.de.git",
-      "type": "github"
-    },
-    "name": null,
-    "raw": "DerZyklop/boilerplate.pxwrk.de",
-    "rawSpec": "DerZyklop/boilerplate.pxwrk.de",
-    "scope": null,
-    "spec": "github:derzyklop/boilerplate.pxwrk.de",
-    "type": "hosted"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "git://github.com/derzyklop/boilerplate.pxwrk.de.git#e7febb31bfb8dde74e5285a9eb9f435b6843de15",
-  "_shasum": "45fd35596ce0cd649f40d3183019f98181c0b2d0",
-  "_shrinkwrap": null,
-  "_spec": "DerZyklop/boilerplate.pxwrk.de",
-  "_where": "/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de",
   "author": {
     "email": "mail@der-zyklop.com",
     "name": "Nils Neumann"
@@ -48,6 +11,7 @@
   },
   "description": "Project by @DerZyklop",
   "devDependencies": {
+    "boilerplate.pxwrk.de": "github:derzyklop/boilerplate.pxwrk.de",
     "grunt": "~0.4.4",
     "grunt-autoprefixer": "0.6.x",
     "grunt-concurrent": "~0.5.0",
@@ -65,11 +29,9 @@
     "grunt-notify": "^0.3.0",
     "grunt-php": "0.2.x",
     "grunt-shell": "~0.6.1",
-    "matchdep": "0.1.x"
+    "matchdep": "0.1.x",
+    "sass-boilerplate": "github:derzyklop/sass-boilerplate"
   },
-  "gitHead": "e7febb31bfb8dde74e5285a9eb9f435b6843de15",
-  "name": "boilerplate.pxwrk.de",
-  "optionalDependencies": {},
   "paths": {
     "build": {
       "css": "assets/css/",
@@ -90,9 +52,5 @@
       ],
       "sass": "assets/sass/"
     }
-  },
-  "private": true,
-  "readme": "# boilerplate.pxwrk.de\n\n## Install\n\nNavigate to your project. **Create a temporary package.json via `npm init`**.\n\n```\nnpm install DerZyklop/boilerplate.pxwrk.de\nsh node_modules/boilerplate.pxwrk.de/init\nnpm install\ngrunt\n```\n\n## Wat is it?\n\nThis is my personal project-boilerplate.\n\nI wouldn't recommend to use it as it is for your project. It's not documented.\nIt's just a collection of files, that i use in almost every project.\n",
-  "readmeFilename": "README.md",
-  "version": "1.0.0"
+  }
 }
