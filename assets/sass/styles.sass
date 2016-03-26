@@ -466,6 +466,8 @@ nav
 #search_controls
   margin: 8em 10em
   font-size: 1.7em
+  label
+    font-weight: normal
 
 .results
   padding-top: 2em
@@ -668,15 +670,28 @@ body
         width: 30%
         display: inline-block
         margin: 0.3em 0
-      > li a,
-      > li input
-        display: inline
-        width: auto
+      > li
+        a,
+        input
+          display: inline
+          width: auto
+        label
+          font-weight: normal
+          display: inline
+        input
+          margin-right: 0.6em
 
 
 /* advanced-search-controls [END] */
 
+/* checkbox-list [BEGIN] */
 
+.checkbox-list
+  li.checked
+    color: $primary
+
+
+/* checkbox-list [END] */
 
 
 

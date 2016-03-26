@@ -1,5 +1,6 @@
 <div id="search_controls">
   <form>
+    <label>Ich suche...</label>
     <div class="input-group">
       <input type="text" class="eg_input_keyword form-control" placeholder="Gute Sache eG">
       <span class="input-group-btn">
