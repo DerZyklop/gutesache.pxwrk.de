@@ -57,8 +57,16 @@ var setResponsiveHeader = function() {
 	});
 };
 
+var setClickableCheckboxList = function () {
+	"use strict";
+	$(".checkbox-list li input").on("change", function() {
+		$(this).parent().toggleClass("checked");
+	});
+};
+
 $(document).ready(function () {
 	"use strict";
 	setHighlighting();
 	// setResponsiveHeader();
+	setClickableCheckboxList();
 });
