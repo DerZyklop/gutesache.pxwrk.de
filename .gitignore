@@ -1,0 +1,6 @@
+node_modules/
+assets/pre_css/
+assets/js_lib/
+bower_components/
+assets/pre_js/jquery.min.js
+assets/pre_css/styles.css.map

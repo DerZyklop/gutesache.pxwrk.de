@@ -1,0 +1,136 @@
+{
+  "plugins": [
+    "should-promised",
+    "no-unsafe-chars",
+    "filesize"
+  ],
+  "globals": {
+    // Set each global variable name equal to true to allow the variable to be overwritten or false to disallow overwriting.
+    // Src: http://eslint.org/docs/user-guide/configuring.html#specifying-globals
+    "blackberry": false,
+    "sap": false,
+    "module": false,
+    "require": false,
+    "window": false,
+    "document": false,
+    "console": true,
+    "jQuery": true,
+    "IScroll": true,
+    "cordova": true,
+    "ok": true,
+    "_": true,
+    "ebau": false,
+    "setTimeout": false,
+    "QUnit": true,
+    "navigator": true,
+    "location": true
+  },
+  "rules": {
+    // Strict mode
+    "strict": 1,
+
+    // Prevent errors
+    "no-cond-assign": 1,
+    "no-console": 1,
+    "no-constant-condition": 1,
+    "no-debugger": 1,
+    "no-dupe-args": 2,
+    "no-dupe-keys": 2,
+    "no-duplicate-case": 1,
+    "no-empty": 1,
+    "no-empty-character-class": 1,
+    "no-ex-assign": 1,
+    "no-extra-parens": 0,
+    "no-extra-boolean-cast": 1,
+    "no-extra-semi": 1,
+    "no-func-assign": 2,
+    "no-inner-declarations": 1,
+    "no-invalid-regexp": 2,
+    "no-irregular-whitespace": 2,
+    "no-negated-in-lhs": 1,
+    // "no-negated-condition": 1,
+    "no-obj-calls": 1,
+    "no-regex-spaces": 2,
+    "no-sparse-arrays": 2,
+    "no-unexpected-multiline": 1,
+    "no-unreachable": 2,
+    "use-isnan": 2,
+    "valid-typeof": 2,
+    "eqeqeq": 2,
+
+    // Stylistic Issues
+    "block-spacing": 1,
+    "brace-style": [1, "1tbs", { "allowSingleLine": true }],
+    "camelcase": [1, {"properties": "never"}],
+    "comma-spacing": 1,
+    "comma-style": [1, "last"],
+    "func-style": [1, "expression", { "allowArrowFunctions": true }],
+    "quotes": [1, "double", "avoid-escape"],
+    "quote-props": [1, "as-needed"],
+    "key-spacing": [1, {
+        "beforeColon": false,
+        "afterColon": true,
+        "mode": "minimum"
+    }],
+    "no-mixed-spaces-and-tabs": [2],
+    "indent": [2, "tab", {"SwitchCase": 1}],
+    "no-inline-comments": 1,
+    "no-multiple-empty-lines": 1,
+    "no-new-object": [1],
+    "no-warning-comments": [1, {
+        "terms": [
+            "TODO",
+            "FIXME",
+            "HOTFIX"
+        ],
+        "location": "start"
+    }],
+    "operator-linebreak": 1,
+    "semi": [1, "always"],
+    "semi-spacing": [1, {"before": false, "after": true}],
+    "id-length": [1, {
+      "min": 3,
+      "max": 40,
+      "properties": "never",
+      "exceptions": ["e", "el", "i", "j", "id"]
+    }],
+    "eol-last": 1,
+    "space-infix-ops": 1,
+    "spaced-comment": 1,
+    "max-depth": [1, 2],
+    "max-nested-callbacks": [1, 3],
+    "max-params": [1, 24],
+    "wrap-regex": 2,
+    // "max-len": [1, 160, 2],
+    "linebreak-style": [2, "unix"],
+    // "max-statements": [2, 16],
+    "new-cap": [1, {"capIsNewExceptions": ["jQuery.Deferred"]}],
+
+    // Variables
+    "no-undef": 1,
+    "no-undef-init": 1,
+    "no-unused-vars": [1, {"vars": "local", "args": "after-used"}],
+    "no-shadow-restricted-names": 2,
+    "no-shadow": 2,
+
+    // Best Practices
+    // "complexity": [1, 6],
+    "no-return-assign": 1,
+    "dot-notation": 1,
+    "no-alert": 1,
+    "no-new": 2,
+    "curly": 1,
+    "no-eq-null": 1,
+    // "no-ternary": 1,
+    // "no-else-return": 1,
+    "no-new-func": 1,
+    "no-multi-spaces": 1,
+    "no-empty-function": 1,
+
+    // Plugins
+    "should-promised/return-promise": 2,
+    "no-unsafe-chars/no-umlauts": [2],
+    // "filesize/filesize": [1, {"limit": 1337}],
+    "no-unsafe-chars/custom": [2]
+  }
+}
