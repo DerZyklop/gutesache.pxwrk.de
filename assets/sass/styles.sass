@@ -345,21 +345,24 @@ input[type="file"]
 
 header
   display: flex
-  flex-direction: row
-  justify-content: flex-start
-  align-items: baseline
-  flex-wrap: wrap
-  > *
-    flex: 1
-    padding: 1.5em 1em 0.5em 1em
-  #logo
-    flex: 0 1 auto
-  #search_controls_alternative
-    display: none
-  nav.mainnav
-    flex: 0 1 auto
-  nav.usernav
-    flex: 1
+  align-items: center
+  .inner
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: baseline
+    flex-wrap: wrap
+    > *
+      flex: 1
+      padding: 1.5em 1em 0.5em 1em
+    #logo
+      flex: 0 1 auto
+    #search_controls_alternative
+      display: none
+    nav.mainnav
+      flex: 0 1 auto
+    nav.usernav
+      flex: 1
 
 nav.mainnav,
 nav.usernav
@@ -381,10 +384,12 @@ nav.usernav
   ul
     justify-content: flex-end
 
-nav.usernav
-  opacity: 0.3
+header
+  nav.usernav
+    opacity: 0.3
   &:hover
-    opacity: 1
+    nav.usernav
+      opacity: 1
 
 /* Header [END] */
 
@@ -463,11 +468,25 @@ nav
       text-decoration: none
 
 
+.decoline
+  height: 1vh
+header
+  height: 19vh
 #search_controls
-  margin: 8em 10em
-  font-size: 1.7em
-  label
-    font-weight: normal
+  height: 80vh
+
+#search_controls
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  form
+    flex: 0 1 auto
+    width: 70%
+    font-size: 1.7em
+    label
+      font-weight: normal
 
 .results
   padding-top: 2em
@@ -538,7 +557,6 @@ nav
 
 .decoline
   background: $primary
-  height: 0.5em
   width: 100%
 
 /* Decoline [END] */
