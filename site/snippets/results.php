@@ -1,23 +1,6 @@
+<?php snippet('result-counter') ?>
 <div class="results">
-  <aside id="searchparams">
-    <ul class="selectors">
-      <li>
-        <a href="#">Trollololo</a>
-        <ul>
-          <li>Trolo</li>
-          <li>lololo</li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Star Wars</a>
-        <ul>
-          <li>Piu</li>
-          <li>Piu</li>
-          <li>Piu</li>
-        </ul>
-      </li>
-    </ul>
-  </aside>
+  <?php snippet('searchparams') ?>
   <ul class="result_list">
     <li>
       <div class="eg_name">Muran Mainzer eG</div>

@@ -1,4 +1,6 @@
-  <header>
+<div class="decoline"></div>
+<header>
+  <div class="inner">
     <a href="/" id="logo">
       <img src="assets/images/logo.svg" width="230px" alt="">
     </a>
@@ -45,4 +47,5 @@
         </li>
       </ul>
     </nav>
-  </header>
+  </div>
+</header>
