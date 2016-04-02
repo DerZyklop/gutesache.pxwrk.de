@@ -491,25 +491,41 @@ header
 
 .results
   padding-top: 2em
+.results
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: baseline
+  > *
+    flex: 1
+    padding: 0 2em
+  #searchparams
+    flex: 0 1 auto
+  .result_list
+    flex: 5
 
-.results > ul
-  float: left
-.results > ul,
 .results > ul li
   padding: 0
   list-style-type: none
-
-.results > ul li
-  margin: 0 0 1.2em 0
-.results > ul li>*
-  padding: 0.2em 0
+ul.result_list > li
+  margin-bottom: 3em
+ul.eg_location
+  padding: 0
+  margin: 1em 0
+ul.eg_location
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  > li
+    flex: 1 1 auto
+    flex: 0 1 auto
+    margin-right: 2em
 
 .results > ul li .eg_name
   font-size: 1.4em
   font-family: $font-highlight
   font-weight: bold
 
-.results > ul li .eg_location
 
 
 .result_counter
@@ -525,11 +541,6 @@ header
   border-radius: 8px 7px 9px 4px
   box-shadow: 1px -0.175em white inset, 3px -1em 0 $primary inset
 
-
-#searchparams
-  width: 20%
-  float: left
-
 #searchparams ul
   list-style: none
 #searchparams > ul
@@ -540,7 +551,8 @@ header
   font-weight: bold
 #searchparams ul.selectors > li li
   font-weight: normal
-
+#searchparams ul.selectors li
+  white-space: nowrap
 
 
 
