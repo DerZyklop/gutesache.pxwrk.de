@@ -1,12 +1,12 @@
 <div id="search_controls">
   <form>
-    <label>Ich suche...</label>
+    <h2>Online-Register-Suchmaschiene über Genossenschaften und mehr!</br>
+    Nach welcher guten Sache suchen sie?</h2>
     <div class="input-group">
-      <input type="text" class="eg_input_keyword form-control" placeholder="Gute Sache eG">
+      <input type="text" class="eg_input_keyword form-control" placeholder="Energiegenossenschaft in Mainz">
       <span class="input-group-btn">
-        <a class="eg_search_btn btn btn-primary" href="/">Go!</a>
+        <a class="eg_search_btn btn btn-primary" href="/">Finden</a>
       </span>
     </div><!-- /input-group -->
-    <a href="/erweiterte-suche" class="btn btn-secondary">Erweiterte Suche</a>
   </form>
 </div>

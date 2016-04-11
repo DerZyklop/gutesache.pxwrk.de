@@ -3,7 +3,7 @@
     <?php foreach($pages->visible() as $item): ?>
       <?php if ($item->isOpen()) {
         $iscurrent = true;
-      } elseif ($site->activePage() == 'suche' && $item->uri() == 'suche') {
+      } elseif ($site->activePage() == 'home' && $item->uri() == 'register') {
         $iscurrent = true;
       } else {
         $iscurrent = false;

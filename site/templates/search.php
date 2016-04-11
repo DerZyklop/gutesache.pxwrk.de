@@ -10,8 +10,10 @@
 <body>
   <div class="decoline"></div>
   <?php snippet('header') ?>
+
   <main class="page_wrap">
     <?php snippet('search-controls') ?>
+    <?php snippet('advanced-search-controls') ?>
     <?php snippet('results') ?>
   </main>
   <footer class="page_wrap">

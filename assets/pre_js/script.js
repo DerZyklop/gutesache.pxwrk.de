@@ -27,35 +27,35 @@ var setHighlighting = function() {
 //   });
 // });
 
-var setResponsiveHeader = function() {
-	"use strict";
-	var scrolling = false;
-	$(document).on("scroll", function () {
-		var hadFocus;
-		clearTimeout(scrolling);
-		scrolling = setTimeout(function () {
-			if ($(this).scrollTop() > 250) {
-				$("body").addClass("collapsed_search_controls");
-				hadFocus = $("#search_controls .input-group input").is(":focus");
-				$("#search_controls .input-group").prependTo("#search_controls_alternative");
-				if (hadFocus) {
-					$("#search_controls_alternative .input-group input").focus();
-				}
-			} else {
-				$(".collapsed_search_controls").removeClass("collapsed_search_controls");
-				hadFocus = $("#search_controls_alternative .input-group input").is(":focus");
-				$("#search_controls_alternative .input-group").prependTo("#search_controls");
-				if (hadFocus) {
-					$("#search_controls .input-group input").focus();
-				}
-			}
-		}, 100);
-		$("#search_controls_alternative").on("click", function () {
-			window.scrollTo(0, 0);
-			$("#search_controls .input-group input").is(":focus");
-		});
-	});
-};
+// var setResponsiveHeader = function() {
+// "use strict";
+// var scrolling = false;
+// $(document).on("scroll", function () {
+// 	var hadFocus;
+// 	clearTimeout(scrolling);
+// 	scrolling = setTimeout(function () {
+// 		if ($(this).scrollTop() > 250) {
+// 			$("body").addClass("collapsed_search_controls");
+// 			hadFocus = $("#search_controls .input-group input").is(":focus");
+// 			$("#search_controls .input-group").prependTo("#search_controls_alternative");
+// 			if (hadFocus) {
+// 				$("#search_controls_alternative .input-group input").focus();
+// 			}
+// 		} else {
+// 			$(".collapsed_search_controls").removeClass("collapsed_search_controls");
+// 			hadFocus = $("#search_controls_alternative .input-group input").is(":focus");
+// 			$("#search_controls_alternative .input-group").prependTo("#search_controls");
+// 			if (hadFocus) {
+// 				$("#search_controls .input-group input").focus();
+// 			}
+// 		}
+// 	}, 100);
+// 	$("#search_controls_alternative").on("click", function () {
+// 		window.scrollTo(0, 0);
+// 		$("#search_controls .input-group input").is(":focus");
+// 	});
+// });
+// };
 
 var setClickableCheckboxList = function () {
 	"use strict";
@@ -64,9 +64,27 @@ var setClickableCheckboxList = function () {
 	});
 };
 
+
+var makethingsCollapsable = function() {
+	"use strict";
+	$(".hide").hide();
+	var triggers = jQuery(".collapsable .collapsable-trigger");
+	$.each(triggers, function (index, trigger) {
+		var collapsableItem = jQuery(trigger).closest(".collapsable").find(".collapsable-item");
+		$(trigger).on("click", function(event) {
+			console.log(collapsableItem);
+			event.preventDefault();
+			collapsableItem.toggle();
+		});
+	});
+};
+
+
 $(document).ready(function () {
 	"use strict";
 	setHighlighting();
 	// setResponsiveHeader();
 	setClickableCheckboxList();
+	makethingsCollapsable();
 });
+

@@ -1,18 +1,18 @@
 <aside id="searchparams">
   <ul class="selectors">
-    <li>
-      <h5 class="title"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> Trollololo</a></h5>
-      <ul>
+    <li class="collapsable">
+      <h5 class="title collapsable-trigger"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> Trollololo</a></h5>
+      <ul class="collapsable-item">
         <li>Trolo</li>
         <li>lololo</li>
       </ul>
     </li>
-    <li>
-      <h5 class="title"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> Trollololo</a></h5>
+    <li class="collapsable">
+      <h5 class="title collapsable-trigger"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> Trollololo</a></h5>
     </li>
-    <li>
-      <h5 class="title"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> Trollololo</a></h5>
-      <ul>
+    <li class="collapsable">
+      <h5 class="title collapsable-trigger"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> Trollololo</a></h5>
+      <ul class="collapsable-item">
         <li>Piu</li>
         <li>Piu</li>
         <li>Piu</li>
@@ -20,9 +20,3 @@
     </li>
   </ul>
 </aside>
-<script type="text/javascript">
-  jQuery('#searchparams .title').on('click', function(event) {
-    event.preventDefault();
-    jQuery(this).parent().find('li').toggle();
-  });
-</script>

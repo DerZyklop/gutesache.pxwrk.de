@@ -3,9 +3,9 @@
 $page-width: 1200px                    !default
 $space-t-b: 1rem                       !default
 $space-l-r: 2rem                       !default
-$font-std: 'Droid Sans', helvetica     !default
-$font-highlight: Merriweather, helvetica   !default
-$font-size: 15px                       !default
+$font-std: Merriweather, helvetica     !default
+$font-highlight: 'Droid Sans', helvetica   !default
+$font-size: 12px                       !default
 $font-color: #222                      !default
 $border-style: solid                   !default
 $border-width: 1px                     !default
@@ -170,10 +170,9 @@ textarea
   display: block
   width: 100%
   border:
-    width: $border-width
+    width: $border-width * 2
     style: $border-style
-    color: #ccc
-    color: transparent
+    color: $primary
   background: $quadrary - #111
   border-radius: $radius
   padding: 0.3em 2%
@@ -184,15 +183,20 @@ textarea
     border-color: #999
 
 .input-group
-  display: table
-  width: 100%
-.input-group>*
-  display: table-cell
+  display: flex
+  > *
+    flex: 6
+  .input-group-btn
+    flex: 1
 
-.input-group-btn
-  spacing: 0
-  margin: 0
-  padding: 0
+
+// .input-group
+//   display: table
+//   width: 100%
+
+// .input-group-btn
+//   margin: 0
+//   padding: 0
 
 .input-group input:first-child,
 .input-group button:first-child
@@ -345,21 +349,11 @@ input[type="file"]
 /* Header [BEGIN] */
 
 header
-  // display: flex
-  // flex-direction: column
   position: relative
-  nav.mainnav
-    // order: 1
-    // flex: 0 1 auto
-    // align-self: flex-end
-    bottom: 0
-    position: absolute
   .inner
-    // flex: 1
     display: flex
     flex-direction: row
     justify-content: flex-start
-    align-items: baseline
     flex-wrap: wrap
     > *
       flex: 1
@@ -371,7 +365,8 @@ header
     nav.usernav
       order: 2
       flex: 1
-
+  .header-inner-1
+    margin: 1em 0
 
 nav.mainnav,
 nav.usernav
@@ -390,6 +385,7 @@ nav.usernav
       display: none
 
 nav.mainnav
+  padding-left: 15em
   ul
     justify-content: flex-start
     margin: 0
@@ -400,7 +396,7 @@ nav.mainnav
         padding: 0.8em 1.2em
         margin: 0 0.2em
         border: 2px solid $primary
-        border-width: 2px 2px 0 2px
+        border-width: 1px 1px 0 1px
         transition: color 0.3s, background 0.3s
       a:hover,
       &.active a
@@ -410,14 +406,6 @@ nav.mainnav
 nav.usernav
   ul
     justify-content: flex-end
-
-header
-  nav.usernav
-    opacity: 0.3
-    transition: opacity 0.3s
-  &:hover
-    nav.usernav
-      opacity: 1
 
 /* Header [END] */
 
@@ -431,7 +419,7 @@ header
 
 /* nav */
 
-header
+.header
   background: $quadrary
   border-bottom: $border-width $border-style $primary
 
@@ -498,15 +486,15 @@ nav
 
 .decoline
   height: 1vh
-header
-  height: 25vh
+
 #search_controls
-  height: 74vh
+  min-height: 74vh
+#search_controls
   margin-bottom: 1em
 
 #search_controls::after
   content: ""
-  background-image: url('http://placekitten.com/1200/670')
+  //background-image: url('http://placekitten.com/1200/670')
   background-color: #fff
   background-position: center center
   background-repeat: no-repeat
@@ -523,35 +511,27 @@ header
   display: flex
   flex-direction: row
   justify-content: center
-  align-items: center
+  align-items: flex-end
   flex-wrap: wrap
   form
-    flex: 0 1 auto
+    flex: 0 1 fit-content
     width: 70%
     font-size: 1.7em
-    label
-      font-weight: normal
 
 .results
   padding-top: 2em
-.results
-  display: flex
-  flex-direction: row
-  justify-content: center
-  align-items: baseline
-  > *
-    flex: 1
-    padding: 0 2em
-  #searchparams
-    flex: 0 1 auto
-  .result_list
-    flex: 5
+// .results
+//   > *
+//     padding: 0 2em
 
-.results > ul li
+.results ul li
   padding: 0
   list-style-type: none
-ul.result_list > li
-  margin-bottom: 3em
+ul.result_list
+  padding: 0
+  list-style-type: none
+  > li
+    margin-bottom: 3em
 ul.eg_location
   padding: 0
   margin: 1em 0
@@ -728,7 +708,27 @@ body
 /* advanced-search-controls [BEGIN] */
 
 .advanced-search-controls
-  margin: 8em 0
+  // margin: 8em 0
+  margin-bottom: 4em
+  .options
+    border: $border-width $border-style $primary
+    padding: 4em
+    margin-top: -1em
+    position: relative
+    z-index: 0
+  .inner
+    width: 70%
+    margin: 0 auto
+    .btn-secondary
+      background: $quadrary
+      position: relative
+      z-index: 1
+
+      margin: 2em 0 0 0
+      width: 20em
+      font-size: 1rem
+  section:first-child
+    margin-top: 0
   section
     margin: 4em 0
     // border: 1px solid #ccc
@@ -770,5 +770,20 @@ body
 
 
 
+/* TwoCol [BEGIN] */
 
+.two-col
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  //align-items: baseline
+  flex-wrap: wrap
+  > *
+    flex: 1
+  .col-1
+    flex: 1
+  .col-2
+    flex: 3
+
+/* TwoCol [END] */
 
