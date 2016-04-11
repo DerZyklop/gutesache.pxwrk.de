@@ -8,8 +8,9 @@
   <script type="text/javascript" src="/assets/js/script.js"></script>
 </head>
 <body>
+  <div class="decoline"></div>
   <?php snippet('header') ?>
-  <main class="page_wrap">
+  <main>
     <?php snippet('search-controls') ?>
     <?php snippet('results') ?>
     <div class="clearit"></div>

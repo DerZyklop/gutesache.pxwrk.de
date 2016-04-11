@@ -9,13 +9,14 @@ $font-size: 15px                       !default
 $font-color: #222                      !default
 $border-style: solid                   !default
 $border-width: 1px                     !default
-$border-color: #ccc                    !default
+$border-color: #00ff00                 !default
 $radius: 0px                           !default
 
 /* Colors [BEGIN] */
 
 // A signal-color
 $primary: #38fd30
+$primary: #00cc00
 
 // Another signal-color
 $secondary: #F64740                       !default
@@ -112,7 +113,7 @@ pre
 blockquote
   padding: 0 0 0 2.5em
   margin: 2em 0
-  border-left: $border-width $border-style $border-color
+  border-left: $border-width $border-style $primary
   font-style: italic
 
 /* Blockquote [END] */
@@ -128,7 +129,7 @@ img
 
 hr
   border: none
-  background: $border-color
+  background: $primary
   height: $border-width
 
 /* HR [END] */
@@ -212,9 +213,9 @@ textarea
   &[readonly],
   &:disabled
     background: $quadrary - #111
-    color: $border-color - #666
+    color: $primary - #666
     background: $quadrary - #111
-    color: $border-color - #666
+    color: $primary - #666
 
 /* Inputs Disabled || Read-Only [END] */
 
@@ -225,7 +226,7 @@ textarea
 fieldset
   padding: $space-l-r
   border:
-    color: $border-color
+    color: $primary
     style: $border-style
     width: $border-width
   legend
@@ -321,7 +322,7 @@ input[type="file"]
   a
     text-decoration: none
   &:disabled
-    background: $border-color + #111
+    background: $primary + #111
     cursor: default
   &.btn-primary
     background: $primary
@@ -344,10 +345,17 @@ input[type="file"]
 /* Header [BEGIN] */
 
 header
-  display: flex
-  align-items: center
+  // display: flex
+  // flex-direction: column
+  position: relative
+  nav.mainnav
+    // order: 1
+    // flex: 0 1 auto
+    // align-self: flex-end
+    bottom: 0
+    position: absolute
   .inner
-    flex: 1
+    // flex: 1
     display: flex
     flex-direction: row
     justify-content: flex-start
@@ -360,10 +368,10 @@ header
       flex: 0 1 auto
     #search_controls_alternative
       display: none
-    nav.mainnav
-      flex: 0 1 auto
     nav.usernav
+      order: 2
       flex: 1
+
 
 nav.mainnav,
 nav.usernav
@@ -372,6 +380,9 @@ nav.usernav
     flex-direction: row
     li
       flex: 0 1 auto
+
+nav.usernav
+  ul
     li:before
       margin: 0 0.4em 0 0.6em
       content: '|'
@@ -381,6 +392,21 @@ nav.usernav
 nav.mainnav
   ul
     justify-content: flex-start
+    margin: 0
+    li
+      background: #fff
+      a
+        display: block
+        padding: 0.8em 1.2em
+        margin: 0 0.2em
+        border: 2px solid $primary
+        border-width: 2px 2px 0 2px
+        transition: color 0.3s, background 0.3s
+      a:hover,
+      &.active a
+        color: $tertiary
+        background: $primary
+
 nav.usernav
   ul
     justify-content: flex-end
@@ -388,6 +414,7 @@ nav.usernav
 header
   nav.usernav
     opacity: 0.3
+    transition: opacity 0.3s
   &:hover
     nav.usernav
       opacity: 1
@@ -406,7 +433,7 @@ header
 
 header
   background: $quadrary
-  border-bottom: $border-width $border-style $border-color
+  border-bottom: $border-width $border-style $primary
 
 .collapsed_search_controls
   header
@@ -472,9 +499,25 @@ nav
 .decoline
   height: 1vh
 header
-  height: 19vh
+  height: 25vh
 #search_controls
-  height: 80vh
+  height: 74vh
+  margin-bottom: 1em
+
+#search_controls::after
+  content: ""
+  background-image: url('http://placekitten.com/1200/670')
+  background-color: #fff
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  opacity: 0.3
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  position: absolute
+  z-index: -1
 
 #search_controls
   display: flex
