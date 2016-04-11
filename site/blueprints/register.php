@@ -2,8 +2,9 @@
 
 # default blueprint
 
-title: Default
-pages: true
+title: Register
+pages:
+  template: company-detail
 files: true
 fields:
   title:

@@ -2,7 +2,7 @@
 
 # default blueprint
 
-title: Default
+title: Erweiterte Suche
 pages: true
 files: true
 fields:

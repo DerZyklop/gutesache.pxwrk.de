@@ -2,8 +2,8 @@
 <div class="results">
   <?php snippet('searchparams') ?>
   <ul class="result_list">
-    <?php for ($i=0; $i < 14; $i++) : ?>
-      <?php snippet('result-list-item') ?>
-    <?php endfor; ?>
+    <?php foreach ($pages->find('register')->children() as $item): ?>
+      <?php snippet('result-list-item', array('company' => $item)) ?>
+    <?php endforeach ?>
   </ul>
 </div>

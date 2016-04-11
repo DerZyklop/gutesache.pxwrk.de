@@ -2,12 +2,15 @@
 
 # default blueprint
 
-title: Default
+title: Firma Detail
 pages: true
 files: true
 fields:
   title:
     label: Title
+    type:  text
+  city:
+    label: Stadt
     type:  text
   text:
     label: Text

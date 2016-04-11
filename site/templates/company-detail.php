@@ -8,20 +8,9 @@
   <script type="text/javascript" src="/assets/js/script.js"></script>
 </head>
 <body>
-  <div class="decoline"></div>
-  <?php snippet('header') ?>
   <main class="page_wrap">
+    <h2><?php echo $page->title() ?></h2>
     <?php echo $page->text() ?>
   </main>
-  <footer class="page_wrap">
-    <ul>
-      <li>
-        <a href="#">Impressum</a>
-      </li>
-      <li>
-        <a href="#">Kontakt</a>
-      </li>
-    </ul>
-  </footer>
 </body>
 </html>
