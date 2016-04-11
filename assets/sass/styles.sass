@@ -787,3 +787,28 @@ body
 
 /* TwoCol [END] */
 
+
+
+/* Overlay [BEGIN] */
+
+.overlay-placeholder
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  bottom: 0
+  // min-height: 1200px
+  // background: rgba(0,0,0,0.1)
+
+  // background-image: linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 10%,rgba(0,0,0,0.5) 90%,rgba(0,0,0,0) 100%)
+  z-index: 100
+  overflow: scroll
+  .inner-wrap
+    padding: $space-l-r
+    .inner
+      box-shadow: 2px 2px 26px rgba(0,0,0,0.2)
+      border: $border-width * 2 $border-style $primary
+      background: #fff
+      padding: 2em
+
+/* Overlay [END] */

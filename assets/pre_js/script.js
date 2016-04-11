@@ -86,5 +86,53 @@ $(document).ready(function () {
 	// setResponsiveHeader();
 	setClickableCheckboxList();
 	makethingsCollapsable();
+
+	var hideOverlay = function (event) {
+		event.preventDefault();
+		var overlay = jQuery(".overlay-placeholder");
+		overlay.fadeOut();
+	};
+
+	jQuery(".overlay-placeholder").on("click", function (event) {
+		event.preventDefault();
+		if (
+			jQuery(event.target).hasClass("close-overlay") ||
+			jQuery(event.target).hasClass("overlay-placeholder")
+		) {
+			hideOverlay(event);
+		}
+	});
+	jQuery(".overlay-placeholder .inner-wrap").on("click", function (event) {
+		event.preventDefault();
+	});
+
+	$(".results .result_list .eg_name a").on("click", function(event) {
+		event.preventDefault();
+		var link = jQuery(this).attr("href");
+		var overlay = jQuery(".overlay-placeholder");
+		overlay.css("top", jQuery(document).scrollTop());
+		overlay.css("min-height", jQuery(window).height() + "px");
+		overlay.css("padding-bottom", jQuery(window).height() + "px");
+		overlay.find(".inner-wrap").css("padding-top", jQuery(window).height() + "px");
+
+		jQuery.get(link, function( data ) {
+			overlay.find(".inner").html(data);
+			overlay.show();
+			overlay.scrollTop(jQuery(window).height() - 20);
+		});
+
+		overlay.scroll(function() {
+			var overlayInnerHeight = (overlay.find(".inner-wrap").height() + jQuery(window).height());
+			if (
+				overlay.scrollTop() === 0 ||
+				overlayInnerHeight - overlay.scrollTop() <= 0
+			) {
+				hideOverlay(event);
+			}
+		});
+
+	});
+
+
 });
 
