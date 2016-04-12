@@ -19,7 +19,7 @@ $primary: #38fd30
 $primary: #00cc00
 
 // Another signal-color
-$secondary: #F64740                       !default
+$secondary: #33ff33                       !default
 
 // An unobtrusive color
 // It's used for e.g. borders.
@@ -179,8 +179,8 @@ textarea
   font-size: 1em
   line-height: 1.5em
   transition: 0.2s
-  &:focus
-    border-color: #999
+  // &:focus
+  //   border-color: $secondary
 
 .input-group
   display: flex
@@ -812,3 +812,11 @@ body
       padding: 2em
 
 /* Overlay [END] */
+
+
+/* Footer [BEGIN] */
+
+footer
+  border-top: $border-width $border-style $primary
+
+/* Footer [END] */
