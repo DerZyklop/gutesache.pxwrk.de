@@ -2,41 +2,41 @@ Title: Branche
 
 ----
 
-Categories: 
+Options: 
 
 - 
   title: Banken
-  description: banken
+  key: banken
 - 
   title: Kultur
-  description: Kultur
+  key: Kultur
 - 
   title: Wohnung
-  description: Wohnung
+  key: Wohnung
 - 
   title: Großhandel
-  description: Großhandel
+  key: Großhandel
 - 
   title: Handwerk
-  description: Handwerk
+  key: Handwerk
 - 
   title: Energie
-  description: Energie
+  key: Energie
 - 
   title: Bildung
-  description: Bildung
+  key: Bildung
 - 
   title: Konsum
-  description: Konsum
+  key: Konsum
 - 
   title: Dienstleistung
-  description: Dienstleistung
+  key: Dienstleistung
 - 
   title: Einzelhandel
-  description: Einzelhandel
+  key: Einzelhandel
 - 
   title: Landwirtschaft
-  description: Landwirtschaft
+  key: Landwirtschaft
 - 
   title: Soziales
-  description: Soziales
+  key: Soziales

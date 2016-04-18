@@ -7,7 +7,7 @@ fields:
   title:
     label: Title
     type:  text
-  categories:
+  options:
     label: Optionen
     type: structure
     entry: >
@@ -16,7 +16,7 @@ fields:
       title:
         label: Titel der Option
         type: text
-      description:
+      key:
         label: Key in der Datenbank
         type: text
         size: large

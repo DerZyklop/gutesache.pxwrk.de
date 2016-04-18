@@ -1,54 +1,54 @@
-Title: Branche
+Title: Bundesland
 
 ----
 
-Categories: 
+Options: 
 
 - 
   title: Baden-Württemberg
-  description: Baden-Württemberg
+  key: Baden-Württemberg
 - 
   title: Bayern
-  description: Bayern
+  key: Bayern
 - 
   title: Berlin
-  description: Berlin
+  key: Berlin
 - 
   title: Brandenburg
-  description: Brandenburg
+  key: Brandenburg
 - 
   title: Bremen
-  description: Bremen
+  key: Bremen
 - 
   title: Hamburg
-  description: Hamburg
+  key: Hamburg
 - 
   title: Hessen
-  description: Hessen
+  key: Hessen
 - 
   title: Mecklenburg-Vorpommern
-  description: Mecklenburg-Vorpommern
+  key: Mecklenburg-Vorpommern
 - 
   title: Niedersachsen
-  description: Niedersachsen
+  key: Niedersachsen
 - 
   title: Nordrhein-Westfalen
-  description: Nordrhein-Westfalen
+  key: Nordrhein-Westfalen
 - 
   title: Rheinland-Pfalz
-  description: Rheinland-Pfalz
+  key: Rheinland-Pfalz
 - 
   title: Saarland
-  description: Saarland
+  key: Saarland
 - 
   title: Sachsen
-  description: Sachsen
+  key: Sachsen
 - 
   title: Sachsen-Anhalt
-  description: Sachsen-Anhalt
+  key: Sachsen-Anhalt
 - 
   title: Schleswig-Holstein
-  description: Schleswig-Holstein
+  key: Schleswig-Holstein
 - 
   title: Thüringen
-  description: Thüringen
+  key: Thüringen

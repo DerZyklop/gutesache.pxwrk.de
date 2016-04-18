@@ -1,9 +1,9 @@
-Title: Branche
+Title: PLZ / Ort
 
 ----
 
-Categories: 
+Options: 
 
 - 
   title: PLZ / Ort
-  description: PLZ / Ort
+  key: PLZ / Ort
