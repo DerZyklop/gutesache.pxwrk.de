@@ -1,9 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-# default blueprint
-
 title: Erweiterte Suche
-pages: true
+pages:
+  template: advanced-search-category
 files: true
 fields:
   title:
@@ -21,55 +20,3 @@ fields:
       - italic
       - email
       - link
-  categories:
-    label: Categories
-    type: structure
-    entry: >
-      {{title}}<br />
-      {{description}}
-    fields:
-      jobtitle:
-        label: Jobbezeichnung
-        type: text
-      description:
-        label: Jobbeschreibung
-        type: textarea
-        size: large
-        buttons:
-          - h1
-          - h2
-          - h3
-          - bold
-          - italic
-          - email
-          - link
-          attachment:
-            label: Anhang
-            type: select
-            options: files
-<!--       categories:
-        label: Categories
-        type: structure
-        entry: >
-          {{title}}<br />
-          {{description}}
-        fields:
-          jobtitle:
-            label: Jobbezeichnung
-            type: text
-          description:
-            label: Jobbeschreibung
-            type: textarea
-            size: large
-            buttons:
-              - h1
-              - h2
-              - h3
-              - bold
-              - italic
-              - email
-              - link -->
-      attachment:
-        label: Anhang
-        type: select
-        options: files

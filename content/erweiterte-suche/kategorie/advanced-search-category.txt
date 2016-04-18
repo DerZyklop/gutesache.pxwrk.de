@@ -1,0 +1,24 @@
+Title: Branche
+
+----
+
+Categories: 
+
+- 
+  title: Förderung
+  description: Förderung
+- 
+  title: Produktion
+  description: Produktion
+- 
+  title: Öffentlich-Rechtliche
+  description: Öffentlich-Rechtliche
+- 
+  title: Soziales und Kultur
+  description: Soziales und Kultur
+- 
+  title: Dienstleistung
+  description: Dienstleistung
+- 
+  title: Bürger
+  description: Bürger

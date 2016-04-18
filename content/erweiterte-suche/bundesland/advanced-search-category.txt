@@ -1,0 +1,54 @@
+Title: Branche
+
+----
+
+Categories: 
+
+- 
+  title: Baden-Württemberg
+  description: Baden-Württemberg
+- 
+  title: Bayern
+  description: Bayern
+- 
+  title: Berlin
+  description: Berlin
+- 
+  title: Brandenburg
+  description: Brandenburg
+- 
+  title: Bremen
+  description: Bremen
+- 
+  title: Hamburg
+  description: Hamburg
+- 
+  title: Hessen
+  description: Hessen
+- 
+  title: Mecklenburg-Vorpommern
+  description: Mecklenburg-Vorpommern
+- 
+  title: Niedersachsen
+  description: Niedersachsen
+- 
+  title: Nordrhein-Westfalen
+  description: Nordrhein-Westfalen
+- 
+  title: Rheinland-Pfalz
+  description: Rheinland-Pfalz
+- 
+  title: Saarland
+  description: Saarland
+- 
+  title: Sachsen
+  description: Sachsen
+- 
+  title: Sachsen-Anhalt
+  description: Sachsen-Anhalt
+- 
+  title: Schleswig-Holstein
+  description: Schleswig-Holstein
+- 
+  title: Thüringen
+  description: Thüringen
