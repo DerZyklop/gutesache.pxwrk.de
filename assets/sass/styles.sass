@@ -67,6 +67,9 @@ h1, h2, h3, h4, h5, h6
   font-family: $font-highlight
   text-transform: uppercase
 
+h3
+  font-size: 1.6em
+
 /* Headlines [END] */
 
 /* Paragraph [BEGIN] */
@@ -485,12 +488,12 @@ nav
 
 
 .decoline
-  height: 1vh
-
+  height: 0.5em
 #search_controls
-  min-height: 74vh
-#search_controls
+  min-height: 30em
   margin-bottom: 1em
+.advanced-search-controls
+  min-height: 20em
 
 #search_controls::after
   content: ""
@@ -535,7 +538,7 @@ ul.result_list
 ul.eg_location
   padding: 0
   margin: 1em 0
-ul.eg_location
+
   display: flex
   flex-direction: row
   justify-content: flex-start
@@ -719,6 +722,8 @@ body
   .inner
     width: 70%
     margin: 0 auto
+  .inner,
+  .options
     .btn-secondary
       background: $quadrary
       position: relative
@@ -727,6 +732,9 @@ body
       margin: 2em 0 0 0
       width: 20em
       font-size: 1rem
+  .options
+    .btn-secondary
+      float: right
   section:first-child
     margin-top: 0
   section
