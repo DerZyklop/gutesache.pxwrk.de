@@ -10,9 +10,9 @@
       } ?>
       <li<?php ecco($iscurrent, ' class="active"') ?>>
         <div class="triangle-left"></div>
-        <a href="<?php echo $item->url() ?>">
-          <?php echo html($item->title()) ?>
-        </a>
+          <a href="<?php echo $item->url() ?>">
+            <h4><?php echo html($item->title()) ?></h4>
+          </a>
         <div class="triangle-right"></div>
       </li>
     <?php endforeach ?>

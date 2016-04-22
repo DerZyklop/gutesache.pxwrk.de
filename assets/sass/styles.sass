@@ -3,8 +3,9 @@
 $page-width: 1200px                    !default
 $space-t-b: 1rem                       !default
 $space-l-r: 2rem                       !default
-$font-std: Merriweather, helvetica     !default
+$font-std: 'FreightText Pro', 'Times New Roman', helvetica     !default
 $font-highlight: 'Franz Sans', helvetica   !default
+$font-register: 'Tenso', 'Fira Mono', 'Courier New', courier   !default
 $font-size: 12px                       !default
 $font-color: #222                      !default
 $border-style: solid                   !default
@@ -63,21 +64,60 @@ body
 
 /* Headlines [BEGIN] */
 
+/* TEMP */
 h1, h2, h3, h4, h5, h6
   font-family: $font-highlight
+/* TEMP */
+h1
+  font-size: 24px
+  line-height: 35px
+  font-weight: bold
+/* TEMP */
+h2
+  font-family: $font-register
+  font-size: 22px
+  line-height: 30px
+  font-weight: bold
+/* TEMP */
+h3
+  font-family: $font-std
+  font-size: 22px
+  line-height: 30px
+  font-weight: normal
+/* TEMP */
+h4
+  font-family: $font-register
+  font-size: 12px
+  text-transform: uppercase
+  line-height: 14px
+  font-weight: normal
+  font-weight: bold
+/* TEMP */
+h5
+  font-family: $font-register
+  font-size: 10px
+  text-transform: uppercase
+  line-height: 12px
+  font-weight: normal
+  font-weight: bold
+/* TEMP */
+// h6
+  // font-family: $font-register
+  // font-size: 10px
+  // text-transform: uppercase
+  // line-height: 12px
+  // font-weight: normal
+  // font-weight: bold
+/* TEMP */
+
+
+h5, h6
   text-transform: uppercase
 
 h3
   font-size: 1.6em
 
 /* Headlines [END] */
-
-/* Paragraph [BEGIN] */
-
-p
-  line-height: 1.6em
-
-/* Paragraph [END] */
 
 /* Links [BEGIN] */
 
@@ -88,6 +128,13 @@ a
     text-decoration: underline
 
 /* Links [END] */
+
+/* Paragraph [BEGIN] */
+
+p
+  line-height: 1.6em
+
+/* Paragraph [END] */
 
 /* Code & Pre [BEGIN] */
 
@@ -412,6 +459,9 @@ nav.mainnav
         margin: 0
         line-height: 3em
         border-top: 1px solid $primary
+        h1, h2, h3, h4, h5, h6
+          line-height: 3em
+          margin: 0
       .triangle-left,
       .triangle-right
         // padding-top: 1px
