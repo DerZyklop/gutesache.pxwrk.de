@@ -1,5 +1,5 @@
 <li>
-  <h3 class="eg_name"><a href="<?= $company->url() ?>"><?= $company->title() ?></a></h3>
+  <h2 class="eg_name"><a href="<?= $company->url() ?>"><?= $company->title() ?></a></h2>
   <?php $meta_items = [
     $company->city(),
     $company->verband(),

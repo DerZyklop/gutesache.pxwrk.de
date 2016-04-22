@@ -13,7 +13,7 @@
         <h5 class="title collapsable-trigger"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> <?= $category->title() ?></a></h5>
         <ul class="checkbox-list collapsable-item hide">
           <?php foreach ($category->options()->yaml() as $option): ?>
-            <li><input id="<?= $option["key"] ?>" type="checkbox"><label for="<?= $option["key"] ?>"><?= $option["title"] ?></label></li>
+            <li><input id="<?= $option["key"] ?>" type="checkbox"><h6><label for="<?= $option["key"] ?>"><?= $option["title"] ?></label></h6></li>
           <?php endforeach ?>
         </ul>
       </li>

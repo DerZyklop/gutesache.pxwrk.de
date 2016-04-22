@@ -3,10 +3,10 @@
 $page-width: 1200px                    !default
 $space-t-b: 1rem                       !default
 $space-l-r: 2rem                       !default
-$font-std: 'FreightText Pro', 'Times New Roman', helvetica     !default
-$font-highlight: 'Franz Sans', helvetica   !default
-$font-register: 'Tenso', 'Fira Mono', 'Courier New', courier   !default
-$font-size: 12px                       !default
+$font-std: 'FreightText Pro', 'Times New Roman', helvetica      !default
+$font-highlight1: 'Franz Sans', helvetica                       !default
+$font-highlight2: 'Tenso', 'Fira Mono', 'Courier New', courier  !default
+$font-size: 16px                       !default
 $font-color: #222                      !default
 $border-style: solid                   !default
 $border-width: 1px                     !default
@@ -37,6 +37,7 @@ $quadrary: #fefefe                     !default
 body
   font-family: $font-std
   font-size: $font-size
+  line-height: 1.625em
 
 /* Fonts [END] */
 
@@ -64,58 +65,59 @@ body
 
 /* Headlines [BEGIN] */
 
-/* TEMP */
 h1, h2, h3, h4, h5, h6
-  font-family: $font-highlight
-/* TEMP */
+  font-family: $font-highlight1
+/* Die Extrawurst */
 h1
-  font-size: 24px
-  line-height: 35px
+  font-size: 1.5rem
+  line-height: 1.5rem
   font-weight: bold
-/* TEMP */
+/* Markenbezogene Überschriften */
 h2
-  font-family: $font-register
-  font-size: 22px
-  line-height: 30px
+  font-size: 1.5rem
+  line-height: 1.5rem
   font-weight: bold
-/* TEMP */
+/* Redaktionelle Überschriften */
 h3
-  font-family: $font-std
-  font-size: 22px
-  line-height: 30px
-  font-weight: normal
-/* TEMP */
+  font-family: $font-highlight2
+  font-size: 1.375rem
+  line-height: 1.36rem
+  font-weight: bold
+/* Blogüberschrift und Suchfeld */
 h4
-  font-family: $font-register
-  font-size: 12px
-  text-transform: uppercase
-  line-height: 14px
+  font-family: $font-std
+  font-size: 1.375rem
+  line-height: 1.36rem
   font-weight: normal
-  font-weight: bold
-/* TEMP */
+/* Register Sachen */
 h5
-  font-family: $font-register
-  font-size: 10px
+  font-family: $font-highlight2
+  font-size: 0.75rem
   text-transform: uppercase
-  line-height: 12px
+  line-height: 1.16666666667em
   font-weight: normal
   font-weight: bold
-/* TEMP */
-// h6
-  // font-family: $font-register
-  // font-size: 10px
+  letter-spacing: 1px
+/* Andere register Sachen */
+h6
+  font-family: $font-highlight2
+  font-size: 0.75rem
   // text-transform: uppercase
-  // line-height: 12px
-  // font-weight: normal
-  // font-weight: bold
-/* TEMP */
+  line-height: 1.2rem
+  font-weight: normal
+  letter-spacing: 1px
 
 
-h5, h6
-  text-transform: uppercase
-
-h3
-  font-size: 1.6em
+/* Same as H4 */
+#search_controls input,
+#search_controls a.btn
+  font-family: $font-std
+  font-size: 1.375rem
+  line-height: 1.36rem
+  font-weight: normal
+#search_controls a.btn
+  font-family: $font-highlight2
+  font-weight: bold
 
 /* Headlines [END] */
 
@@ -365,8 +367,15 @@ input[type="file"]
     decoration: none
   background: $tertiary
   border: 1px solid transparent
-  font-size: 1em
-  font-family: $font-std
+
+  font-family: $font-highlight2
+  font-size: 0.625em
+  text-transform: uppercase
+  line-height: 1.2em
+  font-weight: bold
+
+
+
   border-radius: $radius
   transition: 0.3s
   &:hover
@@ -418,8 +427,13 @@ header
   .header-inner-1
     margin: 1em 0
 
+nav.usernav
+  h5
+    display: inline
 nav.mainnav,
 nav.usernav
+  h2, h3, h4, h5, h6
+    margin: 0
   ul
     display: flex
     flex-direction: row
@@ -457,15 +471,15 @@ nav.mainnav
         display: block
         padding: 0 1.2em
         margin: 0
-        line-height: 3em
+        line-height: 36px
         border-top: 1px solid $primary
-        h1, h2, h3, h4, h5, h6
+        h2, h3, h4, h5, h6
           line-height: 3em
           margin: 0
       .triangle-left,
       .triangle-right
         // padding-top: 1px
-        height: 3em
+        height: 36px
         width: 16px
         border-top: 1px solid #fff
         box-sizing: content-box
@@ -572,10 +586,10 @@ nav
 .decoline
   height: 0.5em
 #search_controls
-  min-height: 30em
+  min-height: 22rem
   margin-bottom: 1em
 .advanced-search-controls
-  min-height: 20em
+  min-height: 13em
 
 #search_controls::after
   content: ""
@@ -601,7 +615,6 @@ nav
   form
     flex: 0 1 fit-content
     width: 70%
-    font-size: 1.7em
 
 .results
   padding-top: 2em
@@ -609,11 +622,20 @@ nav
 //   > *
 //     padding: 0 2em
 
+$markit-icon-space: 2em
+
 .results ul li
   padding: 0
   list-style-type: none
+  .eg_name
+    &:before
+      content: "❤"
+      width: $markit-icon-space
+      margin-left: -(1em + 1em)
+      margin-right: 1em
 ul.result_list
   padding: 0
+  padding-left: $markit-icon-space * 2
   list-style-type: none
   > li
     margin-bottom: 3em
@@ -628,11 +650,6 @@ ul.eg_location
     flex: 1 1 auto
     flex: 0 1 auto
     margin-right: 2em
-
-.results > ul li .eg_name
-  font-size: 1.4em
-  font-family: $font-highlight
-  font-weight: bold
 
 .highlightedtext
   // background: $secondary
@@ -759,7 +776,7 @@ body
       position: relative
       z-index: 1
 
-      margin: 2em 0 0 0
+      margin: 3em 0 0 0
       width: 20em
       font-size: 1rem
   .options
@@ -813,6 +830,9 @@ body
 /* checkbox-list [BEGIN] */
 
 .checkbox-list
+  h6,
+  h5
+    display: inline
   li.checked
     color: $primary
 
@@ -879,7 +899,7 @@ footer
     width: 70%
     > *
       flex: 1 0 auto
-  h5,
+  h2, h3, h4, h5, h6,
   ul li
     margin: 1rem 0
     a

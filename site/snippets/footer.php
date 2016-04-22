@@ -8,7 +8,7 @@
           <ul class="nav">
             <?php foreach ($p->children()->visible() as $c): ?>
               <li>
-                <a href="<?= $c->url() ?>"><?= $c->title() ?></a>
+                <h6><a href="<?= $c->url() ?>"><?= $c->title() ?></a></h6>
               </li>
             <?php endforeach ?>
           </ul>
