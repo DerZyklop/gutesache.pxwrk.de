@@ -84,17 +84,32 @@ var makethingsCollapsable = function() {
 };
 
 
-$(document).ready(function () {
+var initCards = function() {
 	"use strict";
-	setHighlighting();
-	// setResponsiveHeader();
-	setClickableCheckboxList();
-	makethingsCollapsable();
-
-	var hideOverlay = function (event) {
+	var hideCard = function (event) {
 		event.preventDefault();
 		var overlay = jQuery(".overlay-placeholder");
 		overlay.fadeOut();
+	};
+	var openCard = function (event, link) {
+		var overlay = jQuery(".overlay-placeholder");
+		event.preventDefault();
+		overlay.css("top", jQuery(document).scrollTop());
+		overlay.css("min-height", jQuery(window).height() + "px");
+		overlay.css("padding-bottom", jQuery(window).height() + "px");
+		overlay.find(".inner-wrap").css("padding-top", jQuery(window).height() + "px");
+		// overlay.scrollTop(jQuery(window).height() - 20);
+
+		jQuery.get(link, function( data ) {
+			overlay.find(".inner").html(data);
+			overlay.show();
+			overlay.scrollTop(1);
+			overlay.animate({
+				scrollTop: jQuery(window).height() - 20
+			}, {
+				duration: "300"
+			});
+		});
 	};
 
 	jQuery(".overlay-placeholder").on("click", function (event) {
@@ -103,41 +118,35 @@ $(document).ready(function () {
 			jQuery(event.target).hasClass("close-overlay") ||
 			jQuery(event.target).hasClass("overlay-placeholder")
 		) {
-			hideOverlay(event);
+			hideCard(event);
 		}
 	});
 	jQuery(".overlay-placeholder .inner-wrap").on("click", function (event) {
 		event.preventDefault();
 	});
 
-	$(".results .result_list .eg_name a").on("click", function(event) {
-		event.preventDefault();
-		var link = jQuery(this).attr("href");
-		var overlay = jQuery(".overlay-placeholder");
-		overlay.css("top", jQuery(document).scrollTop());
-		overlay.css("min-height", jQuery(window).height() + "px");
-		overlay.css("padding-bottom", jQuery(window).height() + "px");
-		overlay.find(".inner-wrap").css("padding-top", jQuery(window).height() + "px");
-
-		jQuery.get(link, function( data ) {
-			overlay.find(".inner").html(data);
-			overlay.show();
-			overlay.scrollTop(jQuery(window).height() - 20);
-		});
-
-		overlay.scroll(function() {
-			var overlayInnerHeight = (overlay.find(".inner-wrap").height() + jQuery(window).height());
-			if (
-				overlay.scrollTop() === 0 ||
-				overlayInnerHeight - overlay.scrollTop() <= 0
-			) {
-				hideOverlay(event);
-			}
-		});
-
-
+	jQuery(".results .result_list .eg_name a").on("click", function(event) {
+		openCard(event, jQuery(this).attr("href"));
 	});
 
+	jQuery(".overlay-placeholder").scroll(function(event) {
+		var overlay = jQuery(".overlay-placeholder");
+		var overlayInnerHeight = (overlay.find(".inner-wrap").height() + jQuery(window).height());
+		var reachedTop = overlay.scrollTop() === 0;
+		var reachedBottom = overlayInnerHeight - overlay.scrollTop() <= 0;
+		if ( reachedTop || reachedBottom ) {
+			hideCard(event);
+		}
+	});
+};
 
+
+$(document).ready(function () {
+	"use strict";
+	setHighlighting();
+	// setResponsiveHeader();
+	setClickableCheckboxList();
+	makethingsCollapsable();
+	initCards();
 });
 

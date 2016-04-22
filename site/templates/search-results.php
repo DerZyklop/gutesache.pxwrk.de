@@ -14,15 +14,6 @@
   <main class="page_wrap">
     <?php snippet('results') ?>
   </main>
-  <footer class="page_wrap">
-    <ul>
-      <li>
-        <a href="#">Impressum</a>
-      </li>
-      <li>
-        <a href="#">Kontakt</a>
-      </li>
-    </ul>
-  </footer>
+  <?php snippet("footer") ?>
 </body>
 </html>

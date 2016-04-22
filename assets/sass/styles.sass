@@ -361,7 +361,7 @@ header
     > *
       flex: 1
       padding: 1.5em 1em 0.5em 1em
-    #logo
+    .logo
       flex: 0 1 auto
     #search_controls_alternative
       display: none
@@ -441,7 +441,7 @@ nav.usernav
     //   flex: 1
     > *
       padding: 0em
-    #logo
+    .logo
       margin: 0.4em 0.4em 0.4em 0
       width: 200px
       padding: 0 1em 0 1em
@@ -472,12 +472,15 @@ nav.usernav
   border-width: 0 $border-width 0 $border-width
 
 
+footer,
 nav
-  text-transform: uppercase
   ul,
   ul li
     padding: 0
     list-style-type: none
+
+nav
+  text-transform: uppercase
   ul li a
     color: $tertiary
     font-weight: bold
@@ -713,6 +716,17 @@ body
     flex: 1 1 auto
     width: 30%
 
+.flex
+  display: flex
+  flex-direction: row
+  // justify-content: center
+  justify-content: flext-start
+  align-items: baseline
+  flex-wrap: wrap
+  > *
+    flex: 0 1 auto
+
+
 
 
 /* advanced-search-controls [END] */
@@ -776,6 +790,21 @@ body
 /* Footer [BEGIN] */
 
 footer
-  border-top: $border-width $border-style $primary
+  padding: $space-l-r
+  border: $border-width $border-style $primary
+  padding: $space-t-b * 4 0
+  .logo
+    margin-bottom: $space-t-b * 2
+    display: block
+  .flex
+    width: 70%
+    > *
+      flex: 1 0 auto
+  h5,
+  ul li
+    margin: 1rem 0
+    a
+      color: $tertiary
+
 
 /* Footer [END] */

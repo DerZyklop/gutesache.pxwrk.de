@@ -4,9 +4,7 @@
 
     <div class="two-col header-inner-1">
       <div class="col-1">
-        <a href="/" id="logo">
-          <img src="/assets/images/logo.svg" width="230px" alt="">
-        </a>
+        <?php snippet("logo") ?>
       </div>
       <div class="col-2">
         <?php snippet('usernav') ?>
