@@ -4,7 +4,7 @@ $page-width: 1200px                    !default
 $space-t-b: 1rem                       !default
 $space-l-r: 2rem                       !default
 $font-std: Merriweather, helvetica     !default
-$font-highlight: 'Droid Sans', helvetica   !default
+$font-highlight: 'Franz Sans', helvetica   !default
 $font-size: 12px                       !default
 $font-color: #222                      !default
 $border-style: solid                   !default
@@ -393,18 +393,47 @@ nav.mainnav
     justify-content: flex-start
     margin: 0
     li
-      background: #fff
+      // a,
+      // &:after
+      //   transition: color 0.3s, background 0.3s
+      display: flex
+      flex-direction: row
+      // justify-content: center
+      justify-content: flext-start
+      // align-items: baseline
+      flex-wrap: wrap
+      margin-left: -1em
+      background #fff
+      > *
+        flex: 0 1 auto
       a
         display: block
-        padding: 0.8em 1.2em
-        margin: 0 0.2em
-        border: 2px solid $primary
-        border-width: 1px 1px 0 1px
-        transition: color 0.3s, background 0.3s
-      a:hover,
-      &.active a
-        color: $tertiary
-        background: $primary
+        padding: 0 1.2em
+        margin: 0
+        line-height: 3em
+        border-top: 1px solid $primary
+      .triangle-left,
+      .triangle-right
+        // padding-top: 1px
+        height: 3em
+        width: 16px
+        border-top: 1px solid #fff
+        box-sizing: content-box
+      .triangle-right
+        background-image: url('../images/reiter-r.png')
+      .triangle-left
+        background-image: url('../images/reiter-l.png')
+      &:hover,
+      &.active
+        .triangle-right
+          background-image: url('../images/reiter-r-active.png')
+        .triangle-left
+          background-image: url('../images/reiter-l-active.png')
+
+
+        a
+          color: $tertiary
+          background: $primary
 
 nav.usernav
   ul

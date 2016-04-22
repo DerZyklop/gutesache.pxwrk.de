@@ -15,15 +15,6 @@
     <?php snippet('search-controls') ?>
     <?php snippet('advanced-search-controls') ?>
   </main>
-  <footer class="page_wrap">
-    <ul>
-      <li>
-        <a href="#">Impressum</a>
-      </li>
-      <li>
-        <a href="#">Kontakt</a>
-      </li>
-    </ul>
-  </footer>
+  <?php snippet("footer") ?>
 </body>
 </html>
