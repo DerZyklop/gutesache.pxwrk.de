@@ -4,11 +4,11 @@
     <div class="flex">
       <?php foreach ($pages->visible() as $p): ?>
         <div>
-          <h5><?= $p->title() ?></h5>
+          <h5><a href="<?= $p->url() ?>"><?= $p->title() ?></a></h5>
           <ul class="nav">
             <?php foreach ($p->children()->visible() as $c): ?>
               <li>
-                <a href="#"><?= $c->title() ?></a>
+                <a href="<?= $c->url() ?>"><?= $c->title() ?></a>
               </li>
             <?php endforeach ?>
           </ul>
