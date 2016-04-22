@@ -552,21 +552,13 @@ ul.eg_location
   font-family: $font-highlight
   font-weight: bold
 
-
-
-.result_counter
-  // font-size: 1.4em
-  text-align: center
-
-.result_counter .counter
-  font-weight: bold
-
-
 .highlightedtext
   // background: $secondary
   border-radius: 8px 7px 9px 4px
   box-shadow: 1px -0.175em white inset, 3px -1em 0 $primary inset
 
+#searchparams
+  padding: $space-t-b $space-l-r $space-t-b 0
 #searchparams ul
   list-style: none
 #searchparams > ul
@@ -579,7 +571,6 @@ ul.eg_location
   font-weight: normal
 #searchparams ul.selectors li
   white-space: nowrap
-
 
 
 
@@ -626,49 +617,6 @@ ul.eg_location
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Multi-Col-30-30-30 [BEGIN] */
-
-.multi-col-30-30-30
-  box-sizing: border-box
-  .col-1
-    width: 33%
-    float: left
-  .col-2
-    width: 34%
-    float: left
-  .col-3
-    width: 33%
-    float: left
-
-/* Multi-Col-30-30-30 [END] */
-
-/* Multi-Col-50-50 [BEGIN] */
-
-.multi-col-50-50
-  box-sizing: border-box
-  .col-1
-    width: 50%
-    float: left
-  .col-2
-    width: 50%
-    float: right
-
-/* Multi-Col-50-50 [END] */
 
 
 
@@ -739,29 +687,32 @@ body
     margin-top: 0
   section
     margin: 4em 0
-    // border: 1px solid #ccc
-    ul
-      padding: 0
-      display: flex
-      flex-direction: row
-      justify-content: center
-      align-items: baseline
-      flex-wrap: wrap
-      > li
-        flex: 1 1 auto
-        width: 30%
-        display: inline-block
-        margin: 0.3em 0
-      > li
-        a,
-        input
-          display: inline
-          width: auto
-        label
-          font-weight: normal
-          display: inline
-        input
-          margin-right: 0.6em
+  ul.checkbox-list
+    padding: 0
+    > li
+      margin: 0.3em 0
+      a,
+      input
+        display: inline
+        width: auto
+      label
+        font-weight: normal
+        display: inline
+      input
+        margin-right: 0.6em
+
+.col-30-30-30
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: baseline
+  flex-wrap: wrap
+  > li
+    display: inline-block
+  > *
+    flex: 1 1 auto
+    width: 30%
+
 
 
 /* advanced-search-controls [END] */

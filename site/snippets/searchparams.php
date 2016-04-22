@@ -1,22 +1,22 @@
-<aside id="searchparams">
+<aside id="searchparams" class="advanced-search-controls">
+  <input type="text" class="eg_input_keyword form-control" placeholder="Energiegenossenschaft in Mainz">
+  <?php $results = 56; ?>
+  <?php $btn_text = "" ?>
+  <?php if ($results) : ?>
+    <?php $btn_text += (String)$results + " "; ?>
+  <?php endif; ?>
+  <?php $btn_text += "Ergebnisse Anzeigen"; ?>
+  <a class="eg_search_btn btn btn-primary" href="/"><?= $btn_text ?></a>
   <ul class="selectors">
-    <li class="collapsable">
-      <h5 class="title collapsable-trigger"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> Trollololo</a></h5>
-      <ul class="collapsable-item">
-        <li>Trolo</li>
-        <li>lololo</li>
-      </ul>
-    </li>
-    <li class="collapsable">
-      <h5 class="title collapsable-trigger"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> Trollololo</a></h5>
-    </li>
-    <li class="collapsable">
-      <h5 class="title collapsable-trigger"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> Trollololo</a></h5>
-      <ul class="collapsable-item">
-        <li>Piu</li>
-        <li>Piu</li>
-        <li>Piu</li>
-      </ul>
-    </li>
+    <?php foreach ($pages->find('erweiterte-suche')->children() as $category): ?>
+      <li class="collapsable">
+        <h5 class="title collapsable-trigger"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> <?= $category->title() ?></a></h5>
+        <ul class="checkbox-list collapsable-item hide">
+          <?php foreach ($category->options()->yaml() as $option): ?>
+            <li><input id="<?= $option["key"] ?>" type="checkbox"><label for="<?= $option["key"] ?>"><?= $option["title"] ?></label></li>
+          <?php endforeach ?>
+        </ul>
+      </li>
+    <?php endforeach ?>
   </ul>
 </aside>

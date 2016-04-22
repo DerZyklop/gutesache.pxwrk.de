@@ -77,7 +77,6 @@ var makethingsCollapsable = function() {
 	$.each(triggers, function (index, trigger) {
 		var collapsableItem = jQuery(trigger).closest(".collapsable").find(".collapsable-item");
 		$(trigger).on("click", function(event) {
-			console.log(collapsableItem);
 			event.preventDefault();
 			collapsableItem.toggle();
 		});
@@ -135,6 +134,7 @@ $(document).ready(function () {
 				hideOverlay(event);
 			}
 		});
+
 
 	});
 

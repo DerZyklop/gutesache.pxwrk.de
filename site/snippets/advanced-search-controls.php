@@ -6,7 +6,7 @@
     <?php foreach ($pages->find('erweiterte-suche')->children() as $category): ?>
       <section>
         <h4><?= $category->title() ?></h4>
-        <ul class="checkbox-list">
+        <ul class="col-30-30-30 checkbox-list">
         <?php foreach ($category->options()->yaml() as $option): ?>
           <li><input id="<?= $option["key"] ?>" type="checkbox"><label for="<?= $option["key"] ?>"><?= $option["title"] ?></label></li>
         <?php endforeach ?>

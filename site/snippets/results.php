@@ -1,4 +1,3 @@
-<?php snippet('result-counter') ?>
 <div class="results two-col">
   <div class="col-1">
     <?php snippet('searchparams') ?>
