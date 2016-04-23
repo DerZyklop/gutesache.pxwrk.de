@@ -4,7 +4,7 @@
   </div>
   <div class="options collapsable-item hide">
     <?php foreach ($pages->find('erweiterte-suche')->children() as $category): ?>
-      <section>
+      <div class="inner">
         <h5><?= $category->title() ?></h5>
         <ul class="flex checkbox-list">
         <?php foreach ($category->options()->yaml() as $option): ?>
@@ -17,7 +17,7 @@
           </li>
         <?php endforeach ?>
         </ul>
-      </section>
+      </div>
     <?php endforeach ?>
     <a href="/erweiterte-suche" class="btn btn-secondary">Finden</a>
   </div>

@@ -1,8 +1,8 @@
 /*! ui-pattern - v1.0.0 - 2014-08-06 */
 // Set the variables if not allready set.
 $page-width: 1200px                    !default
-$space-t-b: 0.5rem                       !default
-$space-l-r: 0.5rem                       !default
+$space1: 0.5rem                       !default
+$space2: 2rem                       !default
 $font-std: "freight-text-pro", 'Times New Roman', helvetica     !default
 $font-highlight1: "Franz Sans", helvetica                       !default
 $font-highlight2: "tenso", sans-serif  !default
@@ -10,7 +10,7 @@ $font-size: 16px                       !default
 $font-color: #222                      !default
 $border-style: solid                   !default
 $border-width: 1px                     !default
-$border-color: #00ff00                 !default
+$border-color: #f00                    !default
 $radius: 0px                           !default
 
 /* Colors [BEGIN] */
@@ -18,6 +18,7 @@ $radius: 0px                           !default
 // A signal-color
 $primary: #38fd30
 $primary: #00cc00
+$border-color: $primary
 
 // Another signal-color
 $secondary: #33ff33                       !default
@@ -267,7 +268,7 @@ textarea
 /* Fieldset [BEGIN] */
 
 fieldset
-  padding: $space-l-r
+  padding: $space2
   border:
     color: $primary
     style: $border-style
@@ -315,7 +316,7 @@ input[type="search"]
 /* Fields [BEGIN] */
 
 .field
-  margin-bottom: $space-t-b
+  margin-bottom: $space1
 
 /* Fields [END] */
 
@@ -388,6 +389,10 @@ input[type="file"]
 
 /* Header [BEGIN] */
 
+.header
+  border-bottom: $border-width $border-style $primary
+  .logo-wrap
+    align-self: center
 header
   position: relative
   .inner
@@ -470,13 +475,6 @@ nav.usernav
 /* Icon [END] */
 
 /* nav */
-
-.header
-  background: $quadrary
-  border-bottom: $border-width $border-style $primary
-  .logo-wrap
-    align-self: center
-
 
 .logo
   display: block
@@ -580,27 +578,25 @@ nav
 $markit-icon-space: 2em
 
 .results
-  padding-top: $space-t-b * 4
+  padding-top: $space1 * 4
 
 ul.result_list
-  > li
-    > *
-      flex: 1
+  .bookmark
+    font-size: 1.5rem
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    cursor: pointer
+    &.active
+      color: $primary
+  .eg-name
+    margin-top: 0
 
-    .bookmark
-      font-size: 1.5rem
-      flex: 0 1 auto
-      margin-right: 0.5em
-      padding: 0 0.3em
-      -webkit-user-select: none
-      -moz-user-select: none
-      -ms-user-select: none
-      user-select: none
-      cursor: pointer
-      &.active
-        color: $primary
-    .eg-name
-      margin-top: 0
+.eg-logo
+  padding: $space2
+  border: $border-width $border-style $border-color
+
 ul.result_list
   list-style-type: none
   > li
@@ -616,7 +612,7 @@ ul.flatList
   box-shadow: 1px -0.175em white inset, 3px -1em 0 $primary inset
 
 .searchparams
-  padding: 0 $space-l-r $space-t-b 0
+  padding: 0 $space2 $space1 0
   ul
     list-style: none
     &.selectors > li li
@@ -628,15 +624,6 @@ ul.flatList
       font-weight: bold
     ul
       padding-left: 1em
-
-
-
-
-
-
-.page_wrap
-  max-width: 1200px
-  margin: 0 auto
 
 /* nav */
 
@@ -724,10 +711,10 @@ body
     margin-top: -1em
     position: relative
     z-index: 0
-  .inner
+  > .inner
     width: 70%
     margin: 0 auto
-  .inner,
+  > .inner,
   .options
     .btn-secondary
       background: $quadrary
@@ -740,12 +727,16 @@ body
   .options
     .btn-secondary
       float: right
-  section:first-child
-    margin-top: 0
-  section
-    margin: 4em 0
+    > .inner:first-child
+      margin-top: 0
+    > .inner
+      margin: 4em 0
 
 /* advanced-search-controls [END] */
+
+.page-wrap
+  max-width: 1200px
+  margin: 0 auto
 
 .flex
   display: flex
@@ -753,12 +744,12 @@ body
   // justify-content: center
   justify-content: flext-start
   flex-wrap: wrap
-  margin-right: -($space-l-r)
-  margin-left: -($space-l-r)
+  margin-right: -($space1)
+  margin-left: -($space1)
   > *
     flex: 1 0 auto
-    padding: 0 $space-l-r
-    // margin: $space-t-b $space-l-r
+    padding: 0 $space1
+    // margin: $space1 $space2
   .flex-1
     flex-basis: 8.333%
     max-width: 8.333%
@@ -865,7 +856,7 @@ $fancyCheckbox-size: 18px
 
 ul.checkbox-list
   padding: 0
-  margin-bottom: $space-t-b * 2
+  margin-bottom: $space1 * 2
   > li
     margin: 0.3em 0
     a,
@@ -908,7 +899,7 @@ ul.checkbox-list
   z-index: 100
   overflow: scroll
   .inner-wrap
-    padding: $space-l-r
+    padding: $space2
     .inner
       box-shadow: 2px 2px 26px rgba(0,0,0,0.2)
       border: $border-width * 2 $border-style $primary
@@ -921,11 +912,11 @@ ul.checkbox-list
 /* Footer [BEGIN] */
 
 footer
-  padding: $space-l-r
+  padding: $space2
   border: $border-width $border-style $primary
-  padding: $space-t-b * 4 0
+  padding: $space1 * 4 0
   .logo
-    margin-bottom: $space-t-b * 2
+    margin-bottom: $space1 * 2
   h2, h3, h4, h5, h6,
   ul li
     margin: 1rem 0

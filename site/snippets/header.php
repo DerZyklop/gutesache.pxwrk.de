@@ -1,6 +1,6 @@
 <section class="header">
 
-  <header class="page_wrap">
+  <header class="page-wrap">
 
     <div class="flex">
       <div class="flex-3 logo-wrap">

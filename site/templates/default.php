@@ -10,7 +10,7 @@
   <div class="decoline"></div>
   <?php snippet('header') ?>
 
-  <main class="page_wrap">
+  <main class="page-wrap">
     <h2><?= $page->title() ?></h2>
     <p><?= $page->text() ?></p>
   </main>

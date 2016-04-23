@@ -10,7 +10,7 @@
   <div class="decoline"></div>
   <?php snippet('header') ?>
 
-  <main class="page_wrap">
+  <main class="page-wrap">
     <?php snippet('results') ?>
   </main>
   <?php snippet("footer") ?>
