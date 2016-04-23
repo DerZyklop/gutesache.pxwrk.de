@@ -107,6 +107,9 @@ h6
   font-weight: normal
   letter-spacing: 1px
 
+h1, h2, h3, h4, h5, h6
+  label
+    font-weight: inherit
 
 /* Same as H4 */
 #search_controls input,
@@ -185,23 +188,6 @@ hr
   height: $border-width
 
 /* HR [END] */
-
-
-/* Unordered List [BEGIN] */
-
-ul
-  li
-    padding: 0.2em 0
-
-/* Unordered List [END] */
-
-/* Ordered List [BEGIN] */
-
-ol
-  li
-    padding: 0.2em 0
-
-/* Ordered List [END] */
 
 
 /* Labels [BEGIN] */
@@ -616,36 +602,61 @@ nav
     flex: 0 1 fit-content
     width: 70%
 
-.results
-  padding-top: 2em
-// .results
-//   > *
-//     padding: 0 2em
-
 $markit-icon-space: 2em
 
-.results ul li
-  padding: 0
-  list-style-type: none
-  .eg_name
-    &:before
-      content: "❤"
-      width: $markit-icon-space
-      margin-left: -(1em + 1em)
-      margin-right: 1em
+.results
+  padding-top: 2em
+  ul.result_list
+    li
+      padding: 0
+      list-style-type: none
+
+      display: flex
+      flex-direction: row
+      // justify-content: center
+      align-items: flex-start
+      flex-wrap: wrap
+      > *
+        flex: 0 1 fit-content
+        flex: 1
+        // width: 70%
+      .bookmark
+        font-size: 1.5rem
+        flex: 0
+        margin-right: 0.5em
+        padding: 0 0.3em
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        cursor: pointer
+        &.active
+          color: $primary
+      .eg_name
+        margin-top: 0
+
+      // .eg_name:before
+      //   width: $markit-icon-space
+      //   margin-left: -(1em + 1em)
+      //   margin-right: 1em
+      //   content: ☆
+      // &.bookmark .eg_name:before
+      //   content: ★
 ul.result_list
   padding: 0
-  padding-left: $markit-icon-space * 2
+  // padding-left: $markit-icon-space * 2
   list-style-type: none
   > li
     margin-bottom: 3em
-ul.eg_location
+ul.meta
   padding: 0
   margin: 1em 0
 
   display: flex
   flex-direction: row
   justify-content: flex-start
+  h1, h2, h3, h4, h5, h6
+    margin: 0
   > li
     flex: 1 1 auto
     flex: 0 1 auto
@@ -656,20 +667,19 @@ ul.eg_location
   border-radius: 8px 7px 9px 4px
   box-shadow: 1px -0.175em white inset, 3px -1em 0 $primary inset
 
-#searchparams
+.searchparams
   padding: $space-t-b $space-l-r $space-t-b 0
-#searchparams ul
-  list-style: none
-#searchparams > ul
-  padding: 0
-#searchparams > ul ul
-  padding-left: 1em
-#searchparams > ul > li
-  font-weight: bold
-#searchparams ul.selectors > li li
-  font-weight: normal
-#searchparams ul.selectors li
-  white-space: nowrap
+  ul
+    list-style: none
+    &.selectors > li li
+      font-weight: normal
+      white-space: nowrap
+  > ul
+    padding: 0
+    > li
+      font-weight: bold
+    ul
+      padding-left: 1em
 
 
 
@@ -758,7 +768,6 @@ body
 /* advanced-search-controls [BEGIN] */
 
 .advanced-search-controls
-  // margin: 8em 0
   margin-bottom: 4em
   .options
     border: $border-width $border-style $primary
@@ -786,19 +795,6 @@ body
     margin-top: 0
   section
     margin: 4em 0
-  ul.checkbox-list
-    padding: 0
-    > li
-      margin: 0.3em 0
-      a,
-      input
-        display: inline
-        width: auto
-      label
-        font-weight: normal
-        display: inline
-      input
-        margin-right: 0.6em
 
 .col-30-30-30
   display: flex
@@ -827,12 +823,82 @@ body
 
 /* advanced-search-controls [END] */
 
+/* Checkbox [BEGIN] */
+
+$fancyCheckbox-size: 18px
+
+.fancyCheckbox
+  width: $fancyCheckbox-size
+  position: relative
+  label
+    width: $fancyCheckbox-size
+    height: $fancyCheckbox-size
+    cursor: pointer
+    position: absolute
+    top: 0
+    left: 0
+    // background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%)
+    background: #ccc
+    border-radius: 4px
+    // border: 1px solid #ccc
+    // box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5)
+    &:after
+      content: ''
+      width: 0.7 * $fancyCheckbox-size
+      height: 0.3 * $fancyCheckbox-size
+      position: absolute
+      top: 0.1 * $fancyCheckbox-size
+      left: 0.0 * $fancyCheckbox-size
+      border: 0.25 * $fancyCheckbox-size solid $quadrary
+      border-top: none
+      border-right: none
+      background: transparent
+      opacity: 0
+      transform: rotate(-45deg)
+    &:hover::after
+      opacity: 0.5
+      opacity: 1
+  input[type=checkbox]
+    visibility: hidden
+    &:checked + label:after
+      opacity: 1
+      border-color: #fff
+
+      border-color: $primary
+
+.checked .fancyCheckbox
+  label
+    background: $primary
+
+    background: #eee
+
+/* Checkbox [END] */
+
 /* checkbox-list [BEGIN] */
 
-.checkbox-list
-  h6,
-  h5
+ul.checkbox-list
+  padding: 0
+  margin-bottom: $space-t-b * 2
+  > li
+    margin: 0.3em 0
+    a,
+    input,
+    .fancyCheckbox,
+    label,
+    h1, h2, h3, h4, h5, h6
+      display: inline
+    input
+      margin-right: 0.6em
+    a,
+    input,
+    .fancyCheckbox
+      width: auto
+    label,
+    h1, h2, h3, h4, h5, h6
+      font-weight: normal
+  h1, h2, h3, h4, h5, h6
     display: inline
+    margin: 0
   li.checked
     color: $primary
 

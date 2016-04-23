@@ -57,11 +57,14 @@ var setHighlighting = function() {
 // });
 // };
 
-var setClickableCheckboxList = function () {
+var initClickableCheckboxList = function () {
 	"use strict";
 	$(".checkbox-list li input").on("change", function() {
-		$(this).parent().toggleClass("checked");
+		$(this).closest("li").toggleClass("checked");
 	});
+	// $(".checkbox-list li label").on("click", function() {
+	// 	$(this).closest("li").find("input").toggleClass("checked");
+	// });
 };
 
 
@@ -123,6 +126,21 @@ var initCards = function() {
 	jQuery(".results .result_list .eg_name a").on("click", function(event) {
 		openCard(event, jQuery(this).attr("href"));
 	});
+	var toggleBookmarkState = function(that, activeContent, defaultContent) {
+		var el = jQuery(that);
+		console.log(el.text());
+		if (el.html() === activeContent) {
+			el.html(defaultContent);
+			el.removeClass("active");
+		} else {
+			el.html(activeContent);
+			el.addClass("active");
+		}
+	};
+	jQuery(".results .result_list .bookmark").on("click", function() {
+		jQuery(this).toggleClass("active");
+		toggleBookmarkState(this, "★", "☆");
+	});
 
 	jQuery(".overlay-placeholder").scroll(function(event) {
 		var overlay = jQuery(".overlay-placeholder");
@@ -140,7 +158,7 @@ $(document).ready(function () {
 	"use strict";
 	setHighlighting();
 	// setResponsiveHeader();
-	setClickableCheckboxList();
+	initClickableCheckboxList();
 	makethingsCollapsable();
 	initCards();
 });

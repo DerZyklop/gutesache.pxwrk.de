@@ -1,4 +1,4 @@
-<aside id="searchparams" class="advanced-search-controls">
+<aside class="searchparams" class="advanced-search-controls">
   <input type="text" class="eg_input_keyword form-control" placeholder="Energiegenossenschaft in Mainz">
   <?php $results = 56; ?>
   <?php $btn_text = "" ?>
@@ -13,7 +13,13 @@
         <h5 class="title collapsable-trigger"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> <?= $category->title() ?></a></h5>
         <ul class="checkbox-list collapsable-item hide">
           <?php foreach ($category->options()->yaml() as $option): ?>
-            <li><input id="<?= $option["key"] ?>" type="checkbox"><h6><label for="<?= $option["key"] ?>"><?= $option["title"] ?></label></h6></li>
+            <li>
+              <div class="fancyCheckbox">
+                <input type="checkbox" value="None" id="<?= $option["key"] ?>" name="check" />
+                <label for="<?= $option["key"] ?>"></label>
+              </div>
+              <h6><label for="<?= $option["key"] ?>"><?= $option["title"] ?></label></h6>
+            </li>
           <?php endforeach ?>
         </ul>
       </li>

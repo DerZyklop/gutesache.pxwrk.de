@@ -8,7 +8,13 @@
         <h5><?= $category->title() ?></h5>
         <ul class="col-30-30-30 checkbox-list">
         <?php foreach ($category->options()->yaml() as $option): ?>
-          <li><input id="<?= $option["key"] ?>" type="checkbox"><h5><label for="<?= $option["key"] ?>"><?= $option["title"] ?></label></h5></li>
+          <li>
+            <div class="fancyCheckbox">
+              <input type="checkbox" value="None" id="<?= $option["key"] ?>" name="check" />
+              <label for="<?= $option["key"] ?>"></label>
+            </div>
+            <h5><label for="<?= $option["key"] ?>"><?= $option["title"] ?></label></h5>
+          </li>
         <?php endforeach ?>
         </ul>
       </section>
