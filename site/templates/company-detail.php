@@ -1,5 +1,26 @@
+<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+
 <main class="page_wrap">
     <h2><?= $page->title() ?></h2>
+
+
+    <ul class="flatList cleanList flex">
+      <?php snippet("interactive-list-item", array(
+        "key" => "Verband",
+        "value" => $page->verband()
+      )) ?>
+      <?php snippet("interactive-list-item", array(
+        "key" => "Kategorie",
+        "value" => $page->kategorie()
+      )) ?>
+      <?php snippet("interactive-list-item", array(
+        "key" => "Branche",
+        "value" => $page->branche()
+      )) ?>
+    </ul>
+
+    <?php snippet("meta", array('company' => $page)) ?>
+
     <?php $p = $page; ?>
     <p><?= $p->text() ?>
     <p><?= $p->text() ?>

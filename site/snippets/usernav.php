@@ -1,5 +1,5 @@
 <nav class="usernav">
-  <ul>
+  <ul class="flex">
     <li>
       <h5><a href="#"><img class="icon" src="/assets/images/google-location-icon-icon-location.png">Mitglieder</a></h5>
     </li>

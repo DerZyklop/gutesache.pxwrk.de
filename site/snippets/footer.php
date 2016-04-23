@@ -5,7 +5,7 @@
       <?php foreach ($pages->visible() as $p): ?>
         <div>
           <h5><a href="<?= $p->url() ?>"><?= $p->title() ?></a></h5>
-          <ul class="nav">
+          <ul class="cleanList">
             <?php foreach ($p->children()->visible() as $c): ?>
               <li>
                 <h6><a href="<?= $c->url() ?>"><?= $c->title() ?></a></h6>

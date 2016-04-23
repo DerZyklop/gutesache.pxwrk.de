@@ -1,5 +1,5 @@
 <nav class="mainnav">
-  <ul>
+  <ul class="cleanList flex">
     <?php foreach($pages->visible() as $item): ?>
       <?php if ($item->isOpen()) {
         $iscurrent = true;

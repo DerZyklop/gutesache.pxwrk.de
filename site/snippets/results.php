@@ -3,7 +3,7 @@
     <?php snippet('searchparams') ?>
   </div>
   <div class="col-2">
-    <ul class="result_list">
+    <ul class="cleanList result_list">
       <?php foreach ($pages->find('register')->children() as $item): ?>
         <?php snippet('result-list-item', array('company' => $item)) ?>
       <?php endforeach ?>
