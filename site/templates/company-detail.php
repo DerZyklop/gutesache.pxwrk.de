@@ -36,9 +36,6 @@
     <p><?= $p->videotitle() ?>
     <p><?= $p->videodescription() ?>
     <p><?= $p->logo() ?>
-    <p><?= $p->verband() ?>
-    <p><?= $p->kategorie() ?>
-    <p><?= $p->banche() ?>
     <p><?= $p->praeambel() ?>
     <p><?= $p->geschaeftszweck() ?>
     <p><?= $p->historie() ?>

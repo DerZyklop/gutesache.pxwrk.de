@@ -3,9 +3,9 @@
 $page-width: 1200px                    !default
 $space-t-b: 1rem                       !default
 $space-l-r: 2rem                       !default
-$font-std: 'FreightText Pro', 'Times New Roman', helvetica      !default
-$font-highlight1: 'Franz Sans', helvetica                       !default
-$font-highlight2: 'Tenso', 'Fira Mono', 'Courier New', courier  !default
+$font-std: "freight-text-pro", 'Times New Roman', helvetica     !default
+$font-highlight1: "Franz Sans", helvetica                       !default
+$font-highlight2: "tenso", 'Courier New', sans-serif  !default
 $font-size: 16px                       !default
 $font-color: #222                      !default
 $border-style: solid                   !default
@@ -82,7 +82,7 @@ h3
   font-family: $font-highlight2
   font-size: 1.375rem
   line-height: 1.36rem
-  font-weight: bold
+  font-weight: 500
 /* Blogüberschrift und Suchfeld */
 h4
   font-family: $font-std
@@ -96,7 +96,7 @@ h5
   text-transform: uppercase
   line-height: 1.16666666667em
   font-weight: normal
-  font-weight: bold
+  font-weight: 500
   letter-spacing: 1px
 /* Andere register Sachen */
 h6
@@ -104,7 +104,7 @@ h6
   font-size: 0.75rem
   // text-transform: uppercase
   line-height: 1.2rem
-  font-weight: normal
+  font-weight: 300
   letter-spacing: 1px
 
 h1, h2, h3, h4, h5, h6
@@ -339,15 +339,6 @@ ul.cleanList
   > li
     padding: 0
     margin: 0
-ul.flex
-  > li
-    margin-right: 1em
-  &.flex-start
-    justify-content: flex-start
-    > li
-      flex: 0 1 auto
-
-
 
 /* List [END] */
 
@@ -805,7 +796,14 @@ body
   align-items: baseline
   flex-wrap: wrap
   > *
+    flex: 1
+.flex-start
+  justify-content: flex-start
+  > *
     flex: 0 1 auto
+ul.flex
+  > li
+    margin-right: 1em
 
 
 
@@ -937,6 +935,9 @@ ul.checkbox-list
       border: $border-width * 2 $border-style $primary
       background: #fff
       padding: 2em
+      > *
+        max-width: 800px
+
 
 /* Overlay [END] */
 

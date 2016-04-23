@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <title>Gute Sache</title>
 
-  <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
-  <script type="text/javascript" src="/assets/js/script.js"></script>
+  <?php snippet("includes") ?>
 </head>
 <body>
   <div class="decoline"></div>

@@ -13,7 +13,7 @@
               <input type="checkbox" value="None" id="<?= $option["key"] ?>" name="check" />
               <label for="<?= $option["key"] ?>"></label>
             </div>
-            <h5><label for="<?= $option["key"] ?>"><?= $option["title"] ?></label></h5>
+            <h6><label for="<?= $option["key"] ?>"><?= $option["title"] ?></label></h6>
           </li>
         <?php endforeach ?>
         </ul>

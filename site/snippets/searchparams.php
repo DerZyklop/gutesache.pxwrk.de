@@ -10,7 +10,7 @@
   <ul class="selectors">
     <?php foreach ($pages->find('erweiterte-suche')->children() as $category): ?>
       <li class="collapsable">
-        <h5 class="title collapsable-trigger"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> <?= $category->title() ?></a></h5>
+        <h5 class="title collapsable-trigger"><a href="#"><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> <?= $category->title() ?></a></h5>
         <ul class="checkbox-list collapsable-item hide">
           <?php foreach ($category->options()->yaml() as $option): ?>
             <li>

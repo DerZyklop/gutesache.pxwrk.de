@@ -1,7 +1,7 @@
 <li class="flex">
   <div class="bookmark">☆</div><!-- ★ -->
   <div>
-    <h2 class="eg_name"><a href="<?= $company->url() ?>"><?= $company->title() ?></a></h2>
+    <h3 class="eg_name"><a href="<?= $company->url() ?>"><?= $company->title() ?></a></h3>
 
 
     <?php $items = [
@@ -11,10 +11,10 @@
     ]; ?>
 
 
-    <ul class="cleanList flatList flex">
+    <ul class="cleanList flatList flex flex-start">
       <?php foreach ($items as $item) : ?>
         <?php if ($item && (String)$item->html() !== ""): ?>
-          <li><h5><img src="/assets/images/google-location-icon-icon-location.png" height="14px"> <a href="#"><?= $item ?></a></h5></li>
+          <li><h5><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> <a href="#"><?= $item ?></a></h5></li>
         <?php endif ?>
       <?php endforeach; ?>
     </ul>
