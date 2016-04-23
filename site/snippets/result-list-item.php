@@ -10,7 +10,6 @@
       $company->banche()
     ]; ?>
 
-
     <ul class="cleanList flatList flex flex-start">
       <?php foreach ($items as $item) : ?>
         <?php if ($item && (String)$item->html() !== ""): ?>

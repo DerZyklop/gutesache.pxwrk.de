@@ -401,15 +401,11 @@ header
     > *
       flex: 1
       padding: 1.5em 1em 0.5em 1em
-    .logo
-      flex: 0 1 auto
     #search_controls_alternative
       display: none
     nav.usernav
       order: 2
       flex: 1
-  .header-inner-1
-    margin: 1em 0
 
 nav.usernav
   h5
@@ -419,6 +415,7 @@ nav.usernav
   h2, h3, h4, h5, h6
     margin: 0
 nav.mainnav
+  padding-top: 2em
   ul
     li
       display: flex
@@ -480,6 +477,13 @@ nav.usernav
 .header
   background: $quadrary
   border-bottom: $border-width $border-style $primary
+  .logo-wrap
+    align-self: center
+
+
+.logo
+  display: block
+  width: 200px
 
 .collapsed_search_controls
   header
@@ -498,7 +502,6 @@ nav.usernav
       padding: 0em
     .logo
       margin: 0.4em 0.4em 0.4em 0
-      width: 200px
       padding: 0 1em 0 1em
     #search_controls_alternative
       display: block
@@ -770,10 +773,34 @@ body
   flex-direction: row
   // justify-content: center
   justify-content: flext-start
-  align-items: baseline
   flex-wrap: wrap
   > *
     flex: 1
+  .flex-1
+    flex: 1
+  .flex-2
+    flex: 2
+  .flex-3
+    flex: 3
+  .flex-4
+    flex: 4
+  .flex-5
+    flex: 5
+  .flex-6
+    flex: 6
+  .flex-7
+    flex: 7
+  .flex-8
+    flex: 8
+  .flex-9
+    flex: 9
+  .flex-10
+    flex: 10
+  .flex-11
+    flex: 11
+  .flex-12
+    flex: 12
+
 .flex-start
   justify-content: flex-start
 .flex-end
@@ -874,27 +901,6 @@ ul.checkbox-list
 /* checkbox-list [END] */
 
 
-
-
-/* TwoCol [BEGIN] */
-
-.two-col
-  display: flex
-  flex-direction: row
-  justify-content: flex-start
-  //align-items: baseline
-  flex-wrap: wrap
-  > *
-    flex: 1
-  .col-1
-    flex: 1
-  .col-2
-    flex: 3
-
-/* TwoCol [END] */
-
-
-
 /* Overlay [BEGIN] */
 
 .overlay-placeholder
@@ -931,7 +937,6 @@ footer
   padding: $space-t-b * 4 0
   .logo
     margin-bottom: $space-t-b * 2
-    display: block
   .flex
     width: 70%
     > *
