@@ -11,8 +11,13 @@
       </div>
     </div>
     <!-- <div id="search_controls_alternative"></div> -->
-    <div class="header-inner-2">
-      <?php snippet('mainnav') ?>
+    <div style="display: flex;" class="header-inner-2">
+      <div style="flex: 1;"></div>
+      <div style="flex: 3;">
+        <?php snippet('mainnav') ?>
+
+      </div>
+
     </div>
 
   </header>
