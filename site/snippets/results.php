@@ -14,7 +14,7 @@
 
 <div class="overlay-placeholder hide">
   <div class="inner-wrap close-overlay">
-    <div class="inner">
-    </div>
+    <section class="inner">
+    </section>
   </div>
 </div>

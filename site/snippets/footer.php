@@ -1,26 +1,28 @@
-<footer>
-  <div class="page-wrap">
-    <div class="flex">
-      <div class="flex-12">
-        <?php snippet("logo") ?>
-      </div>
-      <div class="flex flex-12">
-        <?php foreach ($pages->visible() as $p): ?>
-          <div>
-            <h5><a href="<?= $p->url() ?>"><?= $p->title() ?></a></h5>
-            <ul class="cleanList">
-              <?php foreach ($p->children()->visible() as $c): ?>
-                <li>
-                  <h6><a href="<?= $c->url() ?>"><?= $c->title() ?></a></h6>
-                </li>
-              <?php endforeach ?>
-            </ul>
-          </div>
-        <?php endforeach ?>
+<section>
+  <footer>
+    <div class="page-wrap">
+      <div class="flex">
+        <div class="flex-12">
+          <?php snippet("logo") ?>
+        </div>
+        <div class="flex flex-12">
+          <?php foreach ($pages->visible() as $p): ?>
+            <div>
+              <h5><a href="<?= $p->url() ?>"><?= $p->title() ?></a></h5>
+              <ul class="cleanList">
+                <?php foreach ($p->children()->visible() as $c): ?>
+                  <li>
+                    <h6><a href="<?= $c->url() ?>"><?= $c->title() ?></a></h6>
+                  </li>
+                <?php endforeach ?>
+              </ul>
+            </div>
+          <?php endforeach ?>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+</section>
 <script>
   (function(d) {
     var config = {

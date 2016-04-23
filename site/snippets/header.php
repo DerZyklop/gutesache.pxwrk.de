@@ -1,3 +1,4 @@
+<section class="decoline"></section>
 <section class="header">
 
   <header class="page-wrap">

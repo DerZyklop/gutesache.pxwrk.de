@@ -16,17 +16,21 @@ fields:
     type: headline
     label: Kontakt-Person
   poc_gender:
-    label: gender
+    label: Anrede
     type:  select
     options:
-      - female
-      - male
+      female: Frau
+      male: Herr
   poc_firstname:
     label: first
     type:  text
   poc_name:
     label: name
     type:  text
+  poc_avatar:
+    label: Profil-Bild
+    type:  select
+    options: images
 
   headline1:
     type: headline
@@ -48,6 +52,9 @@ fields:
     type:  text
   website:
     label: Webseite
+    type:  text
+  mail:
+    label: E-Mail
     type:  text
   video:
     label: video

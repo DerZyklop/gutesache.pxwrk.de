@@ -7,13 +7,14 @@
   <?php snippet("includes") ?>
 </head>
 <body>
-  <div class="decoline"></div>
   <?php snippet('header') ?>
 
-  <main class="page-wrap">
-    <h2><?= $page->title() ?></h2>
-    <p><?= $page->text() ?></p>
-  </main>
+  <section>
+    <main class="page-wrap">
+      <h2><?= $page->title() ?></h2>
+      <p><?= $page->text() ?></p>
+    </main>
+  </section>
   <?php snippet("footer") ?>
 </body>
 </html>

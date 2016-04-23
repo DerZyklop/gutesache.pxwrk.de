@@ -1,6 +1,5 @@
 /*! ui-pattern - v1.0.0 - 2014-08-06 */
 // Set the variables if not allready set.
-$page-width: 1200px                    !default
 $space1: 0.5rem                       !default
 $space2: 2rem                       !default
 $font-std: "freight-text-pro", 'Times New Roman', helvetica     !default
@@ -68,6 +67,9 @@ body
 
 h1, h2, h3, h4, h5, h6
   font-family: $font-highlight1
+  font-kerning: auto
+  text-rendering: optimizeLegibility
+  font-feature-settings: "kern"
 /* Die Extrawurst */
 h1
   font-size: 1.5rem
@@ -330,6 +332,16 @@ table
 /* Table [END] */
 
 
+/* Section [BEGIN] */
+
+section
+  border-bottom: $border-width $border-style $primary
+  > *
+    max-width: 1200px
+    margin: 0 auto
+
+/* Section [END] */
+
 
 
 /* Button [BEGIN] */
@@ -389,12 +401,10 @@ input[type="file"]
 
 /* Header [BEGIN] */
 
-.header
-  border-bottom: $border-width $border-style $primary
-  .logo-wrap
-    align-self: center
 header
   position: relative
+  .logo-wrap
+    align-self: center
   .inner
     display: flex
     flex-direction: row
@@ -524,22 +534,11 @@ nav.usernav
   border-radius: 0
   border-width: 0 $border-width 0 $border-width
 
-
-footer,
-nav
-  ul,
-  ul li
-    list-style-type: none
-
-nav
-  text-transform: uppercase
-  ul li a
-    color: $tertiary
-    font-weight: bold
+nav ul li a
+  color: $tertiary
+.mainnav ul li a
+  &:hover
     text-decoration: none
-    &:hover
-      color: $primary
-      text-decoration: none
 
 
 .decoline
@@ -593,9 +592,15 @@ ul.result_list
   .eg-name
     margin-top: 0
 
-.eg-logo
+.eg-logo,
+.eg-poc_avatar
   padding: $space2
   border: $border-width $border-style $border-color
+
+// .eg-sidebar
+//   p > img
+//     display: block
+//     margin: 0 auto
 
 ul.result_list
   list-style-type: none
@@ -708,7 +713,7 @@ body
   .options
     border: $border-width $border-style $primary
     padding: 4em
-    margin-top: -1em
+    margin-top: -2em
     position: relative
     z-index: 0
   > .inner
@@ -721,7 +726,7 @@ body
       position: relative
       z-index: 1
 
-      margin: 3em 0 0 0
+      margin: 1em 0
       width: 20em
       font-size: 1rem
   .options
@@ -733,10 +738,6 @@ body
       margin: 4em 0
 
 /* advanced-search-controls [END] */
-
-.page-wrap
-  max-width: 1200px
-  margin: 0 auto
 
 .flex
   display: flex
@@ -892,10 +893,6 @@ ul.checkbox-list
   left: 0
   width: 100%
   bottom: 0
-  // min-height: 1200px
-  // background: rgba(0,0,0,0.1)
-
-  // background-image: linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 10%,rgba(0,0,0,0.5) 90%,rgba(0,0,0,0) 100%)
   z-index: 100
   overflow: scroll
   .inner-wrap
@@ -912,8 +909,6 @@ ul.checkbox-list
 /* Footer [BEGIN] */
 
 footer
-  padding: $space2
-  border: $border-width $border-style $primary
   padding: $space1 * 4 0
   .logo
     margin-bottom: $space1 * 2

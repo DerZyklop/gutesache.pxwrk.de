@@ -26,10 +26,6 @@ Website: der-zyklop.de
 
 ----
 
-Gender: 0
-
-----
-
 Video: https://www.youtube.com/watch?v=txqiwrbYGrs
 
 ----
@@ -43,14 +39,6 @@ Videodescription: Funny stuff
 ----
 
 Logo: ✓
-
-----
-
-Firstname: Miriam
-
-----
-
-Name: Gueckel
 
 ----
 
@@ -95,3 +83,23 @@ Pinterest: -
 ----
 
 Linkedin: -
+
+----
+
+Poc-gender: female
+
+----
+
+Poc-firstname: Miriam
+
+----
+
+Poc-name: Gückel
+
+----
+
+Mail: mail@der-zyklop.de
+
+----
+
+Poc-avatar: chewbacca-2.jpg

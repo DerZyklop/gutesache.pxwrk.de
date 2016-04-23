@@ -8,33 +8,14 @@
     </div>
     <div class="flex-8">
 
-      <ul class="flatList cleanList flex">
-        <?php snippet("interactive-list-item", array(
-          "key" => "Verband",
-          "value" => $page->verband()
-        )) ?>
-        <?php snippet("interactive-list-item", array(
-          "key" => "Kategorie",
-          "value" => $page->kategorie()
-        )) ?>
-        <?php snippet("interactive-list-item", array(
-          "key" => "Branche",
-          "value" => $page->branche()
-        )) ?>
-      </ul>
+      <?php snippet("eg-meta") ?>
 
       <?php snippet("meta", array('company' => $page)) ?>
 
+
       <?php $p = $page; ?>
       <p><?= $p->text() ?>
-      <p><?= $p->text() ?>
-      <p><?= $p->poc_gender() ?>
-      <p><?= $p->poc_firstname() ?>
-      <p><?= $p->poc_name() ?>
       <p><?= $p->unternehmensform() ?>
-      <p><?= $p->plz() ?>
-      <p><?= $p->city() ?>
-      <p><?= $p->street().' '.$p->housenr() ?>
       <a href="<?= url($p->website()) ?>"><?= $p->website() ?></a>
       <p><?= $p->video() ?>
       <p><?= $p->videotitle() ?>
@@ -44,20 +25,38 @@
       <p><?= $p->geschaeftszweck() ?>
       <p><?= $p->historie() ?>
       <p><?= $p->facebook() ?>
-      <p><?= $p->twitter() ?>
       <p><?= $p->pinterest() ?>
       <p><?= $p->linkedin() ?>
 
     </div>
     <div class="flex-1">
     </div>
-    <div class="flex-3">
-      <?php $logo = $p->images()->find("logo.png"); ?>
-      <?php if ($logo != ""): ?>
-        <div class="eg-logo">
-          <?= thumb($logo) ?>
-        </div>
-      <?php endif ?>
+    <div class="flex-3 eg-sidebar">
+      <?php snippet("eg-logo") ?>
+      <?php snippet("eg-adress") ?>
+      <p>
+        <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> E-Mail</strong><br />
+        <a href="mailto:<?= $page->mail() ?>"><?= $page->mail() ?></a>
+      </p>
+      <p class="eg-poc_avatar">
+        <?= thumb($page->images()->find($page->poc_avatar()->title())) ?>
+      </p>
+      <p>
+        <?php if ($page->poc_gender() == "female"): ?>
+          <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Ansprechpartnerin</strong>
+          <br>
+          Frau <?= $p->poc_firstname() ?> <?= $p->poc_name() ?>
+        <?php else : ?>
+          <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Ansprechpartner</strong>
+          <br>
+          Herr <?= $p->poc_firstname() ?> <?= $p->poc_name() ?>
+        <?php endif ?>
+      </p>
+      <p>
+        <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Twitter</strong><br />
+        <a href="https://twitter.com/<?= $page->twitter() ?>">@<?= $page->twitter() ?></a>
+      </p>
+
     </div>
   </div>
 
