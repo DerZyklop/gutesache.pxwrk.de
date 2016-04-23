@@ -1,8 +1,8 @@
 <div class="results flex">
-  <div style="flex: 1">
+  <div class="flex-3">
     <?php snippet('searchparams') ?>
   </div>
-  <div style="flex: 3">
+  <div class="flex-9">
     <ul class="cleanList result_list">
       <?php foreach ($pages->find('register')->children() as $item): ?>
         <?php snippet('result-list-item', array('company' => $item)) ?>

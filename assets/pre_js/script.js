@@ -123,7 +123,7 @@ var initCards = function() {
 		event.preventDefault();
 	});
 
-	jQuery(".results .result_list .eg_name a").on("click", function(event) {
+	jQuery(".results .result_list .eg-name a").on("click", function(event) {
 		openCard(event, jQuery(this).attr("href"));
 	});
 	var toggleBookmarkState = function(that, activeContent, defaultContent) {

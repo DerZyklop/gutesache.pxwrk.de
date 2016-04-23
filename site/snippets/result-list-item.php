@@ -1,7 +1,7 @@
 <li class="flex">
   <div class="bookmark">☆</div><!-- ★ -->
   <div>
-    <h3 class="eg_name"><a href="<?= $company->url() ?>"><?= $company->title() ?></a></h3>
+    <h3 class="eg-name"><a href="<?= $company->url() ?>"><?= $company->title() ?></a></h3>
 
 
     <?php $items = [

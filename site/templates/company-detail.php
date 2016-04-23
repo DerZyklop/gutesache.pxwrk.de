@@ -1,11 +1,12 @@
 <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 
 <main class="page_wrap">
-  <h2><?= $page->title() ?></h2>
-
 
   <div class="flex">
-    <div>
+    <div class="flex-12">
+      <h2><?= $page->title() ?></h2>
+    </div>
+    <div class="flex-8">
 
       <ul class="flatList cleanList flex">
         <?php snippet("interactive-list-item", array(
@@ -48,10 +49,14 @@
       <p><?= $p->linkedin() ?>
 
     </div>
-    <div>
+    <div class="flex-1">
+    </div>
+    <div class="flex-3">
       <?php $logo = $p->images()->find("logo.png"); ?>
-      <?php if ($logo): ?>
-        <?= $logo->thumb() ?>
+      <?php if ($logo != ""): ?>
+        <div class="eg-logo">
+          <?= thumb($logo) ?>
+        </div>
       <?php endif ?>
     </div>
   </div>

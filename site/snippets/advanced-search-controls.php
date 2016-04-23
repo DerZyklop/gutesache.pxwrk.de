@@ -6,9 +6,9 @@
     <?php foreach ($pages->find('erweiterte-suche')->children() as $category): ?>
       <section>
         <h5><?= $category->title() ?></h5>
-        <ul class="col-30-30-30 checkbox-list">
+        <ul class="flex checkbox-list">
         <?php foreach ($category->options()->yaml() as $option): ?>
-          <li>
+          <li class="flex-4">
             <div class="fancyCheckbox">
               <input type="checkbox" value="None" id="<?= $option["key"] ?>" name="check" />
               <label for="<?= $option["key"] ?>"></label>

@@ -1,8 +1,8 @@
 /*! ui-pattern - v1.0.0 - 2014-08-06 */
 // Set the variables if not allready set.
 $page-width: 1200px                    !default
-$space-t-b: 1rem                       !default
-$space-l-r: 2rem                       !default
+$space-t-b: 0.5rem                       !default
+$space-l-r: 0.5rem                       !default
 $font-std: "freight-text-pro", 'Times New Roman', helvetica     !default
 $font-highlight1: "Franz Sans", helvetica                       !default
 $font-highlight2: "tenso", sans-serif  !default
@@ -200,6 +200,18 @@ label
 
 /* Labels [END] */
 
+/* List [BEGIN] */
+
+ul.cleanList
+  list-style: none
+  padding: 0
+  margin: 0
+  > li
+    padding: 0
+    margin: 0
+
+/* List [END] */
+
 /* Inputs [BEGIN] */
 
 input,
@@ -319,20 +331,6 @@ table
 
 
 
-/* List [BEGIN] */
-
-ul.cleanList
-  list-style: none
-  padding: 0
-  margin: 0
-  > li
-    padding: 0
-    margin: 0
-
-/* List [END] */
-
-
-
 /* Button [BEGIN] */
 
 a.btn,
@@ -351,7 +349,7 @@ input[type="file"]
     align: center
     decoration: none
   background: $tertiary
-  border: 1px solid transparent
+  border: $border-width solid transparent
 
   font-family: $font-highlight2
   font-size: 0.625em
@@ -380,7 +378,7 @@ input[type="file"]
   &.btn-secondary
     background: $quadrary
     color: $tertiary
-    border: 1px solid $primary
+    border: $border-width solid $primary
     &:hover
       background: $primary
       color: $tertiary
@@ -430,7 +428,7 @@ nav.mainnav
         padding: 0 1.2em
         margin: 0
         line-height: 36px
-        border-top: 1px solid $primary
+        border-top: $border-width solid $primary
         h2, h3, h4, h5, h6
           line-height: 3em
           margin: 0
@@ -439,7 +437,7 @@ nav.mainnav
         // padding-top: 1px
         height: 36px
         width: 16px
-        border-top: 1px solid #fff
+        border-top: $border-width solid #fff
         box-sizing: content-box
       .triangle-right
         background-image: url('../images/reiter-r.png')
@@ -591,7 +589,7 @@ ul.result_list
 
     .bookmark
       font-size: 1.5rem
-      flex: 0
+      flex: 0 1 auto
       margin-right: 0.5em
       padding: 0 0.3em
       -webkit-user-select: none
@@ -601,18 +599,9 @@ ul.result_list
       cursor: pointer
       &.active
         color: $primary
-    .eg_name
+    .eg-name
       margin-top: 0
-
-    // .eg_name:before
-    //   width: $markit-icon-space
-    //   margin-left: -(1em + 1em)
-    //   margin-right: 1em
-    //   content: ☆
-    // &.bookmark .eg_name:before
-    //   content: ★
 ul.result_list
-  // padding-left: $markit-icon-space * 2
   list-style-type: none
   > li
     margin-bottom: 3em
@@ -724,6 +713,7 @@ body
 
 /* Body-Background [END] */
 
+
 /* advanced-search-controls [BEGIN] */
 
 .advanced-search-controls
@@ -755,17 +745,7 @@ body
   section
     margin: 4em 0
 
-.col-30-30-30
-  display: flex
-  flex-direction: row
-  justify-content: center
-  align-items: baseline
-  flex-wrap: wrap
-  > li
-    display: inline-block
-  > *
-    flex: 1 1 auto
-    width: 30%
+/* advanced-search-controls [END] */
 
 .flex
   display: flex
@@ -773,32 +753,48 @@ body
   // justify-content: center
   justify-content: flext-start
   flex-wrap: wrap
+  margin-right: -($space-l-r)
+  margin-left: -($space-l-r)
   > *
-    flex: 1
+    flex: 1 0 auto
+    padding: 0 $space-l-r
+    // margin: $space-t-b $space-l-r
   .flex-1
-    flex: 1
+    flex-basis: 8.333%
+    max-width: 8.333%
   .flex-2
-    flex: 2
+    flex-basis: 16.667%
+    max-width: 16.667%
   .flex-3
-    flex: 3
+    flex-basis: 25%
+    max-width: 25%
   .flex-4
-    flex: 4
+    flex-basis: 33.333%
+    max-width: 33.333%
   .flex-5
-    flex: 5
+    flex-basis: 41.667%
+    max-width: 41.667%
   .flex-6
-    flex: 6
+    flex-basis: 50%
+    max-width: 50%
   .flex-7
-    flex: 7
+    flex-basis: 58.333%
+    max-width: 58.333%
   .flex-8
-    flex: 8
+    flex-basis: 66.667%
+    max-width: 66.667%
   .flex-9
-    flex: 9
+    flex-basis: 75%
+    max-width: 75%
   .flex-10
-    flex: 10
+    flex-basis: 83.333%
+    max-width: 83.333%
   .flex-11
-    flex: 11
+    flex-basis: 91.667%
+    max-width: 91.667%
   .flex-12
-    flex: 12
+    flex-basis: 100%
+    max-width: 100%
 
 .flex-start
   justify-content: flex-start
@@ -809,13 +805,10 @@ body
   > *
     flex: 0 1 auto
 ul.flex
+  list-style: none
   > li
     margin-right: 1em
 
-
-
-
-/* advanced-search-controls [END] */
 
 /* Checkbox [BEGIN] */
 
@@ -921,9 +914,6 @@ ul.checkbox-list
       border: $border-width * 2 $border-style $primary
       background: #fff
       padding: 2em
-      > *
-        max-width: 800px
-
 
 /* Overlay [END] */
 
@@ -936,10 +926,6 @@ footer
   padding: $space-t-b * 4 0
   .logo
     margin-bottom: $space-t-b * 2
-  .flex
-    width: 70%
-    > *
-      flex: 1 0 auto
   h2, h3, h4, h5, h6,
   ul li
     margin: 1rem 0
