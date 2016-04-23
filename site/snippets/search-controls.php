@@ -4,9 +4,7 @@
     Nach welcher guten Sache suchen sie?</h2>
     <div class="input-group">
       <input type="text" class="eg_input_keyword form-control" placeholder="Energiegenossenschaft in Mainz">
-      <span class="input-group-btn">
-        <a class="eg_search_btn btn btn-primary" href="/">Finden</a>
-      </span>
+      <a class="eg_search_btn btn btn-primary input-group-btn" href="/erweiterte-suche">Finden</a>
     </div><!-- /input-group -->
   </form>
 </div>
