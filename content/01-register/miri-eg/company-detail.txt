@@ -102,4 +102,4 @@ Mail: mail@der-zyklop.de
 
 ----
 
-Poc-avatar: chewbacca-2.jpg
+Poc-avatar: einhorn_0017.gif
