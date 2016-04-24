@@ -20,15 +20,21 @@
       <?php snippet('advanced-search-controls') ?>
     </main>
   </section>
+  <?php $about = $pages->find("about"); ?>
   <section>
     <div>
       <div class="flex flex-baseline">
         <div class="flex-6">
-          <h2><?= $page->headline1() ?></h2>
+          <h2><?= $about->headline1() ?></h2>
         </div>
         <div class="flex-6">
-          <h5><?= $page->headline2() ?></h5>
-          <p><?= $page->text() ?></p>
+          <h5><?= $about->headline2() ?></h5>
+          <p>
+            <?= $about->text() ?>
+          </p>
+          <p>
+            <a href="<?= $about->url() ?>">Mehr über uns ➡</a>
+          </p>
         </div>
       </div>
     </div>
