@@ -129,10 +129,15 @@ h1, h2, h3, h4, h5, h6
 /* Links [BEGIN] */
 
 a
-  color: $primary
+  color: $tertiary
+  border-bottom: $border-width $border-style $primary
   text-decoration: none
   &:hover
     text-decoration: underline
+  &.no-link-highlighting
+    color: inherit
+    border-bottom: inherit
+    text-decoration: inherit
 
 /* Links [END] */
 
@@ -420,37 +425,38 @@ header
       flex: 1
 
 nav.usernav
-  h5
-    display: inline
+  margin: $space2 0
 nav.mainnav,
 nav.usernav
   h2, h3, h4, h5, h6
     margin: 0
+
+$mainnav-height: 26px
 nav.mainnav
-  padding-top: 2em
+  padding-top: 1em
   ul
     li
       display: flex
       flex-direction: row
       justify-content: flext-start
       flex-wrap: wrap
-      margin-left: -1.5em
+      margin-left: -($mainnav-height + 5px)
       background #fff
       > *
         flex: 0 1 auto
       a
         display: block
-        padding: 0 1.2em
+        padding: 0 $mainnav-height / 2
         margin: 0
-        line-height: 36px
+        line-height: $mainnav-height
         border-top: $border-width solid $primary
         h2, h3, h4, h5, h6
-          line-height: 3em
+          line-height: $mainnav-height
           margin: 0
       .triangle-left,
       .triangle-right
         // padding-top: 1px
-        height: 36px
+        height: $mainnav-height
         width: 16px
         border-top: $border-width solid #fff
         box-sizing: content-box
@@ -800,6 +806,8 @@ ul.flex
   list-style: none
   > li
     margin-right: 1em
+  > li:last-child
+    margin-right: 0
 
 
 /* Checkbox [BEGIN] */

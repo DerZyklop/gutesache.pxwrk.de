@@ -10,7 +10,7 @@
       } ?>
       <li<?php ecco($iscurrent, ' class="active"') ?>>
         <div class="triangle-left"></div>
-          <a href="<?php echo $item->url() ?>">
+          <a href="<?php echo $item->url() ?>" class="no-link-highlighting">
             <h5><?php echo html($item->title()) ?></h5>
           </a>
         <div class="triangle-right"></div>
