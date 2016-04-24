@@ -17,7 +17,7 @@ var setHighlighting = function() {
 		e.preventDefault();
 		$("span.highlightedtext").contents().unwrap();
 		var keyword = $(".eg_input_keyword").val();
-		$(".result_list").highlight(keyword, "highlightedtext");
+		$(".results").highlight(keyword, "highlightedtext");
 	});
 };
 
@@ -123,12 +123,11 @@ var initCards = function() {
 		event.preventDefault();
 	});
 
-	jQuery(".results .result_list .eg-name a").on("click", function(event) {
+	jQuery(".results .eg-name a").on("click", function(event) {
 		openCard(event, jQuery(this).attr("href"));
 	});
 	var toggleBookmarkState = function(that, activeContent, defaultContent) {
 		var el = jQuery(that);
-		console.log(el.text());
 		if (el.html() === activeContent) {
 			el.html(defaultContent);
 			el.removeClass("active");
@@ -137,7 +136,7 @@ var initCards = function() {
 			el.addClass("active");
 		}
 	};
-	jQuery(".results .result_list .bookmark").on("click", function() {
+	jQuery(".results .bookmark").on("click", function() {
 		jQuery(this).toggleClass("active");
 		toggleBookmarkState(this, "★", "☆");
 	});

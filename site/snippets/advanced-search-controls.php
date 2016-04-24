@@ -19,6 +19,8 @@
         </ul>
       </div>
     <?php endforeach ?>
-    <a href="/erweiterte-suche" class="btn btn-secondary">Finden</a>
+    <div class="btn-wrap">
+      <a href="/erweiterte-suche" class="btn btn-primary">Finden</a>
+    </div>
   </div>
 </div>

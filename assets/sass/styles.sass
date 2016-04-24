@@ -113,17 +113,6 @@ h1, h2, h3, h4, h5, h6
   label
     font-weight: inherit
 
-/* Same as H4 */
-#search_controls input,
-#search_controls a.btn
-  font-family: $font-std
-  font-size: 1.375rem
-  line-height: 1.35em
-  font-weight: normal
-#search_controls a.btn
-  font-family: $font-highlight2
-  font-weight: bold
-
 /* Headlines [END] */
 
 /* Links [BEGIN] */
@@ -239,10 +228,6 @@ textarea
 
 .input-group
   display: flex
-  > *
-    flex: 6
-  .input-group-btn
-    flex: 1
 
 .input-group
   input:first-child,
@@ -348,6 +333,74 @@ section
 /* Section [END] */
 
 
+/* Flexbox [BEGIN] */
+
+.flex
+  display: flex
+  flex-direction: row
+  // justify-content: center
+  justify-content: flext-start
+  flex-wrap: wrap
+  margin-right: -($space1)
+  margin-left: -($space1)
+  > *
+    flex: 1 0 auto
+    padding: 0 $space1
+    // margin: $space1 $space2
+  > .flex-1
+    flex-basis: 8.333%
+    max-width: 8.333%
+  > .flex-2
+    flex-basis: 16.667%
+    max-width: 16.667%
+  > .flex-3
+    flex-basis: 25%
+    max-width: 25%
+  > .flex-4
+    flex-basis: 33.333%
+    max-width: 33.333%
+  > .flex-5
+    flex-basis: 41.667%
+    max-width: 41.667%
+  > .flex-6
+    flex-basis: 50%
+    max-width: 50%
+  > .flex-7
+    flex-basis: 58.333%
+    max-width: 58.333%
+  > .flex-8
+    flex-basis: 66.667%
+    max-width: 66.667%
+  > .flex-9
+    flex-basis: 75%
+    max-width: 75%
+  > .flex-10
+    flex-basis: 83.333%
+    max-width: 83.333%
+  > .flex-11
+    flex-basis: 91.667%
+    max-width: 91.667%
+  > .flex-12
+    flex-basis: 100%
+    max-width: 100%
+
+.flex-start
+  justify-content: flex-start
+.flex-end
+  justify-content: flex-end
+.flex-end,
+.flex-start
+  > *
+    flex: 0 1 auto
+ul.flex
+  list-style: none
+  > li
+    margin-right: 1em
+  > li:last-child
+    margin-right: 0
+
+/* Flexbox [END] */
+
 
 /* Button [BEGIN] */
 
@@ -357,26 +410,30 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"],
 input[type="file"]
-  display: block
+  display: inline
   box-sizing: border-box
   width: 100%
   padding: 0.5em 1em
   cursor: pointer
-  color: $quadrary
   text:
     align: center
     decoration: none
-  background: $tertiary
   border: $border-width solid transparent
 
   font-family: $font-highlight2
-  font-size: 0.625em
-  text-transform: uppercase
-  line-height: 1.2em
-  font-weight: bold
+  text-transform: inherit
+  font-weight: 300
 
   border-radius: $radius
   transition: 0.3s
+
+  background: $primary
+  color: $tertiary
+  &:hover
+    background: $primary - #222
+    color: $tertiary
+    text-decoration: none
+
   &:hover
     text-decoration: none
     color: $quadrary
@@ -387,14 +444,11 @@ input[type="file"]
     background: $primary + #111
     cursor: default
   &.btn-primary
-    background: $primary
-    color: $tertiary
-    &:hover
-      background: $primary - #222
-      color: $tertiary
-      text-decoration: none
+    font-size: 1.375rem
+    line-height: 1.35em
   &.btn-secondary
     background: $quadrary
+    display: inline
     color: $tertiary
     border: $border-width solid $primary
     &:hover
@@ -524,21 +578,16 @@ nav.usernav
 
 #search_controls_alternative
   margin: 0
-#search_controls_alternative input
-  padding: 0 0.6em
-  background: $quadrary - #111
-  height: 54px
-#search_controls_alternative .input-group-btn
-  padding: 0
-  //border-bottom:0
-  //border-top:0
-
-#search_controls_alternative .input-group-btn button
-  height: 54px
-  //display: none
-#search_controls_alternative input
-  border-radius: 0
-  border-width: 0 $border-width 0 $border-width
+  input
+    padding: 0 0.6em
+    background: $quadrary - #111
+    height: 54px
+    border-radius: 0
+    border-width: 0 $border-width 0 $border-width
+  .input-group-btn
+    padding: 0
+    button
+      height: 54px
 
 nav ul li a
   color: $tertiary
@@ -571,21 +620,23 @@ nav ul li a
   z-index: -1
 
 #search_controls
+  align-items: flex-end
+#search_controls,
+.advanced-search-controls
   display: flex
   flex-direction: row
   justify-content: center
-  align-items: flex-end
   flex-wrap: wrap
-  form
+  > form,
+  > .inner
     flex: 0 1 fit-content
-    width: 70%
+    width: 60%
+    // margin: 0 auto
 
 $markit-icon-space: 2em
 
-.results
+ul.results
   padding-top: $space1 * 4
-
-ul.result_list
   .bookmark
     font-size: 1.5rem
     -webkit-user-select: none
@@ -608,7 +659,7 @@ ul.result_list
 //     display: block
 //     margin: 0 auto
 
-ul.result_list
+ul.results
   list-style-type: none
   > li
     margin-bottom: 3em
@@ -722,93 +773,24 @@ body
     margin-top: -2em
     position: relative
     z-index: 0
-  > .inner
-    width: 70%
-    margin: 0 auto
-  > .inner,
+  .inner
+    margin: 1em 0
+  .btn-secondary
+    position: relative
+    z-index: 1
+    font-size: 1rem
   .options
-    .btn-secondary
-      background: $quadrary
-      position: relative
-      z-index: 1
-
-      margin: 1em 0
-      width: 20em
-      font-size: 1rem
-  .options
-    .btn-secondary
-      float: right
+    // .btn-secondary
+    //   float: right
+    .btn-wrap
+      margin-bottom: -5em
+      text-align: right
     > .inner:first-child
       margin-top: 0
     > .inner
       margin: 4em 0
 
 /* advanced-search-controls [END] */
-
-.flex
-  display: flex
-  flex-direction: row
-  // justify-content: center
-  justify-content: flext-start
-  flex-wrap: wrap
-  margin-right: -($space1)
-  margin-left: -($space1)
-  > *
-    flex: 1 0 auto
-    padding: 0 $space1
-    // margin: $space1 $space2
-  .flex-1
-    flex-basis: 8.333%
-    max-width: 8.333%
-  .flex-2
-    flex-basis: 16.667%
-    max-width: 16.667%
-  .flex-3
-    flex-basis: 25%
-    max-width: 25%
-  .flex-4
-    flex-basis: 33.333%
-    max-width: 33.333%
-  .flex-5
-    flex-basis: 41.667%
-    max-width: 41.667%
-  .flex-6
-    flex-basis: 50%
-    max-width: 50%
-  .flex-7
-    flex-basis: 58.333%
-    max-width: 58.333%
-  .flex-8
-    flex-basis: 66.667%
-    max-width: 66.667%
-  .flex-9
-    flex-basis: 75%
-    max-width: 75%
-  .flex-10
-    flex-basis: 83.333%
-    max-width: 83.333%
-  .flex-11
-    flex-basis: 91.667%
-    max-width: 91.667%
-  .flex-12
-    flex-basis: 100%
-    max-width: 100%
-
-.flex-start
-  justify-content: flex-start
-.flex-end
-  justify-content: flex-end
-.flex-end,
-.flex-start
-  > *
-    flex: 0 1 auto
-ul.flex
-  list-style: none
-  > li
-    margin-right: 1em
-  > li:last-child
-    margin-right: 0
-
 
 /* Checkbox [BEGIN] */
 
