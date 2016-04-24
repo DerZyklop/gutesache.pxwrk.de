@@ -33,10 +33,15 @@
     </div>
     <div class="flex-3 eg-sidebar">
       <?php snippet("eg-logo") ?>
-      <?php snippet("eg-adress") ?>
       <p>
-        <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> E-Mail</strong><br />
-        <a href="mailto:<?= $page->mail() ?>"><?= $page->mail() ?></a>
+        <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Adresse</strong><br />
+        <?= $page->plz() ?> <?= $page->city() ?><br />
+        <?= $page->street().' '.$page->housenr() ?><br /><br>
+      </p>
+      <p>
+        <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Im Internet</strong><br />
+        <a href="mailto:<?= $page->mail() ?>">www.der-zyklop.de ➡</a><br>
+        <a href="mailto:<?= $page->mail() ?>"><?= $page->mail() ?> ➡</a>
       </p>
       <p class="eg-poc_avatar">
         <?= thumb($page->images()->find($page->poc_avatar()->title())) ?>
