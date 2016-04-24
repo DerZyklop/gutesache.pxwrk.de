@@ -130,6 +130,10 @@ a.no-link-highlighting
   color: inherit
   border-bottom: inherit
   text-decoration: inherit
+  &:hover
+    color: $primary
+    border-bottom: none
+    text-decoration: none
 
 /* Links [END] */
 
@@ -513,8 +517,6 @@ header
 
 nav.usernav
   margin: $space2 0
-  a:hover
-    color: $primary
 nav.mainnav,
 nav.usernav
   h2, h3, h4, h5, h6
@@ -810,6 +812,7 @@ body
 .advanced-search-controls
   margin-bottom: 4em
   .options
+    background: $quadrary
     border: $border-width $border-style $primary
     padding: 4em
     margin-top: -2em

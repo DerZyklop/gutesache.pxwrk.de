@@ -11,7 +11,12 @@
 
   <section class="start-search">
     <main class="page-wrap">
-      <?php snippet('search-controls') ?>
+      <div id="search_controls">
+        <form>
+          <h2><?= $page->claim()->kirbytext() ?></h2>
+          <?php snippet("eg-search-input") ?>
+        </form>
+      </div>
       <?php snippet('advanced-search-controls') ?>
     </main>
   </section>
@@ -19,11 +24,11 @@
     <div>
       <div class="flex flex-baseline">
         <div class="flex-6">
-          <h2>Die Idee hinter der Guten Sache</h2>
+          <h2><?= $page->headline1() ?></h2>
         </div>
         <div class="flex-6">
-          <h5>Informieren</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi minus alias assumenda ipsam, sed reprehenderit iusto cumque laudantium dignissimos distinctio id officia nam eos, quo debitis, omnis et tempora ducimus sit ipsum, quasi consequatur! Tempora ipsum facilis fugit, nulla consectetur voluptates dicta voluptatum et! Quasi debitis, reprehenderit aut consequuntur unde?</p>
+          <h5><?= $page->headline2() ?></h5>
+          <p><?= $page->text() ?></p>
         </div>
       </div>
     </div>

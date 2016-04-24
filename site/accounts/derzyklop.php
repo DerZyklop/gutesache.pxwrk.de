@@ -6,6 +6,7 @@ password: >
   $2a$10$xfC0pznHQKVcxlnXiORG5.NV7w8mrOcmyG5Y/j6nctxMMELBsuhGW
 language: en
 history:
+  - home
   - register/miri-eg
   - erweiterte-suche/branche
   - erweiterte-suche

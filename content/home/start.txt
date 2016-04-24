@@ -1,0 +1,20 @@
+Title: home
+
+----
+
+Claim: 
+
+Online-Register-Suchmaschiene über Genossenschaften und mehr!
+Nach welcher guten Sache suchen sie?
+
+----
+
+Headline1: Die Idee hinter der Guten Sache
+
+----
+
+Headline2: Informieren
+
+----
+
+Text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi minus alias assumenda ipsam, sed reprehenderit iusto cumque laudantium dignissimos distinctio id officia nam eos, quo debitis, omnis et tempora ducimus sit ipsum, quasi consequatur! Tempora ipsum facilis fugit, nulla consectetur voluptates dicta voluptatum et! Quasi debitis, reprehenderit aut consequuntur unde?
