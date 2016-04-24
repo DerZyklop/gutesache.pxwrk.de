@@ -90,24 +90,26 @@ var initCards = function() {
 		overlay.fadeOut();
 	};
 	var openCard = function (event, link) {
-		var overlay = jQuery(".overlay-placeholder");
-		event.preventDefault();
-		overlay.css("top", jQuery(document).scrollTop());
-		overlay.css("min-height", jQuery(window).height() + "px");
-		overlay.css("padding-bottom", jQuery(window).height() + "px");
-		overlay.find(".inner-wrap").css("padding-top", jQuery(window).height() + "px");
-		// overlay.scrollTop(jQuery(window).height() - 20);
+		if (link && link !== "#") {
+			var overlay = jQuery(".overlay-placeholder");
+			event.preventDefault();
+			overlay.css("top", jQuery(document).scrollTop());
+			overlay.css("min-height", jQuery(window).height() + "px");
+			overlay.css("padding-bottom", jQuery(window).height() + "px");
+			overlay.find(".inner-wrap").css("padding-top", jQuery(window).height() + "px");
+			// overlay.scrollTop(jQuery(window).height() - 20);
 
-		jQuery.get(link, function( data ) {
-			overlay.find(".inner").html(data);
-			overlay.show();
-			overlay.scrollTop(1);
-			overlay.animate({
-				scrollTop: jQuery(window).height() - 20
-			}, {
-				duration: "300"
+			jQuery.get(link, function( data ) {
+				overlay.find(".inner").html(data);
+				overlay.show();
+				overlay.scrollTop(1);
+				overlay.animate({
+					scrollTop: jQuery(window).height() - 20
+				}, {
+					duration: "300"
+				});
 			});
-		});
+		}
 	};
 
 	jQuery(".overlay-placeholder").on("click", function (event) {
@@ -123,7 +125,7 @@ var initCards = function() {
 		event.preventDefault();
 	});
 
-	jQuery(".results .eg-name a").on("click", function(event) {
+	jQuery(".results .on-open-profile a").on("click", function(event) {
 		openCard(event, jQuery(this).attr("href"));
 	});
 	var toggleBookmarkState = function(that, activeContent, defaultContent) {
