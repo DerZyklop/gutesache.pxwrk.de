@@ -122,11 +122,14 @@ a
   border-bottom: $border-width $border-style $primary
   text-decoration: none
   &:hover
-    text-decoration: underline
-  &.no-link-highlighting
-    color: inherit
-    border-bottom: inherit
-    text-decoration: inherit
+    color: $primary
+    border-bottom: none
+    text-decoration: none
+.no-link-highlighting a,
+a.no-link-highlighting
+  color: inherit
+  border-bottom: inherit
+  text-decoration: inherit
 
 /* Links [END] */
 
@@ -325,6 +328,7 @@ table
 /* Section [BEGIN] */
 
 section
+  padding: 0 $space2
   border-bottom: $border-width $border-style $primary
   > *
     max-width: 1200px
@@ -480,6 +484,8 @@ header
 
 nav.usernav
   margin: $space2 0
+  a:hover
+    color: $primary
 nav.mainnav,
 nav.usernav
   h2, h3, h4, h5, h6
@@ -489,6 +495,7 @@ $mainnav-height: 26px
 nav.mainnav
   padding-top: 1em
   ul
+    margin-left: $mainnav-height + 5px
     li
       display: flex
       flex-direction: row
@@ -604,23 +611,26 @@ nav ul li a
 .advanced-search-controls
   min-height: 13em
 
-#search_controls::after
-  content: ""
-  //background-image: url('http://placekitten.com/1200/670')
-  background-color: #fff
-  background-position: center center
-  background-repeat: no-repeat
-  background-size: cover
-  opacity: 0.3
-  top: 0
-  left: 0
-  bottom: 0
-  right: 0
-  position: absolute
-  z-index: -1
-
 #search_controls
   align-items: flex-end
+
+.start-search
+  position: relative
+  &:after
+    content: ""
+    background-image: url('http://placekitten.com/1200/670')
+    background-color: #fff
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    opacity: 0.3
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    position: absolute
+    z-index: -1
+
 #search_controls,
 .advanced-search-controls
   display: flex
@@ -654,6 +664,10 @@ ul.results
   padding: $space2
   border: $border-width $border-style $border-color
 
+.eg-search-input
+  font-family: $font-std
+  font-size: 1.375rem
+
 // .eg-sidebar
 //   p > img
 //     display: block
@@ -678,7 +692,6 @@ ul.flatList
   ul
     list-style: none
     &.selectors > li li
-      font-weight: normal
       white-space: nowrap
   > ul
     padding: 0
@@ -868,8 +881,6 @@ ul.checkbox-list
   h1, h2, h3, h4, h5, h6
     display: inline
     margin: 0
-  li.checked
-    color: $primary
 
 
 /* checkbox-list [END] */

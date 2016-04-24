@@ -1,5 +1,5 @@
 <section>
-  <footer>
+  <footer class="no-link-highlighting">
     <div class="page-wrap">
       <div class="flex">
         <div class="flex-12">

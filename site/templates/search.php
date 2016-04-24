@@ -9,7 +9,7 @@
 <body>
   <?php snippet('header') ?>
 
-  <section>
+  <section class="start-search">
     <main class="page-wrap">
       <?php snippet('search-controls') ?>
       <?php snippet('advanced-search-controls') ?>

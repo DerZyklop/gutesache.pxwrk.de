@@ -5,7 +5,7 @@
       <span class="bookmark">☆</span><!-- ★ -->
     </div>
     <div class="flex-8">
-      <h3 class="eg-name"><a href="<?= $company->url() ?>"><?= $company->title() ?></a></h3>
+      <h3 class="eg-name"><a class="no-link-highlighting" href="<?= $company->url() ?>"><?= $company->title() ?></a></h3>
 
 
       <?php $items = [
