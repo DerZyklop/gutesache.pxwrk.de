@@ -2,34 +2,28 @@
   <footer class="no-link-highlighting">
     <div class="page-wrap">
       <div class="flex">
-        <div class="flex-12">
+        <div class="flex-4">
           <?php snippet("logo") ?>
         </div>
-        <div class="flex flex-12">
-          <div>
-            <div class="flex">
-              <div class="flex-4">
-                <?php foreach ($pages->visible() as $item): ?>
-                  <h5><a href="<?= $item->url() ?>">
-                    <?php if ($item->pageicon()->length()): ?>
-                      <span class="fa <?= $item->pageicon() ?>"></span>
-                    <?php endif ?>
-                    <?= $item->title() ?>
-                  </a></h5>
-                <?php endforeach ?>
-              </div>
-              <div class="flex-4">
-                <?php foreach ($pages->find("user-area")->children()->visible() as $item): ?>
-                  <h5><a href="#">
-                    <?php if ($item->pageicon()->length()): ?>
-                      <span class="fa <?= $item->pageicon() ?>"></span>
-                    <?php endif ?>
-                    <?= $item->title() ?>
-                  </a></h5>
-                <?php endforeach ?>
-              </div>
-            </div>
-          </div>
+        <div class="flex-4">
+          <?php foreach ($pages->visible() as $item): ?>
+            <h5><a href="<?= $item->url() ?>">
+              <?php if ($item->pageicon()->length()): ?>
+                <span class="fa <?= $item->pageicon() ?>"></span>
+              <?php endif ?>
+              <?= $item->title() ?>
+            </a></h5>
+          <?php endforeach ?>
+        </div>
+        <div class="flex-4">
+          <?php foreach ($pages->find("user-area")->children()->visible() as $item): ?>
+            <h5><a href="#">
+              <?php if ($item->pageicon()->length()): ?>
+                <span class="fa <?= $item->pageicon() ?>"></span>
+              <?php endif ?>
+              <?= $item->title() ?>
+            </a></h5>
+          <?php endforeach ?>
         </div>
       </div>
     </div>
