@@ -134,13 +134,18 @@ var initMoreBtns = function() {
 	"use strict";
 	jQuery(".more-info").on("click", function() {
 		if (jQuery(this).find(".fa-plus").length) {
+			jQuery(this).find(".text").html("Kurzbeschreibung einklappen");
+		} else {
+			jQuery(this).find(".text").html("Kurzbeschreibung");
+		}
+	});
+	jQuery(".collapsable-trigger").on("click", function() {
+		if (jQuery(this).find(".fa-plus").length) {
 			jQuery(this).find(".fa.fa-plus").removeClass("fa-plus");
 			jQuery(this).find(".fa").addClass("fa-minus");
-			jQuery(this).find(".text").html("Kurzbeschreibung einklappen");
 		} else {
 			jQuery(this).find(".fa.fa-minus").removeClass("fa-minus");
 			jQuery(this).find(".fa").addClass("fa-plus");
-			jQuery(this).find(".text").html("Kurzbeschreibung");
 		}
 	});
 };
