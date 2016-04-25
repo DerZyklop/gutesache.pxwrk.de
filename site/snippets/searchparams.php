@@ -1,4 +1,5 @@
 <aside class="searchparams" class="advanced-search-controls">
+  <h5>Erweiterte Suche</h5>
   <ul class="selectors">
     <?php foreach ($pages->find('erweiterte-suche')->children() as $category): ?>
       <li class="collapsable">
