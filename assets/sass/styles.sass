@@ -142,7 +142,7 @@ a.no-link-highlighting
 
 p
   line-height: 1.6em
-  margin: $space1 0 $space2 0
+  margin: $space1 0 $space1 0
 
 /* Paragraph [END] */
 
@@ -699,17 +699,11 @@ $markit-icon-space: 2em
 
 ul.results
   padding-top: $space1 * 4
-  .bookmark
-    font-size: 1.5rem
-    -webkit-user-select: none
-    -moz-user-select: none
-    -ms-user-select: none
-    user-select: none
-    cursor: pointer
-    &.active
-      color: $primary
-  .eg-name
-    margin-top: 0
+
+.bookmark
+  margin-top: 5px
+  &.fa-bookmark
+    color: $primary
 
 .eg-logo,
 .eg-poc_avatar
@@ -728,7 +722,7 @@ ul.results
 ul.results
   list-style-type: none
   > li
-    margin-bottom: 3em
+    margin-bottom: 1em
 ul.flatList
   margin: 1em 0
   h1, h2, h3, h4, h5, h6

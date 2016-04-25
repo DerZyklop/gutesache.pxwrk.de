@@ -4,25 +4,36 @@
 
   <div class="flex">
     <div class="flex-12">
-      <h2><?= $page->title() ?></h2>
+      <div class="flex flex-start">
+
+        <div class="">
+          <h2><span class="bookmark fa fa-bookmark-o"></span></h2>
+        </div>
+        <div class="flex-11">
+          <h2><?= $page->title() ?></h2>
+        </div>
+
+      </div>
     </div>
     <div class="flex-8">
 
-      <?php snippet("eg-meta") ?>
+      <div class="content-section">
+        <?php snippet("eg-meta") ?>
+      </div>
 
-      <?php snippet("meta", array('company' => $page)) ?>
-
-      <?php $p = $page; ?>
-      <p><?= $page->text() ?>
-      <a href="<?= url($page->website()) ?>"><?= $page->website() ?></a>
-
-
-      <?php if ($page->video()->length()): ?>
-        <h5><?= $page->videotitle() ?></h5>
-        <?= youtube($page->video(), "100%", 500) ?>
-        <p><?= $page->videodescription() ?></p>
-      <?php endif ?>
-
+      <div class="content-section">
+        <?php snippet("meta", array('company' => $page)) ?>
+      </div>
+      <div class="content-section">
+        <p><?= $page->text() ?>
+      </div>
+      <div class="content-section">
+        <?php if ($page->video()->length()): ?>
+          <h5><?= $page->videotitle() ?></h5>
+          <?= youtube($page->video(), "100%", 500) ?>
+          <p><?= $page->videodescription() ?></p>
+        <?php endif ?>
+      </div>
       <div class="content-section">
         <h5>Präambel</h5>
         <p><?= $page->praeambel() ?></p>

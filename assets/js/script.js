@@ -113,7 +113,9 @@ var initCards = function() {
 				}, {
 					duration: "300"
 				});
+				initBookmarkIcon(".overlay-placeholder");
 			});
+
 		}
 	};
 
@@ -133,20 +135,6 @@ var initCards = function() {
 	jQuery(".results .on-open-profile a").on("click", function(event) {
 		openCard(event, jQuery(this).attr("href"));
 	});
-	var toggleBookmarkState = function(that, activeContent, defaultContent) {
-		var el = jQuery(that);
-		if (el.html() === activeContent) {
-			el.html(defaultContent);
-			el.removeClass("active");
-		} else {
-			el.html(activeContent);
-			el.addClass("active");
-		}
-	};
-	jQuery(".results .bookmark").on("click", function() {
-		jQuery(this).toggleClass("active");
-		toggleBookmarkState(this, "★", "☆");
-	});
 
 	jQuery(".overlay-placeholder").scroll(function(event) {
 		var overlay = jQuery(".overlay-placeholder");
@@ -160,6 +148,24 @@ var initCards = function() {
 };
 
 
+var initBookmarkIcon = function (selector) {
+	"use strict";
+	var toggleBookmarkState = function(that, activeClass, passiveClass) {
+		var el = jQuery(that);
+		if (el.hasClass(activeClass)) {
+			el.addClass(passiveClass);
+			el.removeClass(activeClass);
+		} else {
+			el.removeClass(passiveClass);
+			el.addClass(activeClass);
+		}
+	};
+
+	jQuery(selector).find(".bookmark").on("click", function() {
+		toggleBookmarkState(this, "fa-bookmark-o", "fa-bookmark");
+	});
+};
+
 $(document).ready(function () {
 	"use strict";
 	setHighlighting();
@@ -167,5 +173,6 @@ $(document).ready(function () {
 	initClickableCheckboxList();
 	makethingsCollapsable();
 	initCards();
+	initBookmarkIcon("body");
 });
 

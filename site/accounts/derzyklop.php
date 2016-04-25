@@ -12,5 +12,4 @@ history:
     blog/pinsel-stifte-mikrophone-raeume-nach-bedarf
   - blog
   - home
-  - register/miri-eg
 token: ee7a73d993b944388b02d51cf1223af108817f4d

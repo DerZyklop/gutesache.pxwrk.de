@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"po",
+				"poc_gender"
+			],
+			[
+				"flex-",
+				"flex-basis"
+			],
+			[
+				"cle",
+				"cleanList	(styles.sass)"
+			],
+			[
+				"hi",
+				"highlight2"
+			],
+			[
 				"line",
 				"line-height"
 			],
@@ -92,35 +108,49 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de"
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates"
 	],
 	"file_history":
 	[
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/footer.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/advanced-search-controls.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/searchparams.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/meta.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/result-list-item.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/results.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/gutesache.pxwrk.de.sublime-project",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/sass/styles.sass",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/5-wir/default.txt",
-		"/Users/derzyklop/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/pre_css/styles.css",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/search-controls.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/usernav.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/mainnav.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/header.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/logo.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/5-wir/01-kontakt/default.txt",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/5-wir/02-Partner/default.txt",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/02-karte/default.txt",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/fields/comments/assets/js/controller.js",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/pre_js/script.js",
-		"/Users/derzyklop/.gitconfig",
-		"/Users/derzyklop/.dotfiles/.git/.gitc",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/eg-adress.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/eg-logo.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/company-detail.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/company-detail.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/meta.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/eg-meta.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/interactive-list-item.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/search-results.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/search.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/footer.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/results.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/default.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/header.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/advanced-search-controls.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/result-list-item.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/logo.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/searchparams.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/search-controls.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/pre_js/script.js",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/usernav.php",
+		"/Users/derzyklop/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/mainnav.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/interactive.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/includes.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/register.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/02-karte/default.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/.gitignore",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/gutesache.pxwrk.de.sublime-project",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/5-wir/default.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/pre_css/styles.css",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/5-wir/01-kontakt/default.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/5-wir/02-Partner/default.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/fields/comments/assets/js/controller.js",
+		"/Users/derzyklop/.gitconfig",
+		"/Users/derzyklop/.dotfiles/.git/.gitc",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/result-counter.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/small-search-controls.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/js/script.js",
@@ -137,12 +167,8 @@
 		"/Users/derzyklop/Downloads/SLITio.user.js",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/advanced-search.php",
 		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/gradient",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/company-detail.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/company-detail.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/default.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/01-register/01-miri-eg/company-detail.txt",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/default.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/register.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/register.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/01-register/search.txt",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/02-landkarte/default.txt",
@@ -216,14 +242,7 @@
 		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/content/1-blog/86-jawbone-up24/comments.json",
 		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/.gitmodules",
 		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/comments.read.php",
-		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/config/config.php",
-		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/assets/src/coffee/script.coffee",
-		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/templates/page-with-comments.php",
-		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/index.php",
-		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/js/script.js",
-		"/Users/derzyklop/Desktop/coffeemaschinescript.js",
-		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/coffee/script.coffee",
-		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/content/1-blog/statistics/statistics.txt"
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/config/config.php"
 	],
 	"find":
 	{
@@ -242,134 +261,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"resu",
-			"margin-top: -",
-			".advanced-search-controls",
-			"btn",
-			"search_controls",
-			"uppercase",
-			"chec",
-			"options",
-			"Branche",
-			"h6",
-			"nav.mainnav ul li .triangle",
-			"font-s",
-			"search_controls",
-			"button",
-			"$font-size",
-			"font-size",
-			"uppercase",
-			"highlight2",
-			"search",
-			"search-Input",
-			"h6",
-			"h2",
-			"h5",
-			"h4",
-			"h3",
-			"h2",
-			"h3",
-			"h2",
-			"h1",
-			"userna",
-			"$font-highlight2",
-			"$font-highlight",
-			"eg_name",
-			"$font-highlight",
-			"font-highlight1",
-			"$font-highlight",
-			"mainnav",
-			"font-std",
-			"$font-std",
-			"result-lis",
-			"meta_items",
-			"meta",
-			"upperc",
-			"uppercase",
+			"eg-",
+			"eg-sidebar",
+			"mail",
+			"icon",
+			"page-",
+			"-secondary",
 			"footer",
-			"primary",
+			"1200px",
+			"main",
+			"decoline",
+			"section",
+			"header",
+			"section",
+			"header",
+			"section",
+			"inner",
+			"section",
+			"header",
+			"page_wrap",
+			"header",
+			"page_wrap",
+			"footer",
+			"page_wrap",
+			"page_wpar",
 			".flex",
-			"mainnav",
-			".logo",
-			"#logo",
-			"id=\"logo",
-			"i",
-			"id=\"logo",
-			"footer",
 			"flex",
-			"footer",
-			"list-s",
-			"footer",
-			"reachedTop",
-			"anima",
-			"this",
-			"openCard",
-			"initCards",
-			"hideCard",
-			"overlayInnerHeight",
-			"overlay",
-			"openCard",
-			"hideOverlay",
-			"makethingsCollapsable",
-			"setClickableCheckboxList",
-			"setHighlighting",
-			"$btn_text",
-			"result_counter",
-			"children",
-			"erweiterte-suche",
-			"check",
-			"checkbox-list",
-			"col-30-30-30",
-			"col-3",
-			"checkbox-list",
-			"search_controls",
-			".advanced-search-controls",
-			"input[type",
-			"[type=\"checkbox\"]",
-			"searchparams",
-			"\n  description: ",
-			"yaml",
-			"categories",
-			"eg_location",
-			"h2",
-			"h3",
-			"eg_name",
-			".advanced-search-controls .inner .btn-secondary",
-			"advanced-search-controls",
-			"search_controls",
-			"ncu",
-			"sou",
-			"src",
-			",\"",
-			"sour",
-			"gif",
-			"\",\"",
-			"$secondary",
-			"secondary",
+			"flex-start",
+			"bookmark",
+			"padding: ",
+			"$space2",
+			"$space-t-b",
+			"$space-l-r",
+			"border-color",
+			"eg-",
+			"eg-logo",
+			"flex-7",
+			"ul",
+			"flatList",
 			"border",
-			"grba",
-			"shadow",
-			"hideOverlay",
-			"hide",
-			"preventDefault",
-			"hideOverlay",
-			"hide",
-			"#ccc",
-			"#000",
-			"overlay",
-			"overlay-placeholder",
-			"results",
-			"list-s",
-			"result_list",
-			"collapse-trigger",
-			"collapsable",
-			"searchparams",
-			"selectors",
-			"setClickableCheckboxList",
-			"setResponsiveHeader",
-			"advanced_search_controls",
-			"advanced-search-controls",
-			"#search_controls"
+			"$border-width",
+			"border",
+			"col-30-30-30",
+			"ul.fl",
+			".flex",
+			"flex",
+			"30-30-30",
+			"eg-logo",
+			"$space-l-r",
+			"flex-9",
+			"page_wrap",
+			"max-w",
+			"flex",
+			"70%",
+			".flex",
+			"flex",
+			"logo",
+			"eg-logo",
+			"eg_",
+			"flex",
+			"bookma",
+			"flex: 1",
+			"bookma",
+			"flex",
+			"h4",
+			"input",
+			"1.36rem",
+			"Finden",
+			"mainna",
+			"mainnav",
+			"flex-9",
+			"mainnav",
+			"flex-9",
+			".flex",
+			"logo",
+			"mainnav",
+			"mainn",
+			"main",
+			".logo",
+			"    display: block\n",
+			"header",
+			"header-inner-1",
+			"1em",
+			"center",
+			"flex-",
+			"venter",
+			"flex",
+			"header-inner-1",
+			"two-col",
+			"flex: 3",
+			"two-col",
+			"230px",
+			"prima",
+			": -",
+			"h2",
+			"mainna",
+			"nav.mainnav",
+			"flex-start",
+			"flex-",
+			".flex",
+			"inner",
+			"Kategorie",
+			"includes",
+			"height=\"14px\"",
+			"height=\"12px\"",
+			"interactive",
+			"google-location-icon-icon-location.png",
+			"icon",
+			"helv",
+			"h3",
+			"font-std",
+			"eg_name",
+			"highlight2",
+			"h5",
+			"uppercase",
+			"h6",
+			"flex-s",
+			"flal",
+			"flat",
+			"flat-",
+			"flat",
+			"flex-start",
+			".flex",
+			"flatList",
+			"horizontalList",
+			"cleanList flex",
+			".fle",
+			"horizontalList",
+			"meta"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -377,6 +396,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$space1",
+			"$space2",
 			"\n  key: ",
 			" <p><?= ",
 			"<?=",
@@ -445,32 +466,132 @@
 		"selected_items":
 		[
 			[
-				"meta",
-				"site/snippets/meta.php"
+				"eg-",
+				"site/snippets/eg-logo.php"
 			],
 			[
-				"result-list-item",
-				"site/snippets/result-list-item.php"
+				"eg-lo",
+				"site/snippets/eg-logo.php"
+			],
+			[
+				"eg-ad",
+				"site/snippets/eg-adress.php"
+			],
+			[
+				"detail",
+				"site/blueprints/company-detail.php"
+			],
+			[
+				"eg-a",
+				"site/snippets/eg-adress.php"
+			],
+			[
+				"interactive-list-item",
+				"site/snippets/interactive-list-item.php"
 			],
 			[
 				"result",
 				"site/snippets/results.php"
 			],
 			[
-				"param",
-				"site/snippets/searchparams.php"
+				"footer",
+				"site/snippets/footer.php"
 			],
 			[
 				"sass",
 				"assets/sass/styles.sass"
 			],
 			[
-				"wir",
-				"content/5-wir/default.txt"
+				"head",
+				"site/snippets/header.php"
 			],
 			[
-				"footer",
+				"header",
+				"site/snippets/header.php"
+			],
+			[
+				"user",
+				"site/snippets/usernav.php"
+			],
+			[
+				"resu",
+				"site/snippets/result-list-item.php"
+			],
+			[
+				"inc",
+				"site/snippets/includes.php"
+			],
+			[
+				"incl",
+				"site/snippets/includes.php"
+			],
+			[
+				"meta",
+				"site/snippets/meta.php"
+			],
+			[
+				"result-",
+				"site/snippets/result-list-item.php"
+			],
+			[
+				"searc",
+				"site/templates/search.php"
+			],
+			[
+				"foo",
 				"site/snippets/footer.php"
+			],
+			[
+				"includ",
+				"site/snippets/includes.php"
+			],
+			[
+				"advan",
+				"site/snippets/advanced-search-controls.php"
+			],
+			[
+				"result-list-item",
+				"site/snippets/result-list-item.php"
+			],
+			[
+				"result-l",
+				"site/snippets/result-list-item.php"
+			],
+			[
+				"regis",
+				"site/blueprints/register.php"
+			],
+			[
+				"inte",
+				"site/snippets/interactive-list-item.php"
+			],
+			[
+				"inter",
+				"site/snippets/interactive-list-item.php"
+			],
+			[
+				"userna",
+				"site/snippets/usernav.php"
+			],
+			[
+				"defa",
+				"site/templates/default.php"
+			],
+			[
+				"defau",
+				"content/02-karte/default.txt"
+			],
+			[
+				"search",
+				"site/snippets/advanced-search-controls.php"
+			],
+			[
+				"param",
+				"site/snippets/searchparams.php"
+			],
+			[
+				"wir",
+				"content/5-wir/default.txt"
 			],
 			[
 				"usern",
@@ -485,16 +606,8 @@
 				"site/snippets/mainnav.php"
 			],
 			[
-				"header",
-				"site/snippets/header.php"
-			],
-			[
 				"mainna",
 				"site/snippets/mainnav.php"
-			],
-			[
-				"defau",
-				"content/02-karte/default.txt"
 			],
 			[
 				"stl",
@@ -517,10 +630,6 @@
 				"assets/pre_js/script.js"
 			],
 			[
-				"advan",
-				"site/snippets/advanced-search-controls.php"
-			],
-			[
 				"js",
 				"assets/pre_js/script.js"
 			],
@@ -539,10 +648,6 @@
 			[
 				"advanced-search-controls",
 				"site/snippets/advanced-search-controls.php"
-			],
-			[
-				"detail",
-				"site/templates/company-detail.php"
 			],
 			[
 				"results",
@@ -615,10 +720,6 @@
 			[
 				"blog.",
 				"site/templates/blog.php"
-			],
-			[
-				"head",
-				"site/plugins/comments/views/installation/header.php"
 			],
 			[
 				"bloga",
