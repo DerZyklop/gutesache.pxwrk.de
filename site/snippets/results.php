@@ -5,7 +5,7 @@
   <div class="flex-9">
     <?php snippet("eg-search-input") ?>
 
-    <?php $results = 56; ?>
+    <?php $results = $pages->find('register')->children()->count(); ?>
     <?php $btn_text = "" ?>
     <?php if ($results) : ?>
       <?php $btn_text += $results." "; ?>

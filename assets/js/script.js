@@ -134,10 +134,10 @@ var initMoreBtns = function() {
 	"use strict";
 	jQuery(".more-info").on("click", function() {
 		if (jQuery(this).find(".fa-plus").length) {
-			jQuery(this).find(".fa").removeClass("fa-plus");
+			jQuery(this).find(".fa.fa-plus").removeClass("fa-plus");
 			jQuery(this).find(".fa").addClass("fa-minus");
 		} else {
-			jQuery(this).find(".fa").removeClass("fa-minus");
+			jQuery(this).find(".fa.fa-minus").removeClass("fa-minus");
 			jQuery(this).find(".fa").addClass("fa-plus");
 		}
 	});

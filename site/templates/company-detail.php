@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+<!-- <link rel="stylesheet" type="text/css" href="/assets/css/styles.css"> -->
 
 <main class="page-wrap">
 
@@ -27,16 +27,16 @@
       <div class="content-section">
         <p><?= $page->text() ?>
       </div>
-      <div class="content-section">
+      <!-- <div class="content-section">
         <?php if ($page->video()->length()): ?>
           <h5><?= $page->videotitle() ?></h5>
           <?= youtube($page->video(), "100%", 500) ?>
           <p><?= $page->videodescription() ?></p>
         <?php endif ?>
-      </div>
+      </div> -->
       <div class="content-section">
         <h5>Präambel</h5>
-        <p><?= $page->praeambel() ?></p>
+        <?= $page->praeambel()->kirbytext() ?>
       </div>
       <div class="content-section">
         <h5>Geschäftszweck</h5>
