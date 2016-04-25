@@ -340,7 +340,13 @@ section
   border-bottom: $border-width $border-style $primary
   > *
     max-width: 1200px
-    margin: 0 auto
+    margin: $space2 auto
+  &.no-vertival-margin
+    > *
+      margin: 0 auto
+
+  .section-headline
+    text-align: center
 
 /* Section [END] */
 
@@ -734,7 +740,7 @@ ul.flatList
   box-shadow: 1px -0.175em white inset, 3px -1em 0 $primary inset
 
 .searchparams
-  padding: 0 $space2 $space1 0
+  padding: $space2 $space2 $space1 0
   ul
     list-style: none
     &.selectors > li li
@@ -763,7 +769,7 @@ $bar-gap: 0.5rem
 .teaser
   position: relative
   background: #fff
-  margin: $space2 * 2
+  margin: 0 ($space2*2)
   > a,
   img
     display: block

@@ -9,7 +9,7 @@
 <body>
   <?php snippet('header') ?>
 
-  <section class="start-search">
+  <section class="start-search no-vertival-margin">
     <main class="page-wrap">
       <div id="search_controls">
         <form>
@@ -41,6 +41,7 @@
   </section>
   <section>
     <div>
+      <h2 class="section-headline"><?= $pages->find("blog")->title() ?></h2>
       <div class="flex">
         <?php if ($pages->find("blog")): ?>
           <?php foreach ($pages->find("blog")->children()->visible() as $teasercontent): ?>

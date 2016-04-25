@@ -1,5 +1,5 @@
 <section class="decoline"></section>
-<section class="header">
+<section class="header no-vertival-margin">
 
   <header class="page-wrap">
 
