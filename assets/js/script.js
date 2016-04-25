@@ -26,42 +26,6 @@ var setHighlighting = function() {
 	});
 };
 
-// $('#search_controls_alternative').on('click', function () {
-//   $("body").animate({ scrollTop: 0 }, {
-//     duration: "300"
-//   });
-// });
-
-// var setResponsiveHeader = function() {
-// "use strict";
-// var scrolling = false;
-// $(document).on("scroll", function () {
-// 	var hadFocus;
-// 	clearTimeout(scrolling);
-// 	scrolling = setTimeout(function () {
-// 		if ($(this).scrollTop() > 250) {
-// 			$("body").addClass("collapsed_search_controls");
-// 			hadFocus = $("#search_controls .input-group input").is(":focus");
-// 			$("#search_controls .input-group").prependTo("#search_controls_alternative");
-// 			if (hadFocus) {
-// 				$("#search_controls_alternative .input-group input").focus();
-// 			}
-// 		} else {
-// 			$(".collapsed_search_controls").removeClass("collapsed_search_controls");
-// 			hadFocus = $("#search_controls_alternative .input-group input").is(":focus");
-// 			$("#search_controls_alternative .input-group").prependTo("#search_controls");
-// 			if (hadFocus) {
-// 				$("#search_controls .input-group input").focus();
-// 			}
-// 		}
-// 	}, 100);
-// 	$("#search_controls_alternative").on("click", function () {
-// 		window.scrollTo(0, 0);
-// 		$("#search_controls .input-group input").is(":focus");
-// 	});
-// });
-// };
-
 var initClickableCheckboxList = function () {
 	"use strict";
 	$(".checkbox-list li input").on("change", function() {
@@ -166,10 +130,27 @@ var initBookmarkIcon = function (selector) {
 	});
 };
 
+var initMoreBtns = function() {
+	"use strict";
+	jQuery(".more-info").on("click", function() {
+		if (jQuery(this).find(".fa-plus").length) {
+			jQuery(this).find(".fa").removeClass("fa-plus");
+			jQuery(this).find(".fa").addClass("fa-minus");
+			// jQuery(this).find(".text").html("Weniger Infos");
+		} else {
+			jQuery(this).find(".fa").removeClass("fa-minus");
+			jQuery(this).find(".fa").addClass("fa-plus");
+			// jQuery(this).find(".text").html("Mehr Infos");
+		}
+	});
+};
+
 $(document).ready(function () {
 	"use strict";
+
+	initMoreBtns();
+
 	setHighlighting();
-	// setResponsiveHeader();
 	initClickableCheckboxList();
 	makethingsCollapsable();
 	initCards();

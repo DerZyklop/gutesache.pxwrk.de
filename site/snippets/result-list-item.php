@@ -13,7 +13,14 @@
 
       <?php snippet("meta", array('company' => $company)) ?>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem iusto explicabo dolor dicta. Quisquam repellat sint sunt laudantium quasi cumque fuga omnis, ducimus nesciunt debitis. Ad est, ullam porro dolorum!</p>
+      <div class="collapsable">
+        <div class="collapsable-trigger">
+          <h5 class="more-info"><span class="fa fa-plus"></span> <span class="text">Kurzbeschreibung</span></h5>
+        </div>
+        <div class="collapsable-item hide">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem iusto explicabo dolor dicta. Quisquam repellat sint sunt laudantium quasi cumque fuga omnis, ducimus nesciunt debitis. Ad est, ullam porro dolorum!</p>
+        </div>
+      </div>
     </div>
 
   </div>

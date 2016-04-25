@@ -1,6 +1,6 @@
 <div class="collapsable advanced-search-controls">
   <div class="inner">
-    <a href="/erweiterte-suche" class="collapsable-trigger btn btn-secondary">Erweiterte Suche ···</a>
+    <a href="/erweiterte-suche" class="collapsable-trigger btn btn-secondary">Erweiterte Suche</a>
   </div>
   <div class="options collapsable-item hide">
     <?php foreach ($pages->find('erweiterte-suche')->children() as $category): ?>

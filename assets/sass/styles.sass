@@ -350,6 +350,16 @@ section
 
 /* Section [END] */
 
+/* More-Btn [BEGIN] */
+
+.more-info
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+/* More-Btn [END] */
 
 /* Flexbox [BEGIN] */
 
@@ -450,7 +460,7 @@ ul.flex
 /* Content-Section [BEGIN] */
 
 .content-section
-  margin-bottom: $space2 * 2
+  margin-bottom: $space2
 
 /* Content-Section [END] */
 
@@ -524,8 +534,6 @@ header
     > *
       flex: 1
       padding: 1.5em 1em 0.5em 1em
-    #search_controls_alternative
-      display: none
     nav.usernav
       order: 2
       flex: 1
@@ -621,26 +629,10 @@ nav.usernav
     .logo
       margin: 0.4em 0.4em 0.4em 0
       padding: 0 1em 0 1em
-    #search_controls_alternative
-      display: block
-      flex: 2
     nav.mainnav
       display: none
     nav.usernav
       padding: 0 1em 0 1em
-
-#search_controls_alternative
-  margin: 0
-  input
-    padding: 0 0.6em
-    background: $quadrary - #111
-    height: 54px
-    border-radius: 0
-    border-width: 0 $border-width 0 $border-width
-  .input-group-btn
-    padding: 0
-    button
-      height: 54px
 
 nav ul li a
   color: $tertiary
@@ -765,6 +757,8 @@ $bar-gap: 0.5rem
   position: relative
   background: #fff
   margin: 0 ($space2*2)
+  a:hover
+    color: $tertiary
   > a,
   img
     display: block
@@ -782,6 +776,10 @@ $bar-gap: 0.5rem
     flex-direction: column
     h1, h2, h3, h4, h5, h6
       margin-top: 0
+  .front
+    transition: background 0.3s
+  &:hover .front
+    background: $primary
   .teaser-tag
     position: absolute
     bottom: $space2
@@ -865,25 +863,30 @@ body
 
 .advanced-search-controls
   margin-bottom: 4em
+  position: relative
   .options
     background: $quadrary
     border: $border-width $border-style $primary
     padding: 4em
-    margin-top: -2em
-    position: relative
-    z-index: 0
+    margin-top: 2em
+    z-index: 10
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+
   .inner
     margin: 1em 0
   .btn-secondary
     position: relative
-    z-index: 1
+    z-index: 20
     font-size: 1rem
   .options
     // .btn-secondary
     //   float: right
     .btn-wrap
       margin-bottom: -5em
-      text-align: right
+      text-align: center
     > .inner:first-child
       margin-top: 0
     > .inner

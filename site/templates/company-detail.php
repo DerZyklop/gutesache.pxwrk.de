@@ -52,8 +52,8 @@
     </div>
     <div class="flex-3 eg-sidebar">
       <?php snippet("eg-logo") ?>
-      <p>
-        <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Adresse</strong><br />
+      <div class="content-section">
+        <strong><span class="fa fa-map-marker"></span> Adresse</strong><br />
         <?php if (
           !$page->plz()->length() &&
           !$page->city()->length() &&
@@ -68,51 +68,51 @@
         <?php if ($page->street()->length() || $page->housenr()->length()): ?>
           <?= $page->street().' '.$page->housenr() ?><br /><br>
         <?php endif ?>
-      </p>
-      <p>
-        <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Im Internet</strong><br />
+      </div>
+      <div class="content-section">
+        <strong><span class="fa fa-link"></span> Im Internet</strong><br />
         <a href="mailto:<?= $page->mail() ?>">www.der-zyklop.de ➡</a><br>
         <?php if ($page->mail()->length()): ?>
           <a href="mailto:<?= $page->mail() ?>"><?= $page->mail() ?> ➡</a>
         <?php endif ?>
-      </p>
+      </div>
       <?php $avatar = $page->images()->find($page->poc_avatar()->title()); ?>
       <?php if ($avatar) : ?>
-        <p class="eg-poc_avatar">
+        <div class="content-section eg-poc_avatar">
           <?= thumb($avatar) ?>
-        </p>
+        </div>
       <?php endif; ?>
-      <p>
+      <div class="content-section">
         <?php if ($page->poc_gender() == "female"): ?>
-          <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Ansprechpartnerin</strong>
+          <strong><span class="fa fa-user"></span> Ansprechpartnerin</strong>
           <br>
           Frau <?= $page->poc_firstname() ?> <?= $page->poc_name() ?>
         <?php else : ?>
-          <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Ansprechpartner</strong>
+          <strong><span class="fa fa-user"></span> Ansprechpartner</strong>
           <br>
           Herr <?= $page->poc_firstname() ?> <?= $page->poc_name() ?>
         <?php endif ?>
-      </p>
-      <p>
-        <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Facebook</strong><br />
+      </div>
+      <div class="content-section">
+        <strong><span class="fa fa-facebook"></span> Facebook</strong><br />
         <?= $page->facebook() ?>
-      </p>
-      <p>
-        <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Twitter</strong><br />
+      </div>
+      <div class="content-section">
+        <strong><span class="fa fa-twitter"></span> Twitter</strong><br />
         <a href="https://twitter.com/<?= $page->twitter() ?>">@<?= $page->twitter() ?></a>
-      </p>
-      <p>
-        <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Pinterest</strong><br />
+      </div>
+      <div class="content-section">
+        <strong><span class="fa fa-pinterest"></span> Pinterest</strong><br />
         <?= $page->pinterest() ?>
-      </p>
-      <p>
-        <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Linkedin</strong><br />
+      </div>
+      <div class="content-section">
+        <strong><span class="fa fa-linkedin"></span> Linkedin</strong><br />
         <?= $page->linkedin() ?>
-      </p>
-      <p>
-        <strong><img src="/assets/images/google-location-icon-icon-location.png" height="12px"> Unternehmensform</strong><br />
+      </div>
+      <div class="content-section">
+        <strong><span class="fa fa-briefcase"></span> Unternehmensform</strong><br />
         <?= $page->unternehmensform() ?>
-      </p>
+      </div>
     </div>
   </div>
 
