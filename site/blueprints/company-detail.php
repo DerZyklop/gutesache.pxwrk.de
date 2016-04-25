@@ -44,6 +44,26 @@ fields:
   city:
     label: Stadt
     type:  text
+  bundesland:
+    label: Bundesland
+    type:  select
+    options:
+      Baden-Wuerttemberg: Baden-Württemberg
+      Bayern: Bayern
+      Berlin: Berlin
+      Brandenburg: Brandenburg
+      Bremen: Bremen
+      Hamburg: Hamburg
+      Hessen: Hessen
+      Mecklenburg-Vorpommern: Mecklenburg-Vorpommern
+      Niedersachsen: Niedersachsen
+      Nordrhein-Westfalen: Nordrhein-Westfalen
+      Rheinland-Pfalz: Rheinland-Pfalz
+      Saarland: Saarland
+      Sachsen: Sachsen
+      Sachsen-Anhalt: Sachsen-Anhalt
+      Schleswig-Holstein: Schleswig-Holstein
+      Thueringen: Thüringen
   street:
     label: Straße
     type:  text
@@ -74,8 +94,8 @@ fields:
   kategorie:
     label: kategorie
     type:  text
-  banche:
-    label: banche
+  branche:
+    label: branche
     type:  text
   praeambel:
     label: praeambel

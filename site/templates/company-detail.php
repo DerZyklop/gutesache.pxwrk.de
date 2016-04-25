@@ -68,7 +68,7 @@
           <?= $page->plz() ?> <?= $page->city() ?><br />
         <?php endif ?>
         <?php if ($page->street()->length() || $page->housenr()->length()): ?>
-          <?= $page->street().' '.$page->housenr() ?><br /><br>
+          <?= $page->street().' '.$page->housenr() ?><br />
         <?php endif ?>
       </div>
       <div class="content-section">

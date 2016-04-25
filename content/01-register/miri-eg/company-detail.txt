@@ -46,11 +46,7 @@ Verband: WFIS
 
 ----
 
-Kategorie: Kreativ
-
-----
-
-Banche: Kreativ
+Kategorie: Lorem
 
 ----
 
@@ -107,3 +103,11 @@ Mail: mail@der-zyklop.de
 ----
 
 Poc-avatar: einhorn_0017.gif
+
+----
+
+Bundesland: Mecklenburg-Vorpommern
+
+----
+
+Branche: Fashion
