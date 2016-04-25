@@ -109,6 +109,7 @@ h6
   line-height: 1.2em
   font-weight: 300
   letter-spacing: 1px
+  margin: $space1 0
 
 h1, h2, h3, h4, h5, h6
   label
@@ -227,7 +228,7 @@ textarea
   display: block
   width: 100%
   border:
-    width: $border-width * 2
+    width: $border-width
     style: $border-style
     color: $primary
   background: $quadrary - #111
@@ -697,6 +698,8 @@ ul.results
   &.fa-bookmark
     color: $primary
 
+.eg-meta
+
 .eg-logo,
 .eg-poc_avatar
   padding: $space2
@@ -730,8 +733,10 @@ ul.flatList
   padding: $space2 $space2 $space1 0
   ul
     list-style: none
-    &.selectors > li li
-      white-space: nowrap
+    &.selectors > li
+      margin-bottom: $space2
+      li
+        white-space: nowrap
   > ul
     padding: 0
     > li
