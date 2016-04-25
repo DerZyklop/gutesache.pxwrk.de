@@ -8,6 +8,9 @@ fields:
   title:
     label: Title
     type:  text
+  pageicon:
+    label: Icon-Class (Font-Awesome)
+    type:  text
   text:
     label: Text
     type:  textarea

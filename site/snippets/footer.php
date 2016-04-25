@@ -1,4 +1,4 @@
-<section>
+<section class="footer">
   <footer class="no-link-highlighting">
     <div class="page-wrap">
       <div class="flex">
@@ -6,18 +6,30 @@
           <?php snippet("logo") ?>
         </div>
         <div class="flex flex-12">
-          <?php foreach ($pages->visible() as $p): ?>
-            <div>
-              <h5><a href="<?= $p->url() ?>"><?= $p->title() ?></a></h5>
-              <ul class="cleanList">
-                <?php foreach ($p->children()->visible() as $c): ?>
-                  <li>
-                    <h6><a href="<?= $c->url() ?>"><?= $c->title() ?></a></h6>
-                  </li>
+          <div>
+            <div class="flex">
+              <div class="flex-4">
+                <?php foreach ($pages->visible() as $item): ?>
+                  <h5><a href="<?= $item->url() ?>">
+                    <?php if ($item->pageicon()->length()): ?>
+                      <span class="fa <?= $item->pageicon() ?>"></span>
+                    <?php endif ?>
+                    <?= $item->title() ?>
+                  </a></h5>
                 <?php endforeach ?>
-              </ul>
+              </div>
+              <div class="flex-4">
+                <?php foreach ($pages->find("user-area")->children()->visible() as $item): ?>
+                  <h5><a href="#">
+                    <?php if ($item->pageicon()->length()): ?>
+                      <span class="fa <?= $item->pageicon() ?>"></span>
+                    <?php endif ?>
+                    <?= $item->title() ?>
+                  </a></h5>
+                <?php endforeach ?>
+              </div>
             </div>
-          <?php endforeach ?>
+          </div>
         </div>
       </div>
     </div>

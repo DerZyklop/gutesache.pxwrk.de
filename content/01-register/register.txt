@@ -1,1 +1,9 @@
-title: Register
+Title: Register
+
+----
+
+Pageicon: 
+
+----
+
+Text: 

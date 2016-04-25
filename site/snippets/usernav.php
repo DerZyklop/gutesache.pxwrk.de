@@ -1,13 +1,14 @@
 <nav class="usernav no-link-highlighting">
   <ul class="cleanList flex flex-end">
-    <li>
-      <h5><a href="#"><img class="icon" src="/assets/images/google-location-icon-icon-location.png">Mitglieder</a></h5>
-    </li>
-    <li>
-      <h5><a href="#"><img class="icon" src="/assets/images/google-location-icon-icon-location.png" />Merkliste</a></h5>
-    </li>
-    <li>
-      <h5><a href="#"><img class="icon" src="/assets/images/google-location-icon-icon-location.png" />Kontakt</a></h5>
-    </li>
+    <?php foreach ($pages->find("user-area")->children()->visible() as $item): ?>
+      <li>
+        <h5><a href="#">
+          <?php if ($item->pageicon()->length()): ?>
+            <span class="fa <?= $item->pageicon() ?>"></span>
+          <?php endif ?>
+          <?= $item->title() ?>
+        </a></h5>
+      </li>
+    <?php endforeach ?>
   </ul>
 </nav>

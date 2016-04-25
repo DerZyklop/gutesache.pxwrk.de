@@ -6,11 +6,9 @@ password: >
   $2a$10$xfC0pznHQKVcxlnXiORG5.NV7w8mrOcmyG5Y/j6nctxMMELBsuhGW
 language: en
 history:
+  - user-area/kontakt
+  - user-area/merkliste
+  - user-area/mitglieder
+  - register
   - register/miri-eg
-  - >
-    blog/awesome-code-katzenfotos-und-shissel-der-developer-knecht
-  - >
-    blog/pinsel-stifte-mikrophone-raeume-nach-bedarf
-  - blog
-  - home
 token: ee7a73d993b944388b02d51cf1223af108817f4d
