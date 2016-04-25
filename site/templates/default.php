@@ -10,8 +10,16 @@
   <?php snippet('header') ?>
 
   <section>
-    <main class="page-wrap">
+    <main class="text-width-fuse">
       <h2><?= $page->title() ?></h2>
+      <div style="float:left; max-width: 30%;margin-right: 2em;margin-top: 0.5em">
+        <?php if ($page->hasImages()): ?>
+          <?= thumb($page->images()->first(), array(
+            'width' => 1200,
+            'crop' => true
+          )) ?>
+        <?php endif ?>
+      </div>
       <p><?= $page->text() ?></p>
     </main>
   </section>

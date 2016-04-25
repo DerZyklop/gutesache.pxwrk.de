@@ -1,7 +1,7 @@
 <section class="decoline"></section>
 <section class="header no-vertival-margin">
 
-  <header class="page-wrap">
+  <header>
 
     <div class="flex">
       <div class="flex-3 logo-wrap">

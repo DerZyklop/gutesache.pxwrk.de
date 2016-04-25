@@ -10,7 +10,7 @@
   <?php snippet('header') ?>
 
   <section class="start-search no-vertival-margin">
-    <main class="page-wrap">
+    <main>
       <div id="search_controls">
         <form>
           <h2><?= $page->claim()->kirbytext() ?></h2>

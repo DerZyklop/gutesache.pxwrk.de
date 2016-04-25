@@ -1,6 +1,6 @@
 <section class="footer">
   <footer class="no-link-highlighting">
-    <div class="page-wrap">
+    <div>
       <div class="flex">
         <div class="flex-4">
           <?php snippet("logo") ?>

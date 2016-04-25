@@ -345,9 +345,11 @@ section
   &.no-vertival-margin
     > *
       margin: 0 auto
-
   .section-headline
     text-align: center
+
+.text-width-fuse
+  max-width: 750px
 
 /* Section [END] */
 
@@ -998,7 +1000,9 @@ ul.checkbox-list
       box-shadow: 2px 2px 26px rgba(0,0,0,0.2)
       border: $border-width * 2 $border-style $primary
       background: #fff
-      padding: 2em
+      padding: 0 $space2*2
+      margin: 0 auto
+      max-width: 1000px
 
 /* Overlay [END] */
 

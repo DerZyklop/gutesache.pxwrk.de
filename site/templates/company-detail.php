@@ -1,6 +1,6 @@
 <!-- <link rel="stylesheet" type="text/css" href="/assets/css/styles.css"> -->
 
-<main class="page-wrap">
+<main>
 
   <div class="flex">
     <div class="flex-12">
