@@ -39,6 +39,22 @@
       </div>
     </div>
   </section>
+  <section>
+    <div>
+      <div class="flex">
+        <?php if ($pages->find("blog")): ?>
+          <?php foreach ($pages->find("blog")->children()->visible() as $teasercontent): ?>
+            <div class="flex-6">
+              <?php snippet(
+                "teaser",
+                array("item" => $teasercontent)
+              ) ?>
+            </div>
+          <?php endforeach ?>
+        <?php endif ?>
+      </div>
+    </div>
+  </section>
   <?php snippet("footer") ?>
 </body>
 </html>
