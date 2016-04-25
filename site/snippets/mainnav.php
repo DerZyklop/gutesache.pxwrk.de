@@ -5,6 +5,8 @@
         $iscurrent = true;
       } elseif ($site->activePage() == 'home' && $item->uri() == 'register') {
         $iscurrent = true;
+      } elseif ($site->activePage() == 'erweiterte-suche' && $item->uri() == 'register') {
+        $iscurrent = true;
       } else {
         $iscurrent = false;
       } ?>
