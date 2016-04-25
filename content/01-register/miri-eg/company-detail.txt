@@ -6,7 +6,7 @@ City: Uckermark
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Text: Genossenschaften sind demokratische Organisationen, die von ihren Mitgliedern kontrolliert werden. Diese arbeiten aktiv mit, indem sie ihre Politik selbst bestimmen und durch demokratische Entscheidungen umsetzen. Männer und Frauen, die als gewählte Vertreter arbeiten, sind der Gesamtheit der Mitglieder rechenschaftspflichtig. In Genossenschaften auf unterster Ebene haben Genossenschaftsmitglieder grundsätzlich gleiches Stimmrecht (ein Mitglied, eine Stimme); Genossenschaften auf anderen Ebenen sind ebenfalls demokratisch organisiert.
 
 ----
 
@@ -14,7 +14,7 @@ Plz: 12345
 
 ----
 
-Street: Rheinallee
+Street: Straße
 
 ----
 
@@ -22,7 +22,7 @@ Housenr: 20
 
 ----
 
-Website: der-zyklop.de
+Website: hanffaser.de
 
 ----
 
@@ -30,11 +30,11 @@ Video: https://www.youtube.com/watch?v=txqiwrbYGrs
 
 ----
 
-Videotitle: David after Dentist
+Videotitle: Anbau unserer Pflanzen
 
 ----
 
-Videodescription: Funny stuff
+Videodescription: Anbau der Hanfpflanzen
 
 ----
 
@@ -46,19 +46,15 @@ Verband: WFIS
 
 ----
 
-Kategorie: Lorem
+Kategorie: Produzierende Genossenschaft
 
 ----
 
-Praeambel: 
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-(image: img_0587.jpg)
+Praeambel: Genossenschaften sind demokratische Organisationen, die von ihren Mitgliedern kontrolliert werden. Diese arbeiten aktiv mit, indem sie ihre Politik selbst bestimmen und durch demokratische Entscheidungen umsetzen. Männer und Frauen, die als gewählte Vertreter arbeiten, sind der Gesamtheit der Mitglieder rechenschaftspflichtig. In Genossenschaften auf unterster Ebene haben Genossenschaftsmitglieder grundsätzlich gleiches Stimmrecht (ein Mitglied, eine Stimme); Genossenschaften auf anderen Ebenen sind ebenfalls demokratisch organisiert.
 
 ----
 
-Geschaeftszweck: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Geschaeftszweck: Genossenschaften sind demokratische Organisationen, die von ihren Mitgliedern kontrolliert werden. Diese arbeiten aktiv mit, indem sie ihre Politik selbst bestimmen und durch demokratische Entscheidungen umsetzen. Männer und Frauen, die als gewählte Vertreter arbeiten, sind der Gesamtheit der Mitglieder rechenschaftspflichtig. In Genossenschaften auf unterster Ebene haben Genossenschaftsmitglieder grundsätzlich gleiches Stimmrecht (ein Mitglied, eine Stimme); Genossenschaften auf anderen Ebenen sind ebenfalls demokratisch organisiert.
 
 ----
 
@@ -66,15 +62,15 @@ Unternehmensform: e.G.
 
 ----
 
-Historie: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Historie: Genossenschaften sind demokratische Organisationen, die von ihren Mitgliedern kontrolliert werden. Diese arbeiten aktiv mit, indem sie ihre Politik selbst bestimmen und durch demokratische Entscheidungen umsetzen. Männer und Frauen, die als gewählte Vertreter arbeiten, sind der Gesamtheit der Mitglieder rechenschaftspflichtig. In Genossenschaften auf unterster Ebene haben Genossenschaftsmitglieder grundsätzlich gleiches Stimmrecht (ein Mitglied, eine Stimme); Genossenschaften auf anderen Ebenen sind ebenfalls demokratisch organisiert.
 
 ----
 
-Facebook: -
+Facebook: www.facebook.de
 
 ----
 
-Twitter: undente
+Twitter: hanffaser
 
 ----
 
@@ -86,28 +82,28 @@ Linkedin: -
 
 ----
 
-Poc-gender: female
+Poc-gender: male
 
 ----
 
-Poc-firstname: Miriam
+Poc-firstname: Walter
 
 ----
 
-Poc-name: Gückel
+Poc-name: Strasheim-Weitz
 
 ----
 
-Mail: mail@der-zyklop.de
+Mail: mail@hanffaser.de
 
 ----
 
-Poc-avatar: einhorn_0017.gif
+Poc-avatar: walter_strasheim-weitz.jpg
 
 ----
 
-Bundesland: Mecklenburg-Vorpommern
+Bundesland: Nordrhein-Westfalen
 
 ----
 
-Branche: Fashion
+Branche: Dämmstoffe
