@@ -51,7 +51,9 @@
     <div class="flex-1">
     </div>
     <div class="flex-3 eg-sidebar">
-      <?php snippet("eg-logo") ?>
+      <div class="content-section">
+        <?php snippet("eg-logo") ?>
+      </div>
       <div class="content-section">
         <strong><span class="fa fa-map-marker"></span> Adresse</strong><br />
         <?php if (
