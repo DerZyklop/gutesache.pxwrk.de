@@ -131,11 +131,9 @@ var initMoreBtns = function() {
 		if (jQuery(this).find(".fa-plus").length) {
 			jQuery(this).find(".fa").removeClass("fa-plus");
 			jQuery(this).find(".fa").addClass("fa-minus");
-			// jQuery(this).find(".text").html("Weniger Infos");
 		} else {
 			jQuery(this).find(".fa").removeClass("fa-minus");
 			jQuery(this).find(".fa").addClass("fa-plus");
-			// jQuery(this).find(".text").html("Mehr Infos");
 		}
 	});
 };
