@@ -6,10 +6,13 @@ title: Default
 pages: true
 files: true
 fields:
-  title: 
+  title:
     label: Title
     type:  text
-  text: 
+  pageicon:
+    label: Icon-Class (Font-Awesome)
+    type:  text
+  text:
     label: Text
     type:  textarea
     size:  large

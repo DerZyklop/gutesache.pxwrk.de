@@ -1,24 +1,26 @@
 /*! ui-pattern - v1.0.0 - 2014-08-06 */
 // Set the variables if not allready set.
-$page-width: 1200px                    !default
-$space-t-b: 1rem                       !default
-$space-l-r: 2rem                       !default
-$font-std: 'Droid Sans', helvetica     !default
-$font-highlight: Merriweather, helvetica   !default
-$font-size: 15px                       !default
+$space1: 0.5rem                       !default
+$space2: 2rem                       !default
+$font-std: "freight-text-pro", 'Times New Roman', helvetica     !default
+$font-highlight1: "Franz Sans", helvetica                       !default
+$font-highlight2: "tenso", sans-serif  !default
+$font-size: 16px                       !default
 $font-color: #222                      !default
 $border-style: solid                   !default
 $border-width: 1px                     !default
-$border-color: #ccc                    !default
+$border-color: #f00                    !default
 $radius: 0px                           !default
 
 /* Colors [BEGIN] */
 
 // A signal-color
+$primary: #00cc00
 $primary: #38fd30
+$border-color: $primary
 
 // Another signal-color
-$secondary: #F64740                       !default
+$secondary: #33ff33                       !default
 
 // An unobtrusive color
 // It's used for e.g. borders.
@@ -35,6 +37,7 @@ $quadrary: #fefefe                     !default
 body
   font-family: $font-std
   font-size: $font-size
+  line-height: 1.625em
 
 /* Fonts [END] */
 
@@ -63,27 +66,86 @@ body
 /* Headlines [BEGIN] */
 
 h1, h2, h3, h4, h5, h6
-  font-family: $font-highlight
+  font-family: $font-highlight1
+  font-kerning: auto
+  text-rendering: optimizeLegibility
+  font-feature-settings: "kern"
+/* Die Extrawurst */
+h1
+  font-size: 1.5rem
+  line-height: 1.5em
+  font-weight: bold
+/* Markenbezogene Überschriften */
+h2
+  font-size: 1.5rem
+  line-height: 1.5em
+  font-weight: bold
+/* Redaktionelle Überschriften */
+h3
+  font-family: $font-highlight2
+  font-size: 1.375rem
+  line-height: 1.36em
+  font-weight: 500
+/* Blogüberschrift und Suchfeld */
+h4
+  font-family: $font-std
+  font-size: 1.375rem
+  line-height: 1.35em
+  font-weight: normal
+/* Register Sachen */
+h5
+  font-family: $font-highlight2
+  font-size: 0.75rem
   text-transform: uppercase
+  line-height: 1.2em
+  font-weight: 500
+  letter-spacing: 1px
+  margin: $space1 0
+/* Andere register Sachen */
+h6
+  font-family: $font-highlight2
+  font-size: 0.75rem
+  // text-transform: uppercase
+  line-height: 1.2em
+  font-weight: 300
+  letter-spacing: 1px
+  margin: $space1 0
+
+h1, h2, h3, h4, h5, h6
+  label
+    font-weight: inherit
 
 /* Headlines [END] */
-
-/* Paragraph [BEGIN] */
-
-p
-  line-height: 1.6em
-
-/* Paragraph [END] */
 
 /* Links [BEGIN] */
 
 a
-  color: $primary
+  color: $tertiary
+  border-bottom: $border-width $border-style $primary
   text-decoration: none
   &:hover
-    text-decoration: underline
+    color: $primary
+    border-bottom: none
+    text-decoration: none
+.no-link-highlighting a,
+a.no-link-highlighting
+  color: inherit
+  border-bottom: inherit
+  text-decoration: inherit
+  &:hover
+    color: $primary
+    border-bottom: none
+    text-decoration: none
 
 /* Links [END] */
+
+/* Paragraph [BEGIN] */
+
+p
+  line-height: 1.8em
+  margin: $space1 0 $space1 0
+
+/* Paragraph [END] */
 
 /* Code & Pre [BEGIN] */
 
@@ -112,13 +174,15 @@ pre
 blockquote
   padding: 0 0 0 2.5em
   margin: 2em 0
-  border-left: $border-width $border-style $border-color
+  border-left: $border-width $border-style $primary
   font-style: italic
 
 /* Blockquote [END] */
 
 /* Figure [BEGIN] */
 
+figure
+  margin: 0
 img
   max-width: 100%
 
@@ -128,27 +192,10 @@ img
 
 hr
   border: none
-  background: $border-color
+  background: $primary
   height: $border-width
 
 /* HR [END] */
-
-
-/* Unordered List [BEGIN] */
-
-ul
-  li
-    padding: 0.2em 0
-
-/* Unordered List [END] */
-
-/* Ordered List [BEGIN] */
-
-ol
-  li
-    padding: 0.2em 0
-
-/* Ordered List [END] */
 
 
 /* Labels [BEGIN] */
@@ -162,6 +209,18 @@ label
 
 /* Labels [END] */
 
+/* List [BEGIN] */
+
+ul.cleanList
+  list-style: none
+  padding: 0
+  margin: 0
+  > li
+    padding: 0
+    margin: 0
+
+/* List [END] */
+
 /* Inputs [BEGIN] */
 
 input,
@@ -171,34 +230,24 @@ textarea
   border:
     width: $border-width
     style: $border-style
-    color: #ccc
-    color: transparent
+    color: $primary
   background: $quadrary - #111
   border-radius: $radius
-  padding: 0.3em 2%
+  padding: 0.5em 2%
   font-size: 1em
   line-height: 1.5em
   transition: 0.2s
-  &:focus
-    border-color: #999
 
 .input-group
-  display: table
-  width: 100%
-.input-group>*
-  display: table-cell
+  display: flex
 
-.input-group-btn
-  spacing: 0
-  margin: 0
-  padding: 0
-
-.input-group input:first-child,
-.input-group button:first-child
-  border-radius: $radius 0 0 $radius
-.input-group button:last-child,
-.input-group input:last-child
-  border-radius: 0 $radius $radius 0
+.input-group
+  input:first-child,
+  button:first-child
+    border-radius: $radius 0 0 $radius
+  button:last-child,
+  input:last-child
+    border-radius: 0 $radius $radius 0
 
 textarea
   resize: vertical
@@ -212,9 +261,9 @@ textarea
   &[readonly],
   &:disabled
     background: $quadrary - #111
-    color: $border-color - #666
+    color: $primary - #666
     background: $quadrary - #111
-    color: $border-color - #666
+    color: $primary - #666
 
 /* Inputs Disabled || Read-Only [END] */
 
@@ -223,9 +272,9 @@ textarea
 /* Fieldset [BEGIN] */
 
 fieldset
-  padding: $space-l-r
+  padding: $space2
   border:
-    color: $border-color
+    color: $primary
     style: $border-style
     width: $border-width
   legend
@@ -271,7 +320,7 @@ input[type="search"]
 /* Fields [BEGIN] */
 
 .field
-  margin-bottom: $space-t-b
+  margin-bottom: $space1
 
 /* Fields [END] */
 
@@ -285,11 +334,138 @@ table
 /* Table [END] */
 
 
+/* Section [BEGIN] */
 
+section
+  padding: 0 $space2
+  border-bottom: $border-width $border-style $primary
+  > *
+    max-width: 1200px
+    margin: $space2 auto
+  &.no-vertival-margin
+    > *
+      margin: 0 auto
+  .section-headline
+    text-align: center
 
+.text-width-fuse
+  max-width: 750px
 
+/* Section [END] */
 
+/* More-Btn [BEGIN] */
 
+.more-info
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+/* More-Btn [END] */
+
+/* Flexbox [BEGIN] */
+
+.flex
+  display: flex
+  flex-direction: row
+  // justify-content: center
+  justify-content: flext-start
+  flex-wrap: wrap
+  margin-right: -($space1)
+  margin-left: -($space1)
+  > *
+    flex: 1 1 0
+    padding: 0 $space1
+    // margin: $space1 $space2
+  > .flex-1
+    flex-basis: 8.333%
+    max-width: 8.333%
+  > .flex-2
+    flex-basis: 16.667%
+    max-width: 16.667%
+  > .flex-3
+    flex-basis: 25%
+    max-width: 25%
+  > .flex-4
+    flex-basis: 33.333%
+    max-width: 33.333%
+  > .flex-5
+    flex-basis: 41.667%
+    max-width: 41.667%
+  > .flex-6
+    flex-basis: 50%
+    max-width: 50%
+  > .flex-7
+    flex-basis: 58.333%
+    max-width: 58.333%
+  > .flex-8
+    flex-basis: 66.667%
+    max-width: 66.667%
+  > .flex-9
+    flex-basis: 75%
+    max-width: 75%
+  > .flex-10
+    flex-basis: 83.333%
+    max-width: 83.333%
+  > .flex-11
+    flex-basis: 91.667%
+    max-width: 91.667%
+  > .flex-12
+    flex-basis: 100%
+    max-width: 100%
+
+.flex-1
+  flex: 1
+.flex-2
+  flex: 2
+.flex-3
+  flex: 3
+.flex-4
+  flex: 4
+.flex-5
+  flex: 5
+.flex-6
+  flex: 6
+.flex-7
+  flex: 7
+.flex-8
+  flex: 8
+.flex-9
+  flex: 9
+.flex-10
+  flex: 10
+.flex-11
+  flex: 11
+.flex-12
+  flex: 12
+
+.flex-start
+  justify-content: flex-start
+.flex-end
+  justify-content: flex-end
+.flex-baseline
+  align-items: baseline
+
+.flex-end,
+.flex-start
+  > *
+    flex: 0 1 auto
+ul.flex
+  list-style: none
+  > li
+    margin-right: 1em
+  > li:last-child
+    margin-right: 0
+
+/* Flexbox [END] */
+
+/* Content-Section [BEGIN] */
+
+.content-section
+  margin-bottom: $space2
+
+/* Content-Section [END] */
 
 /* Button [BEGIN] */
 
@@ -299,21 +475,30 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"],
 input[type="file"]
-  display: block
+  display: inline
   box-sizing: border-box
   width: 100%
   padding: 0.5em 1em
   cursor: pointer
-  color: $quadrary
   text:
     align: center
     decoration: none
-  background: $tertiary
-  border: 1px solid transparent
-  font-size: 1em
-  font-family: $font-std
+  border: $border-width solid transparent
+
+  font-family: $font-highlight2
+  text-transform: inherit
+  font-weight: 300
+
   border-radius: $radius
   transition: 0.3s
+
+  background: $primary
+  color: $tertiary
+  &:hover
+    background: $primary - #222
+    color: $tertiary
+    text-decoration: none
+
   &:hover
     text-decoration: none
     color: $quadrary
@@ -321,19 +506,16 @@ input[type="file"]
   a
     text-decoration: none
   &:disabled
-    background: $border-color + #111
+    background: $primary + #111
     cursor: default
   &.btn-primary
-    background: $primary
-    color: $tertiary
-    &:hover
-      background: $primary - #222
-      color: $tertiary
-      text-decoration: none
+    font-size: 1.375rem
+    line-height: 1.35em
   &.btn-secondary
     background: $quadrary
+    display: inline
     color: $tertiary
-    border: 1px solid $primary
+    border: $border-width solid $primary
     &:hover
       background: $primary
       color: $tertiary
@@ -344,47 +526,77 @@ input[type="file"]
 /* Header [BEGIN] */
 
 header
-  display: flex
-  flex-direction: row
-  justify-content: flex-start
-  align-items: baseline
-  flex-wrap: wrap
-  > *
-    flex: 1
-    padding: 1.5em 1em 0.5em 1em
-  #logo
-    flex: 0 1 auto
-  #search_controls_alternative
-    display: none
-  nav.mainnav
-    flex: 0 1 auto
-  nav.usernav
-    flex: 1
-
-nav.mainnav,
-nav.usernav
-  ul
+  position: relative
+  .logo-wrap
+    align-self: center
+  .inner
     display: flex
     flex-direction: row
-    li
-      flex: 0 1 auto
-    li:before
-      margin: 0 0.4em 0 0.6em
-      content: '|'
-    li:first-child:before
-      display: none
-
-nav.mainnav
-  ul
     justify-content: flex-start
+    flex-wrap: wrap
+    > *
+      flex: 1
+      padding: 1.5em 1em 0.5em 1em
+    nav.usernav
+      order: 2
+      flex: 1
+
+nav.usernav
+  margin: $space2 0
+nav.mainnav,
+nav.usernav
+  h2, h3, h4, h5, h6
+    margin: 0
+
+$mainnav-height: 26px
+nav.mainnav
+  padding-top: 1em
+  ul
+    margin-left: $mainnav-height + 5px
+    li
+      display: flex
+      flex-direction: row
+      justify-content: flext-start
+      flex-wrap: wrap
+      margin-left: -($mainnav-height + 5px)
+      background #fff
+      > *
+        flex: 0 1 auto
+      a
+        display: block
+        padding: 0 $mainnav-height / 2
+        margin: 0
+        line-height: $mainnav-height
+        border-top: $border-width solid $primary
+        h2, h3, h4, h5, h6
+          line-height: $mainnav-height
+          margin: 0
+      .triangle-left,
+      .triangle-right
+        // padding-top: 1px
+        height: $mainnav-height
+        width: 16px
+        border-top: $border-width solid #fff
+        box-sizing: content-box
+      .triangle-right
+        background-image: url('../images/reiter-r.png')
+      .triangle-left
+        background-image: url('../images/reiter-l.png')
+      &:hover,
+      &.active
+        .triangle-right
+          background-image: url('../images/reiter-r-active.png')
+        .triangle-left
+          background-image: url('../images/reiter-l-active.png')
+
+
+        a
+          color: $tertiary
+          background: $primary
+
 nav.usernav
   ul
     justify-content: flex-end
-
-nav.usernav
-  opacity: 0.3
-  &:hover
-    opacity: 1
 
 /* Header [END] */
 
@@ -398,9 +610,9 @@ nav.usernav
 
 /* nav */
 
-header
-  background: $quadrary
-  border-bottom: $border-width $border-style $border-color
+.logo
+  display: block
+  width: 200px
 
 .collapsed_search_controls
   header
@@ -417,120 +629,124 @@ header
     //   flex: 1
     > *
       padding: 0em
-    #logo
+    .logo
       margin: 0.4em 0.4em 0.4em 0
-      width: 200px
       padding: 0 1em 0 1em
-    #search_controls_alternative
-      display: block
-      flex: 2
     nav.mainnav
       display: none
     nav.usernav
       padding: 0 1em 0 1em
 
-#search_controls_alternative
-  margin: 0
-#search_controls_alternative input
-  padding: 0 0.6em
-  background: $quadrary - #111
-  height: 54px
-#search_controls_alternative .input-group-btn
-  padding: 0
-  //border-bottom:0
-  //border-top:0
-
-#search_controls_alternative .input-group-btn button
-  height: 54px
-  //display: none
-#search_controls_alternative input
-  border-radius: 0
-  border-width: 0 $border-width 0 $border-width
-
-
-nav
-  text-transform: uppercase
-  ul,
-  ul li
-    padding: 0
-    list-style-type: none
-  ul li a
-    color: $tertiary
-    font-weight: bold
+nav ul li a
+  color: $tertiary
+.mainnav ul li a
+  &:hover
     text-decoration: none
-    &:hover
-      color: $primary
-      text-decoration: none
 
+
+.decoline
+  height: 0.5em
+#search_controls
+  min-height: 22rem
+  margin-bottom: 1em
+.advanced-search-controls
+  min-height: 13em
 
 #search_controls
-  margin: 8em 10em
-  font-size: 1.7em
-  label
-    font-weight: normal
+  align-items: flex-end
 
-.results
-  padding-top: 2em
+.start-search
+  position: relative
+  &:before,
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    z-index: -1
+    background-color: #444
+  &:after
+    // position: relative
+    // z-index: 10
+    content: ""
+    background-image: url('http://placekitten.com/1200/670')
+    background-color: #fff
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    opacity: 0.3
 
-.results > ul
-  float: left
-.results > ul,
-.results > ul li
-  padding: 0
+#search_controls,
+.advanced-search-controls
+  display: flex
+  flex-direction: row
+  justify-content: center
+  flex-wrap: wrap
+  > form,
+  > .inner
+    flex: 0 1 fit-content
+    width: 60%
+    // margin: 0 auto
+
+$markit-icon-space: 2em
+
+ul.results
+  padding-top: $space1 * 4
+
+.bookmark
+  margin-top: 3px
+  &.fa-bookmark
+    color: $primary
+
+.eg-meta
+
+.eg-logo,
+.eg-poc_avatar
+  padding: $space1
+  border: $border-width $border-style $border-color
+  img
+    display: block
+
+.eg-search-input
+  font-family: $font-std
+  font-size: 1.375rem
+
+// .eg-sidebar
+//   p > img
+//     display: block
+//     margin: 0 auto
+
+ul.results
   list-style-type: none
-
-.results > ul li
-  margin: 0 0 1.2em 0
-.results > ul li>*
-  padding: 0.2em 0
-
-.results > ul li .eg_name
-  font-size: 1.4em
-  font-family: $font-highlight
-  font-weight: bold
-
-.results > ul li .eg_location
-
-
-.result_counter
-  // font-size: 1.4em
-  text-align: center
-
-.result_counter .counter
-  font-weight: bold
-
+  margin-bottom: $space2 * 2
+  > li
+    margin-bottom: 1em
+ul.flatList
+  margin: 1em 0
+  h1, h2, h3, h4, h5, h6
+    margin: 0
 
 .highlightedtext
   // background: $secondary
   border-radius: 8px 7px 9px 4px
   box-shadow: 1px -0.175em white inset, 3px -1em 0 $primary inset
 
-
-#searchparams
-  width: 20%
-  float: left
-
-#searchparams ul
-  list-style: none
-#searchparams > ul
-  padding: 0
-#searchparams > ul ul
-  padding-left: 1em
-#searchparams > ul > li
-  font-weight: bold
-#searchparams ul.selectors > li li
-  font-weight: normal
-
-
-
-
-
-
-
-
-.page_wrap
-  max-width: 1200px
-  margin: 0 auto
+.searchparams
+  padding: $space2 $space2 $space1 0
+  ul
+    list-style: none
+    &.selectors > li
+      margin-bottom: $space1
+      li
+        white-space: nowrap
+  > ul
+    padding: 0
+    > li
+      font-weight: bold
+    ul
+      padding-left: 1em
 
 /* nav */
 
@@ -538,11 +754,54 @@ nav
 
 .decoline
   background: $primary
-  height: 0.5em
   width: 100%
 
 /* Decoline [END] */
 
+/* Teaser [BEGIN] */
+
+$bar-length: 1.5rem
+$bar-gap: 0.5rem
+.teaser
+  position: relative
+  background: #fff
+  margin: $space2
+  a:hover
+    color: $tertiary
+  > a,
+  img
+    display: block
+  img
+    opacity: 0.15
+  .front
+    position: absolute
+    border: $border-width $border-style $border-color
+    top: $space1
+    bottom: $space1
+    left: $space1
+    right: $space1
+    padding: $space2 * 1.5
+    display: flex
+    flex-direction: column
+    h1, h2, h3, h4, h5, h6
+      margin-top: 0
+  .front
+    transition: background 0.3s
+  &:hover .front
+    background: $primary
+  .teaser-tag
+    position: absolute
+    bottom: $space2
+    &:before
+      content: ""
+      display: inline-block
+      border-radius: 1em
+      height: 3px
+      margin: 0.2em $bar-gap 0.2em (-$bar-length + -$bar-gap)
+      width: $bar-length
+      background: $border-color
+
+/* Teaser [END] */
 
 
 
@@ -569,49 +828,6 @@ nav
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Multi-Col-30-30-30 [BEGIN] */
-
-.multi-col-30-30-30
-  box-sizing: border-box
-  .col-1
-    width: 33%
-    float: left
-  .col-2
-    width: 34%
-    float: left
-  .col-3
-    width: 33%
-    float: left
-
-/* Multi-Col-30-30-30 [END] */
-
-/* Multi-Col-50-50 [BEGIN] */
-
-.multi-col-50-50
-  box-sizing: border-box
-  .col-1
-    width: 50%
-    float: left
-  .col-2
-    width: 50%
-    float: right
-
-/* Multi-Col-50-50 [END] */
 
 
 
@@ -651,50 +867,162 @@ body
 
 /* Body-Background [END] */
 
+
 /* advanced-search-controls [BEGIN] */
 
 .advanced-search-controls
-  margin: 8em 0
-  section
-    margin: 4em 0
-    // border: 1px solid #ccc
-    ul
-      padding: 0
-      display: flex
-      flex-direction: row
-      justify-content: center
-      align-items: baseline
-      flex-wrap: wrap
-      > li
-        flex: 1 1 auto
-        width: 30%
-        display: inline-block
-        margin: 0.3em 0
-      > li
-        a,
-        input
-          display: inline
-          width: auto
-        label
-          font-weight: normal
-          display: inline
-        input
-          margin-right: 0.6em
+  margin-bottom: 4em
+  position: relative
+  .options
+    background: $quadrary
+    border: $border-width $border-style $primary
+    padding: 4em
+    margin-top: 2em
+    z-index: 10
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
 
+  .inner
+    margin: 1em 0
+  .btn-secondary
+    position: relative
+    z-index: 20
+    font-size: 1rem
+  .options
+    // .btn-secondary
+    //   float: right
+    .btn-wrap
+      margin-bottom: -5em
+      text-align: center
+    > .inner:first-child
+      margin-top: 0
+    > .inner
+      margin: 4em 0
 
 /* advanced-search-controls [END] */
 
+/* Checkbox [BEGIN] */
+
+$fancyCheckbox-size: 18px
+
+.fancyCheckbox
+  width: $fancyCheckbox-size
+  position: relative
+  label
+    width: $fancyCheckbox-size
+    height: $fancyCheckbox-size
+    cursor: pointer
+    position: absolute
+    top: 0
+    left: 0
+    // background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%)
+    background: #ccc
+    border-radius: 4px
+    // border: 1px solid #ccc
+    // box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5)
+    &:after
+      content: ''
+      width: 0.7 * $fancyCheckbox-size
+      height: 0.3 * $fancyCheckbox-size
+      position: absolute
+      top: 0.1 * $fancyCheckbox-size
+      left: 0.0 * $fancyCheckbox-size
+      border: 0.25 * $fancyCheckbox-size solid $quadrary
+      border-top: none
+      border-right: none
+      background: transparent
+      opacity: 0
+      transform: rotate(-45deg)
+    &:hover::after
+      opacity: 0.5
+      opacity: 1
+  input[type=checkbox]
+    visibility: hidden
+    &:checked + label:after
+      opacity: 1
+      border-color: #fff
+
+      border-color: $primary
+
+.checked .fancyCheckbox
+  label
+    background: $primary
+
+    background: #eee
+
+/* Checkbox [END] */
+
 /* checkbox-list [BEGIN] */
 
-.checkbox-list
-  li.checked
-    color: $primary
+ul.checkbox-list
+  padding: 0
+  margin-bottom: $space1 * 2
+  > li
+    margin: 0.3em 0
+    a,
+    input,
+    .fancyCheckbox,
+    label,
+    h1, h2, h3, h4, h5, h6
+      display: inline
+    input
+      margin-right: 0.6em
+    a,
+    input,
+    .fancyCheckbox
+      width: auto
+    label,
+    h1, h2, h3, h4, h5, h6
+      font-weight: normal
+  h1, h2, h3, h4, h5, h6
+    display: inline
+    margin: 0
 
 
 /* checkbox-list [END] */
 
 
+/* Overlay [BEGIN] */
+
+.overlay-placeholder
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  bottom: 0
+  z-index: 100
+  overflow: scroll
+  .inner-wrap
+    padding: $space2
+    .inner
+      box-shadow: 2px 2px 26px rgba(0,0,0,0.2)
+      border: $border-width * 2 $border-style $primary
+      background: #fff
+      padding: 0 $space2*2
+      margin: 0 auto
+      max-width: 1000px
+
+/* Overlay [END] */
+
+/* Footer [BEGIN] */
+
+.footer
+  background: $primary
+  padding: 1px 0
+  a:hover
+    text-decoration: underline
+    color: $tertiary
+footer
+  padding: $space1 * 4 0
+  .logo
+    margin-bottom: $space1 * 2
+  h2, h3, h4, h5, h6,
+  ul li
+    margin: 1rem 0
+    a
+      color: $tertiary
 
 
-
-
+/* Footer [END] */

@@ -1,0 +1,54 @@
+Title: Bundesland
+
+----
+
+Options: 
+
+- 
+  title: Baden-Württemberg
+  key: Baden-Württemberg
+- 
+  title: Bayern
+  key: Bayern
+- 
+  title: Berlin
+  key: Berlin
+- 
+  title: Brandenburg
+  key: Brandenburg
+- 
+  title: Bremen
+  key: Bremen
+- 
+  title: Hamburg
+  key: Hamburg
+- 
+  title: Hessen
+  key: Hessen
+- 
+  title: Mecklenburg-Vorpommern
+  key: Mecklenburg-Vorpommern
+- 
+  title: Niedersachsen
+  key: Niedersachsen
+- 
+  title: Nordrhein-Westfalen
+  key: Nordrhein-Westfalen
+- 
+  title: Rheinland-Pfalz
+  key: Rheinland-Pfalz
+- 
+  title: Saarland
+  key: Saarland
+- 
+  title: Sachsen
+  key: Sachsen
+- 
+  title: Sachsen-Anhalt
+  key: Sachsen-Anhalt
+- 
+  title: Schleswig-Holstein
+  key: Schleswig-Holstein
+- 
+  title: Thüringen
+  key: Thüringen

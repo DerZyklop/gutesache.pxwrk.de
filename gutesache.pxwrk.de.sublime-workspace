@@ -1,0 +1,868 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"po",
+				"poc_gender"
+			],
+			[
+				"flex-",
+				"flex-basis"
+			],
+			[
+				"cle",
+				"cleanList	(styles.sass)"
+			],
+			[
+				"hi",
+				"highlight2"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"col-",
+				"col-30-30-30"
+			],
+			[
+				"endf",
+				"endforeach〔keyword〕"
+			],
+			[
+				"meta",
+				"meta_items"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"page",
+				"page_wrap"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"sec",
+				"section"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "tab",
+		"selected_items":
+		[
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"linter",
+				"SublimeLinter: Disable Linter"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates"
+	],
+	"file_history":
+	[
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/sass/styles.sass",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/eg-adress.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/eg-logo.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/company-detail.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/company-detail.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/meta.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/eg-meta.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/interactive-list-item.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/search-results.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/search.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/footer.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/results.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/default.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/header.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/advanced-search-controls.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/result-list-item.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/logo.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/searchparams.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/search-controls.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/pre_js/script.js",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/usernav.php",
+		"/Users/derzyklop/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/mainnav.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/interactive.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/includes.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/register.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/02-karte/default.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/.gitignore",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/gutesache.pxwrk.de.sublime-project",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/5-wir/default.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/pre_css/styles.css",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/5-wir/01-kontakt/default.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/5-wir/02-Partner/default.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/fields/comments/assets/js/controller.js",
+		"/Users/derzyklop/.gitconfig",
+		"/Users/derzyklop/.dotfiles/.git/.gitc",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/result-counter.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/small-search-controls.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/js/script.js",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/advanced-search-category.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/erweiterte-suche/kategorie/advanced-search-category.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/erweiterte-suche/bundesland/advanced-search-category.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/erweiterte-suche/branche/advanced-search-category.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/erweiterte-suche/plz/advanced-search-category.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/advanced-search.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/erweiterte-suche/advanced-search.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/erweiterte-suche/advanced-search-category/advanced-search-category.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/categories/categories.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/package.json",
+		"/Users/derzyklop/Downloads/SLITio.user.js",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/advanced-search.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/gradient",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/01-register/01-miri-eg/company-detail.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/default.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/register.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/01-register/search.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/02-landkarte/default.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/4-mitglied-werden/default.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/3-genossenschaften/default.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/assets/src/sass/styles.sass",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/sec-author.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/tweetnest/inc/footer.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/tweetnest/inc/header.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/article-suggestion.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/templates/blog.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/article-teaser-big.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/content/2-about/about.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/.gitignore",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/menu.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/blueprints/site.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/content/site.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/templates/dribbble.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/taglist.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/content/1-blog/subscribe/subscribe.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/comments/comment.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/languages/comments.de.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/templates/blogarticle.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/comments.list.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/content/smart-submit/add-comment.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/templates/blogarticle-with-disqus.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/templates/archiv.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/templates/tags.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/footer.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/templates/about.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/content/1-blog/176-grundschueler-befragen-mich-zum-thema-minimalismus/blogarticle.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/content/1-blog/179-mein-leben-ohne-feste-wohnung/blogarticle.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/templates/default.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/blueprints/about.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/templates/statistics.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/dz-banner-small.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/schemaorg_logo.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/dz-banner.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/assets/src/sass/_config.sass",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/templates/home.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/content/home/home.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/assets/src/styles/styles.css",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/plugins/comments/views/installation/header.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/content/cult-of-less/blogarticle.txt",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/plugins/comments/views/installation/nav.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/header.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/comments.add.form.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/languages/de.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/assets/smart-submit/smart-submit.js",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/assets/js/libs.js",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/package.json",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/gruntfile.coffee",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/bower.json",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/options-bar.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/plugins/kirbytextraw.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/tweets.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/der-zyklop.de.sublime-project",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/assets/src/sass/mixins/_html.sass",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/bower_components/sass-boilerplate/demo/inc/css/styles.min.css",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/eslint.json",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/content/comments.sqlite",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/article-teaser-small.php",
+		"/Volumes/Macintosh HD/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/tweetnest/.htaccess",
+		"/Volumes/Macintosh HD/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/tweetnest/maintenance/.htaccess",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/assets/js/script.js",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/panel/app/views/editor/link.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/plugins/comments/library/view/form.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/sass/styles.sass",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/blueprints/blogarticle.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/.git/config",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/content/1-blog/86-jawbone-up24/comments.json",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/.gitmodules",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/comments.read.php",
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/config/config.php"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"eg-",
+			"eg-sidebar",
+			"mail",
+			"icon",
+			"page-",
+			"-secondary",
+			"footer",
+			"1200px",
+			"main",
+			"decoline",
+			"section",
+			"header",
+			"section",
+			"header",
+			"section",
+			"inner",
+			"section",
+			"header",
+			"page_wrap",
+			"header",
+			"page_wrap",
+			"footer",
+			"page_wrap",
+			"page_wpar",
+			".flex",
+			"flex",
+			"flex-start",
+			"bookmark",
+			"padding: ",
+			"$space2",
+			"$space-t-b",
+			"$space-l-r",
+			"border-color",
+			"eg-",
+			"eg-logo",
+			"flex-7",
+			"ul",
+			"flatList",
+			"border",
+			"$border-width",
+			"border",
+			"col-30-30-30",
+			"ul.fl",
+			".flex",
+			"flex",
+			"30-30-30",
+			"eg-logo",
+			"$space-l-r",
+			"flex-9",
+			"page_wrap",
+			"max-w",
+			"flex",
+			"70%",
+			".flex",
+			"flex",
+			"logo",
+			"eg-logo",
+			"eg_",
+			"flex",
+			"bookma",
+			"flex: 1",
+			"bookma",
+			"flex",
+			"h4",
+			"input",
+			"1.36rem",
+			"Finden",
+			"mainna",
+			"mainnav",
+			"flex-9",
+			"mainnav",
+			"flex-9",
+			".flex",
+			"logo",
+			"mainnav",
+			"mainn",
+			"main",
+			".logo",
+			"    display: block\n",
+			"header",
+			"header-inner-1",
+			"1em",
+			"center",
+			"flex-",
+			"venter",
+			"flex",
+			"header-inner-1",
+			"two-col",
+			"flex: 3",
+			"two-col",
+			"230px",
+			"prima",
+			": -",
+			"h2",
+			"mainna",
+			"nav.mainnav",
+			"flex-start",
+			"flex-",
+			".flex",
+			"inner",
+			"Kategorie",
+			"includes",
+			"height=\"14px\"",
+			"height=\"12px\"",
+			"interactive",
+			"google-location-icon-icon-location.png",
+			"icon",
+			"helv",
+			"h3",
+			"font-std",
+			"eg_name",
+			"highlight2",
+			"h5",
+			"uppercase",
+			"h6",
+			"flex-s",
+			"flal",
+			"flat",
+			"flat-",
+			"flat",
+			"flex-start",
+			".flex",
+			"flatList",
+			"horizontalList",
+			"cleanList flex",
+			".fle",
+			"horizontalList",
+			"meta"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$space1",
+			"$space2",
+			"\n  key: ",
+			" <p><?= ",
+			"<?=",
+			"comment-form"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "gutesache.pxwrk.de.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"eg-",
+				"site/snippets/eg-logo.php"
+			],
+			[
+				"eg-lo",
+				"site/snippets/eg-logo.php"
+			],
+			[
+				"eg-ad",
+				"site/snippets/eg-adress.php"
+			],
+			[
+				"detail",
+				"site/blueprints/company-detail.php"
+			],
+			[
+				"eg-a",
+				"site/snippets/eg-adress.php"
+			],
+			[
+				"interactive-list-item",
+				"site/snippets/interactive-list-item.php"
+			],
+			[
+				"result",
+				"site/snippets/results.php"
+			],
+			[
+				"footer",
+				"site/snippets/footer.php"
+			],
+			[
+				"sass",
+				"assets/sass/styles.sass"
+			],
+			[
+				"head",
+				"site/snippets/header.php"
+			],
+			[
+				"header",
+				"site/snippets/header.php"
+			],
+			[
+				"user",
+				"site/snippets/usernav.php"
+			],
+			[
+				"resu",
+				"site/snippets/result-list-item.php"
+			],
+			[
+				"inc",
+				"site/snippets/includes.php"
+			],
+			[
+				"incl",
+				"site/snippets/includes.php"
+			],
+			[
+				"meta",
+				"site/snippets/meta.php"
+			],
+			[
+				"result-",
+				"site/snippets/result-list-item.php"
+			],
+			[
+				"searc",
+				"site/templates/search.php"
+			],
+			[
+				"foo",
+				"site/snippets/footer.php"
+			],
+			[
+				"includ",
+				"site/snippets/includes.php"
+			],
+			[
+				"advan",
+				"site/snippets/advanced-search-controls.php"
+			],
+			[
+				"result-list-item",
+				"site/snippets/result-list-item.php"
+			],
+			[
+				"result-l",
+				"site/snippets/result-list-item.php"
+			],
+			[
+				"regis",
+				"site/blueprints/register.php"
+			],
+			[
+				"inte",
+				"site/snippets/interactive-list-item.php"
+			],
+			[
+				"inter",
+				"site/snippets/interactive-list-item.php"
+			],
+			[
+				"userna",
+				"site/snippets/usernav.php"
+			],
+			[
+				"defa",
+				"site/templates/default.php"
+			],
+			[
+				"defau",
+				"content/02-karte/default.txt"
+			],
+			[
+				"search",
+				"site/snippets/advanced-search-controls.php"
+			],
+			[
+				"param",
+				"site/snippets/searchparams.php"
+			],
+			[
+				"wir",
+				"content/5-wir/default.txt"
+			],
+			[
+				"usern",
+				"site/snippets/usernav.php"
+			],
+			[
+				"nav",
+				"site/snippets/mainnav.php"
+			],
+			[
+				"mainnav",
+				"site/snippets/mainnav.php"
+			],
+			[
+				"mainna",
+				"site/snippets/mainnav.php"
+			],
+			[
+				"stl",
+				"assets/sass/styles.sass"
+			],
+			[
+				"script",
+				"assets/pre_js/script.js"
+			],
+			[
+				"result-counter",
+				"site/snippets/result-counter.php"
+			],
+			[
+				"small-search-controls",
+				"site/snippets/small-search-controls.php"
+			],
+			[
+				"scrip",
+				"assets/pre_js/script.js"
+			],
+			[
+				"js",
+				"assets/pre_js/script.js"
+			],
+			[
+				"ad",
+				"site/snippets/advanced-search-controls.php"
+			],
+			[
+				"search-controls",
+				"site/snippets/search-controls.php"
+			],
+			[
+				"search-",
+				"site/snippets/search-controls.php"
+			],
+			[
+				"advanced-search-controls",
+				"site/snippets/advanced-search-controls.php"
+			],
+			[
+				"results",
+				"site/snippets/results.php"
+			],
+			[
+				"sec-",
+				"site/snippets/sec-author.php"
+			],
+			[
+				"-big",
+				"site/snippets/article-teaser-big.php"
+			],
+			[
+				"blo",
+				"site/templates/blog.php"
+			],
+			[
+				"article-suggestion",
+				"site/snippets/article-suggestion.php"
+			],
+			[
+				"comment.p",
+				"site/snippets/comments/comment.php"
+			],
+			[
+				"arch",
+				"site/templates/archiv.php"
+			],
+			[
+				"tags",
+				"site/templates/tags.php"
+			],
+			[
+				"sugg",
+				"site/snippets/article-suggestion.php"
+			],
+			[
+				"about",
+				"site/templates/about.php"
+			],
+			[
+				"archiv",
+				"site/templates/archiv.php"
+			],
+			[
+				"stat",
+				"site/templates/statistics.php"
+			],
+			[
+				"site",
+				"site/blueprints/site.php"
+			],
+			[
+				"menu",
+				"site/snippets/menu.php"
+			],
+			[
+				"abou",
+				"site/templates/about.php"
+			],
+			[
+				"dz-",
+				"site/snippets/dz-banner-small.php"
+			],
+			[
+				"nav.",
+				"site/plugins/comments/views/installation/nav.php"
+			],
+			[
+				"blog.",
+				"site/templates/blog.php"
+			],
+			[
+				"bloga",
+				"site/templates/blogarticle.php"
+			],
+			[
+				"articl",
+				"content/cult-of-less/blogarticle.txt"
+			],
+			[
+				"commen",
+				"site/snippets/comments/comment.php"
+			],
+			[
+				"option",
+				"site/snippets/options-bar.php"
+			],
+			[
+				"potion",
+				"site/snippets/options-bar.php"
+			],
+			[
+				"tweets",
+				"site/snippets/tweets.php"
+			],
+			[
+				"eslint",
+				"eslint.json"
+			],
+			[
+				"article",
+				"site/snippets/article-teaser-small.php"
+			],
+			[
+				"autho",
+				"site/snippets/sec-author.php"
+			],
+			[
+				"script.",
+				"assets/js/script.js"
+			],
+			[
+				"grunt",
+				"gruntfile.coffee"
+			],
+			[
+				"comment.",
+				"site/snippets/comments/comment.php"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"blue",
+				"site/blueprints/blogarticle.php"
+			],
+			[
+				".",
+				".gitmodules"
+			],
+			[
+				"comments.list",
+				"site/snippets/comments.list.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"comments.add.form",
+				"site/snippets/comments.add.form.php"
+			],
+			[
+				"style",
+				"sass/styles.sass"
+			],
+			[
+				"blogarti",
+				"site/templates/blogarticle.php"
+			],
+			[
+				"blueprin",
+				"site/blueprints/blogarticle.php"
+			],
+			[
+				"lint",
+				"eslint.json"
+			],
+			[
+				"tags.",
+				"site/templates/tags.php"
+			],
+			[
+				"tagls",
+				"site/snippets/taglist.php"
+			],
+			[
+				"article-teaser-small",
+				"site/snippets/article-teaser-small.php"
+			],
+			[
+				"jemals",
+				"bower_components/jquery/src/manipulation/_evalUrl.js"
+			],
+			[
+				"tag",
+				"site/templates/tags.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"fss_on_distraction_free": false,
+		"fss_on_full_screen": false
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 203.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

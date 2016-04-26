@@ -1,0 +1,109 @@
+Title: Hanffaser Uckermark e.G.
+
+----
+
+City: Uckermark
+
+----
+
+Text: Genossenschaften sind demokratische Organisationen, die von ihren Mitgliedern kontrolliert werden. Diese arbeiten aktiv mit, indem sie ihre Politik selbst bestimmen und durch demokratische Entscheidungen umsetzen. Männer und Frauen, die als gewählte Vertreter arbeiten, sind der Gesamtheit der Mitglieder rechenschaftspflichtig. In Genossenschaften auf unterster Ebene haben Genossenschaftsmitglieder grundsätzlich gleiches Stimmrecht (ein Mitglied, eine Stimme); Genossenschaften auf anderen Ebenen sind ebenfalls demokratisch organisiert.
+
+----
+
+Plz: 12345
+
+----
+
+Street: Straße
+
+----
+
+Housenr: 20
+
+----
+
+Website: hanffaser.de
+
+----
+
+Video: https://www.youtube.com/watch?v=txqiwrbYGrs
+
+----
+
+Videotitle: Anbau unserer Pflanzen
+
+----
+
+Videodescription: Anbau der Hanfpflanzen
+
+----
+
+Logo: ✓
+
+----
+
+Verband: WFIS
+
+----
+
+Kategorie: Produzierende Genossenschaft
+
+----
+
+Praeambel: Genossenschaften sind demokratische Organisationen, die von ihren Mitgliedern kontrolliert werden. Diese arbeiten aktiv mit, indem sie ihre Politik selbst bestimmen und durch demokratische Entscheidungen umsetzen. Männer und Frauen, die als gewählte Vertreter arbeiten, sind der Gesamtheit der Mitglieder rechenschaftspflichtig. In Genossenschaften auf unterster Ebene haben Genossenschaftsmitglieder grundsätzlich gleiches Stimmrecht (ein Mitglied, eine Stimme); Genossenschaften auf anderen Ebenen sind ebenfalls demokratisch organisiert.
+
+----
+
+Geschaeftszweck: Genossenschaften sind demokratische Organisationen, die von ihren Mitgliedern kontrolliert werden. Diese arbeiten aktiv mit, indem sie ihre Politik selbst bestimmen und durch demokratische Entscheidungen umsetzen. Männer und Frauen, die als gewählte Vertreter arbeiten, sind der Gesamtheit der Mitglieder rechenschaftspflichtig. In Genossenschaften auf unterster Ebene haben Genossenschaftsmitglieder grundsätzlich gleiches Stimmrecht (ein Mitglied, eine Stimme); Genossenschaften auf anderen Ebenen sind ebenfalls demokratisch organisiert.
+
+----
+
+Unternehmensform: e.G.
+
+----
+
+Historie: Genossenschaften sind demokratische Organisationen, die von ihren Mitgliedern kontrolliert werden. Diese arbeiten aktiv mit, indem sie ihre Politik selbst bestimmen und durch demokratische Entscheidungen umsetzen. Männer und Frauen, die als gewählte Vertreter arbeiten, sind der Gesamtheit der Mitglieder rechenschaftspflichtig. In Genossenschaften auf unterster Ebene haben Genossenschaftsmitglieder grundsätzlich gleiches Stimmrecht (ein Mitglied, eine Stimme); Genossenschaften auf anderen Ebenen sind ebenfalls demokratisch organisiert.
+
+----
+
+Facebook: 
+
+----
+
+Twitter: hanffaser
+
+----
+
+Pinterest: Lorem
+
+----
+
+Linkedin: Lorem
+
+----
+
+Poc-gender: male
+
+----
+
+Poc-firstname: Walter
+
+----
+
+Poc-name: Strasheim-Weitz
+
+----
+
+Mail: mail@hanffaser.de
+
+----
+
+Poc-avatar: walter_strasheim-weitz.jpg
+
+----
+
+Bundesland: Nordrhein-Westfalen
+
+----
+
+Branche: Dämmstoffe

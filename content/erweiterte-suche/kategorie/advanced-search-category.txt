@@ -1,0 +1,24 @@
+Title: Kategorie
+
+----
+
+Options: 
+
+- 
+  title: Förderung
+  key: Förderung
+- 
+  title: Produktion
+  key: Produktion
+- 
+  title: Öffentlich-Rechtliche
+  key: Öffentlich-Rechtliche
+- 
+  title: Soziales und Kultur
+  key: Soziales und Kultur
+- 
+  title: Dienstleistung
+  key: Dienstleistung
+- 
+  title: Bürger
+  key: Bürger
