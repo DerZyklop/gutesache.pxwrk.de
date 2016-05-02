@@ -14,7 +14,7 @@ fields:
     label: Optionen
     type: structure
     entry: >
-      {{title}} [{{description}}]
+      {{title}} [{{key}}]
     fields:
       title:
         label: Titel der Option
