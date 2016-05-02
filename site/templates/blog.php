@@ -27,8 +27,17 @@
         )) ?>
       <?php endif ?>
       <div class="text-width-fuse">
-        <h2><?= $blogpost->title() ?></h2>
-        <?php snippet("meta", array('company' => $blogpost)) ?>
+        <a href="<?= $blogpost->url() ?>">
+          <h4 style="margin-bottom: 1rem"><?= $blogpost->title() ?></h4>
+        </a>
+        <?php $featured_eg = $pages->find("register/".$blogpost->egname()) ?>
+        <h5 style="margin-bottom: 2rem"><?= $featured_eg->title() ?></h5>
+        <!-- <ul class="cleanList flatList flex flex-start">
+          <?php if ($featured_eg->hasCity()): ?>
+            <li><h5><span class="fa fa-map-marker"></span> <?= $featured_eg->city() ?></a></h5></li>
+          <?php endif ?>
+        </ul> -->
+        <?php snippet("interactive", array('company' => $featured_eg)) ?>
 
         <p><?= $blogpost->text() ?></p>
       </div>

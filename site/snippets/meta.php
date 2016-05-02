@@ -1,14 +1,14 @@
 <ul class="cleanList flatList flex flex-start">
-  <?php if ($company->city() && (String)$company->city()->html() !== ""): ?>
+  <?php if ($company->hasCity()): ?>
     <li><h5><span class="fa fa-map-marker"></span> <?= $company->city() ?></a></h5></li>
   <?php endif ?>
-  <?php if ($company->verband() && (String)$company->verband()->html() !== ""): ?>
+  <?php if ($company->hasVerband()): ?>
     <li><h5><span class="fa fa-connectdevelop"></span> <?= $company->verband() ?></h5></li>
   <?php endif ?>
-  <?php if ($company->kategorie() && (String)$company->kategorie()->html() !== ""): ?>
+  <?php if ($company->hasKategorie()): ?>
     <li><h5><span class="fa fa-tag"></span> <?= $company->kategorie() ?></h5></li>
   <?php endif ?>
-  <?php if ($company->banche() && (String)$company->banche()->html() !== ""): ?>
+  <?php if ($company->hasBanche()): ?>
     <li><h5><span class="fa fa-black-tie"></span> <?= $company->banche() ?></h5></li>
   <?php endif ?>
 </ul>
