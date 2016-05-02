@@ -1,5 +1,15 @@
 /* global $, document, clearTimeout, setTimeout, window */
 
+app = angular.module("guteSacheRegisterApp", []);
+app.controller('ResultCtrl', function($scope){
+	$scope.bookmarkIcon = "fa-bookmark-o";
+	$scope.activeBookmarkIcon = "fa-bookmark";
+	$scope.visibleBookmarkClass = $scope.bookmarkIcon;
+	$scope.toggleBookmarkState = function() {
+		this.visibleBookmarkClass = $scope.activeBookmarkIcon;
+	};
+});
+
 var setHighlighting = function() {
 	"use strict";
 	$.fn.highlight = function(what, spanClass) {
@@ -154,6 +164,8 @@ $(document).ready(function () {
 	initClickableCheckboxList();
 	makethingsCollapsable();
 	initCards();
-	initBookmarkIcon("body");
+	// initBookmarkIcon("body");
+
+
 });
 

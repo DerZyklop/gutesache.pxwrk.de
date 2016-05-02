@@ -1,9 +1,18 @@
-<li>
-  <div class="flex flex-start">
+<!--
+<div ng-controller="MyController">
+  Your name:
+    <input type="text" ng-model="username">
+    <button ng-click='sayHello()'>greet</button>
+  <hr>
+  {{greeting}}
+</div> -->
 
+<li ng-controller="ResultCtrl">
+  <div class="flex flex-start">
+    <h1 ng-click="toggleBookmarkState()">hi</h1>
     <div class="">
       <h3>
-        <span class="bookmark fa fa-bookmark-o"></span>
+        <span class="bookmark fa {{visibleBookmarkClass}}"></span>
       </h3>
     </div>
     <div class="flex-11">

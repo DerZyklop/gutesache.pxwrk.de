@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="guteSacheRegisterApp">
 <head>
   <meta charset="UTF-8">
   <title>Gute Sache</title>

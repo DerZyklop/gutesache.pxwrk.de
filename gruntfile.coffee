@@ -28,7 +28,7 @@ module.exports = (grunt) ->
     concat:
       js:
         src: [
-          'assets/js_lib/*.js',
+          'assets/js_lib/**/*.js',
           '<%= pkg.paths.src.js_concat %>'
         ]
         dest: '<%= pkg.paths.build.js %>script.js'
@@ -140,8 +140,8 @@ module.exports = (grunt) ->
       bower:
         files: [
           expand: true
-          cwd: 'bower_components/jquery/dist'
-          src: ['jquery.min.js']
+          cwd: 'bower_components/'
+          src: ['jquery/dist/jquery.min.js', 'angular/angular.min.js']
           dest: '<%= pkg.paths.build.dir %>/js_lib'
         ]
 
