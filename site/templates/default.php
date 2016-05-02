@@ -21,6 +21,7 @@
         <?php endif ?>
       </div>
       <p><?= $page->text() ?></p>
+      <div style="clear:both;content: ''"></div>
     </main>
   </section>
   <?php snippet("footer") ?>

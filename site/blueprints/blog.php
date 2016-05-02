@@ -10,6 +10,9 @@ fields:
   title:
     label: Title
     type:  text
+  headline:
+    label: Headline
+    type:  text
   pageicon:
     label: Icon-Class (Font-Awesome)
     type:  text
