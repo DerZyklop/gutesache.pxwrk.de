@@ -10,7 +10,7 @@
   <?php snippet('header') ?>
 
   <section class="start-search no-vertival-margin">
-    <main>
+    <main class="width-wrap">
       <div id="search_controls">
         <form>
           <h2><?= $page->claim()->kirbytext() ?></h2>
@@ -22,7 +22,7 @@
   </section>
   <?php $about = $pages->find("about"); ?>
   <section>
-    <div>
+    <div class="width-wrap">
       <div class="flex flex-baseline">
         <div class="flex-6">
           <h2><?= $about->headline1() ?></h2>

@@ -1,5 +1,5 @@
 <section>
-  <div>
+  <div class="width-wrap">
     <h2 class="section-headline"><?= $pages->find("blog")->title() ?></h2>
     <div class="flex">
       <?php if ($pages->find("blog")): ?>

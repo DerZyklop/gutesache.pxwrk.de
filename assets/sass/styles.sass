@@ -336,12 +336,14 @@ table
 
 /* Section [BEGIN] */
 
+.width-wrap
+  max-width: 1200px
+  margin: $space2 auto
+
 section
   padding: 0 $space2
   border-bottom: $border-width $border-style $primary
-  > *
-    max-width: 1200px
-    margin: $space2 auto
+  // TODO: typo
   &.no-vertival-margin
     > *
       margin: 0 auto
@@ -1031,10 +1033,50 @@ footer
 
 section.blog
   padding: 0
-  >
-    img
-      max-width: none
-      width: 100%
-      display: block
+
+.blogarticle
+  img
+    max-width: none
+    width: 100%
+    display: block
+.blogarticle.not-first
+  position: relative
+  background: #fff
+  margin: $space2
+  a:hover
+    color: $tertiary
+  > a,
+  img
+    display: block
+  img
+    opacity: 0.15
+  .front
+    overflow: hidden
+    position: absolute
+    border: $border-width $border-style $border-color
+    top: $space1
+    bottom: $space1
+    left: $space1
+    right: $space1
+    padding: $space2 * 1.5
+    display: flex
+    flex-direction: column
+    h1, h2, h3, h4, h5, h6
+      margin-top: 0
+  .front
+    transition: background 0.3s
+  &:hover .front
+    background: $primary
+  .teaser-tag
+    position: absolute
+    bottom: $space2
+    &:before
+      content: ""
+      display: inline-block
+      border-radius: 1em
+      height: 3px
+      margin: 0.2em $bar-gap 0.2em (-$bar-length + -$bar-gap)
+      width: $bar-length
+      background: $border-color
 
 /* Blog [END] */

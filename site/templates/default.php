@@ -10,7 +10,7 @@
   <?php snippet('header') ?>
 
   <section>
-    <main class="text-width-fuse">
+    <main class="text-width-fuse width-wrap">
       <h2><?= $page->title() ?></h2>
       <div style="float:left; max-width: 30%;margin-right: 2em;margin-top: 0.5em">
         <?php if ($page->hasImages()): ?>
