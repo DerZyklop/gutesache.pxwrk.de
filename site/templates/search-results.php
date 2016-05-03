@@ -10,7 +10,7 @@
   <?php snippet('header') ?>
 
   <section class="no-vertival-margin">
-    <main>
+    <main class="width-wrap">
       <?php snippet('results') ?>
     </main>
   </section>

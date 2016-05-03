@@ -12,5 +12,5 @@
     }
   ?>
   <li><h5><a href="<?= addhttp($company->website()) ?>">Webseite <span class="fa fa-external-link"></span></a></h5></li>
-  <!-- <li><h5 class=""><a href="<?= $company->website() ?>">Merken <span class="fa fa-external-link"></span></a></h5></li> -->
+  <li ng-click="toggleBookmarkState()"><h5 class=""><a href="#" onclick="event.preventDefault()"><span class="bookmark fa {{visibleBookmarkClass}}"></span> Merken</a></h5></li>
 </ul>

@@ -2,11 +2,15 @@
 
 app = angular.module("guteSacheRegisterApp", []);
 app.controller('ResultCtrl', function($scope){
-	$scope.bookmarkIcon = "fa-bookmark-o";
-	$scope.activeBookmarkIcon = "fa-bookmark";
-	$scope.visibleBookmarkClass = $scope.bookmarkIcon;
-	$scope.toggleBookmarkState = function() {
-		this.visibleBookmarkClass = $scope.activeBookmarkIcon;
+	passiveBookmarkIcon = "fa-bookmark-o";
+	activeBookmarkIcon = "fa-bookmark";
+	$scope.visibleBookmarkClass = passiveBookmarkIcon;
+	$scope.toggleBookmarkState = function(event) {
+		if (this.visibleBookmarkClass === passiveBookmarkIcon) {
+			this.visibleBookmarkClass = activeBookmarkIcon;
+		} else {
+			this.visibleBookmarkClass = passiveBookmarkIcon;
+		}
 	};
 });
 
@@ -82,7 +86,6 @@ var initCards = function() {
 				}, {
 					duration: "300"
 				});
-				initBookmarkIcon(".overlay-placeholder");
 			});
 
 		}
@@ -116,25 +119,6 @@ var initCards = function() {
 	});
 };
 
-
-var initBookmarkIcon = function (selector) {
-	"use strict";
-	var toggleBookmarkState = function(that, activeClass, passiveClass) {
-		var el = jQuery(that);
-		if (el.hasClass(activeClass)) {
-			el.addClass(passiveClass);
-			el.removeClass(activeClass);
-		} else {
-			el.removeClass(passiveClass);
-			el.addClass(activeClass);
-		}
-	};
-
-	jQuery(selector).find(".bookmark").on("click", function() {
-		toggleBookmarkState(this, "fa-bookmark-o", "fa-bookmark");
-	});
-};
-
 var initMoreBtns = function() {
 	"use strict";
 	jQuery(".more-info").on("click", function() {
@@ -164,7 +148,6 @@ $(document).ready(function () {
 	initClickableCheckboxList();
 	makethingsCollapsable();
 	initCards();
-	// initBookmarkIcon("body");
 
 
 });
