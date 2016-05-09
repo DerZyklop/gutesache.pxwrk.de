@@ -1,12 +1,3 @@
-<!--
-<div ng-controller="MyController">
-  Your name:
-    <input type="text" ng-model="username">
-    <button ng-click='sayHello()'>greet</button>
-  <hr>
-  {{greeting}}
-</div> -->
-
 <li ng-controller="ResultCtrl">
   <div class="flex flex-start">
     <div ng-click="toggleBookmarkState()">

@@ -141,7 +141,11 @@ module.exports = (grunt) ->
         files: [
           expand: true
           cwd: 'bower_components/'
-          src: ['jquery/dist/jquery.min.js', 'angular/angular.min.js']
+          src: [
+            'jquery/dist/jquery.min.js',
+            'angular/angular.min.js',
+            'underscore/underscore-min.js'
+          ]
           dest: '<%= pkg.paths.build.dir %>/js_lib'
         ]
 

@@ -25,6 +25,7 @@
 <div class="overlay-placeholder hide">
   <div class="inner-wrap close-overlay">
     <section class="inner">
+      <?php snippet("company-detail") ?>
     </section>
   </div>
 </div>

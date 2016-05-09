@@ -1,11 +1,17 @@
 /* global $, document, clearTimeout, setTimeout, window, angular */
 
 var app = angular.module("guteSacheRegisterApp", []);
-app.controller("ResultCtrl", function($scope, $http){
+app.factory("modifiedCompanies", function() {
+	"use strict";
+	var modifiedCompanies = [];
+	return modifiedCompanies;
+});
+app.controller("ResultCtrl", function($scope, $rootScope, $http, modifiedCompanies){
 	"use strict";
 	var passiveBookmarkIcon = "fa-bookmark-o";
 	var activeBookmarkIcon = "fa-bookmark";
 	$scope.visibleBookmarkClass = passiveBookmarkIcon;
+	$scope.modifiedCompanies = modifiedCompanies;
 	$scope.toggleBookmarkState = function() {
 		if (this.visibleBookmarkClass === passiveBookmarkIcon) {
 			this.visibleBookmarkClass = activeBookmarkIcon;
@@ -13,15 +19,23 @@ app.controller("ResultCtrl", function($scope, $http){
 			this.visibleBookmarkClass = passiveBookmarkIcon;
 		}
 	};
+
+	jQuery(".overlay-placeholder").scroll(function() {
+		var overlay = jQuery(".overlay-placeholder");
+		var overlayInnerHeight = (overlay.find(".inner-wrap").height() + jQuery(window).height());
+		var reachedTop = overlay.scrollTop() === 0;
+		var reachedBottom = overlayInnerHeight - overlay.scrollTop() <= 0;
+		if ( reachedTop || reachedBottom ) {
+			overlay.hide();
+		}
+	});
+
 	$scope.openCard = function (url) {
 		var overlay = jQuery(".overlay-placeholder");
-		overlay.css("top", jQuery(document).scrollTop());
-		overlay.css("min-height", jQuery(window).height() + "px");
-		overlay.css("padding-bottom", jQuery(window).height() + "px");
-		overlay.find(".inner-wrap").css("padding-top", jQuery(window).height() + "px");
-
-		$http.get(url).then(function(urlResponse) {
-			overlay.find(".inner").html(urlResponse.data);
+		var companyFromCollection = _.findWhere($scope.modifiedCompanies, {
+			url: url
+		});
+		var showCard = function () {
 			overlay.show();
 			overlay.scrollTop(1);
 			overlay.animate({
@@ -29,10 +43,62 @@ app.controller("ResultCtrl", function($scope, $http){
 			}, {
 				duration: "300"
 			});
+		};
+		if (companyFromCollection) {
+			$rootScope.company = companyFromCollection;
+			showCard();
+		} else {
+			$http.get(url).then(function(urlResponse) {
+				$rootScope.company = urlResponse.data;
+				$scope.modifiedCompanies.push($rootScope.company);
+				showCard();
+			});
+		}
 
-		});
+		overlay.css("top", jQuery(document).scrollTop());
+		overlay.css("min-height", jQuery(window).height() + "px");
+		overlay.css("padding-bottom", jQuery(window).height() + "px");
+		overlay.find(".inner-wrap").css(
+			"padding-top",
+			jQuery(window).height() + "px"
+		);
+
 	};
 });
+
+
+app.controller("CardCtrl", function($scope, $rootScope, $http, modifiedCompanies){
+	"use strict";
+	var passiveBookmarkIcon = "fa-bookmark-o";
+	var activeBookmarkIcon = "fa-bookmark";
+	$scope.visibleBookmarkClass = passiveBookmarkIcon;
+	$scope.modifiedCompanies = modifiedCompanies;
+	$scope.logStuff = function() {
+		console.log($rootScope.company);
+	};
+	$scope.showAddress = function() {
+		var result = false;
+		if (
+			$rootScope.company &&
+			$rootScope.company.content &&
+			$rootScope.company.content.plz &&
+			$rootScope.company.content.city &&
+			$rootScope.company.content.street &&
+			$rootScope.company.content.housenr
+		) {
+			result = true;
+		}
+		return result;
+	};
+	$scope.toggleBookmarkState = function() {
+		if (this.visibleBookmarkClass === passiveBookmarkIcon) {
+			this.visibleBookmarkClass = activeBookmarkIcon;
+		} else {
+			this.visibleBookmarkClass = passiveBookmarkIcon;
+		}
+	};
+});
+
 
 var setHighlighting = function() {
 	"use strict";
@@ -80,56 +146,56 @@ var makethingsCollapsable = function() {
 };
 
 
-var initCards = function() {
-	"use strict";
-	var hideCard = function (event) {
-		event.preventDefault();
-		var overlay = jQuery(".overlay-placeholder");
-		overlay.fadeOut();
-	};
-	var openCard = function (event, link) {
-		if (link && link !== "#") {
-			var overlay = jQuery(".overlay-placeholder");
-			event.preventDefault();
-			overlay.css("top", jQuery(document).scrollTop());
-			overlay.css("min-height", jQuery(window).height() + "px");
-			overlay.css("padding-bottom", jQuery(window).height() + "px");
-			overlay.find(".inner-wrap").css("padding-top", jQuery(window).height() + "px");
-			// overlay.scrollTop(jQuery(window).height() - 20);
+// var initCards = function() {
+// 	"use strict";
+// 	var hideCard = function (event) {
+// 		event.preventDefault();
+// 		var overlay = jQuery(".overlay-placeholder");
+// 		overlay.fadeOut();
+// 	};
+// 	var openCard = function (event, link) {
+// 		if (link && link !== "#") {
+// 			var overlay = jQuery(".overlay-placeholder");
+// 			event.preventDefault();
+// 			overlay.css("top", jQuery(document).scrollTop());
+// 			overlay.css("min-height", jQuery(window).height() + "px");
+// 			overlay.css("padding-bottom", jQuery(window).height() + "px");
+// 			overlay.find(".inner-wrap").css("padding-top", jQuery(window).height() + "px");
+// 			// overlay.scrollTop(jQuery(window).height() - 20);
 
-			jQuery.get(link, function( data ) {
-			});
+// 			jQuery.get(link, function( data ) {
+// 			});
 
-		}
-	};
+// 		}
+// 	};
 
-	jQuery(".overlay-placeholder").on("click", function (event) {
-		event.preventDefault();
-		if (
-			jQuery(event.target).hasClass("close-overlay") ||
-			jQuery(event.target).hasClass("overlay-placeholder")
-		) {
-			hideCard(event);
-		}
-	});
-	jQuery(".overlay-placeholder .inner-wrap").on("click", function (event) {
-		event.preventDefault();
-	});
+// 	jQuery(".overlay-placeholder").on("click", function (event) {
+// 		event.preventDefault();
+// 		if (
+// 			jQuery(event.target).hasClass("close-overlay") ||
+// 			jQuery(event.target).hasClass("overlay-placeholder")
+// 		) {
+// 			hideCard(event);
+// 		}
+// 	});
+// 	jQuery(".overlay-placeholder .inner-wrap").on("click", function (event) {
+// 		event.preventDefault();
+// 	});
 
-	jQuery(".results .on-open-profile a").on("click", function(event) {
-		openCard(event, jQuery(this).attr("href"));
-	});
+// 	jQuery(".results .on-open-profile a").on("click", function(event) {
+// 		openCard(event, jQuery(this).attr("href"));
+// 	});
 
-	jQuery(".overlay-placeholder").scroll(function(event) {
-		var overlay = jQuery(".overlay-placeholder");
-		var overlayInnerHeight = (overlay.find(".inner-wrap").height() + jQuery(window).height());
-		var reachedTop = overlay.scrollTop() === 0;
-		var reachedBottom = overlayInnerHeight - overlay.scrollTop() <= 0;
-		if ( reachedTop || reachedBottom ) {
-			hideCard(event);
-		}
-	});
-};
+// 	jQuery(".overlay-placeholder").scroll(function(event) {
+// 		var overlay = jQuery(".overlay-placeholder");
+// 		var overlayInnerHeight = (overlay.find(".inner-wrap").height() + jQuery(window).height());
+// 		var reachedTop = overlay.scrollTop() === 0;
+// 		var reachedBottom = overlayInnerHeight - overlay.scrollTop() <= 0;
+// 		if ( reachedTop || reachedBottom ) {
+// 			hideCard(event);
+// 		}
+// 	});
+// };
 
 var initMoreBtns = function() {
 	"use strict";
@@ -159,7 +225,7 @@ $(document).ready(function () {
 	setHighlighting();
 	initClickableCheckboxList();
 	makethingsCollapsable();
-	initCards();
+	// initCards();
 
 
 });

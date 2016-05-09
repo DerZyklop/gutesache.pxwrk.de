@@ -4,7 +4,7 @@
 
 title: Register
 pages:
-  template: company-detail
+  template: json
 files: true
 fields:
   title:
