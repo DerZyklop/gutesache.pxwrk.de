@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"mark",
+				"marked"
+			],
+			[
+				"toggl",
+				"toggleBookmarkState"
+			],
+			[
+				"com",
+				"company"
+			],
+			[
 				"qua",
 				"quadrary"
 			],
@@ -126,7 +138,11 @@
 	[
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/pre_js",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/1-register",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/1-register/miri-eg",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content/1-register/nils-e-g",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets",
@@ -134,6 +150,14 @@
 	],
 	"file_history":
 	[
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/result-list-item.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/company-detail.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/pre_js/script.js",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/json.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/search-results.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/gruntfile.coffee",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/results.php",
+		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/register.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/sass/styles.sass",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/company-detail.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/searchparams.php",
@@ -149,14 +173,10 @@
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/default.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/about.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/start.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/pre_js/script.js",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/register.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/blog.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/advanced-search.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/advanced-search-category.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/default.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/results.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/result-list-item.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/.gitignore",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/advanced-search-controls.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/teaser.php",
@@ -164,10 +184,8 @@
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/interactive.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/pre_css/font-awesome.css",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/package.json",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/gruntfile.coffee",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/eg-adress.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/interactive-list-item.php",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/search-results.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates/search.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/logo.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/search-controls.php",
@@ -259,9 +277,7 @@
 		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/article-teaser-small.php",
 		"/Volumes/Macintosh HD/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/tweetnest/.htaccess",
 		"/Volumes/Macintosh HD/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/tweetnest/maintenance/.htaccess",
-		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/assets/js/script.js",
-		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/panel/app/views/editor/link.php",
-		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/plugins/comments/library/view/form.php"
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/assets/js/script.js"
 	],
 	"find":
 	{
@@ -280,6 +296,91 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"markers",
+			"toggle",
+			"companyFromCollection",
+			"modifiedCompanies",
+			"init",
+			"$rootScope",
+			"$scope",
+			"init",
+			"company",
+			"showAddress",
+			"company",
+			"initMoreBtns",
+			"initClickableCheckboxList",
+			"setHighlighting",
+			"makethingsCollapsable",
+			"markerService",
+			"init",
+			"marked",
+			"init",
+			"markerService",
+			"factory",
+			"markerService",
+			"myService",
+			"markerService",
+			"guteSacheRegisterApp",
+			"toggleBookmarkState",
+			"MarkerCtrl",
+			"passiveBookmarkIcon",
+			"visibleBookmarkClass",
+			"visibleBookmarkClass\n",
+			"company",
+			"company.content.kategorie",
+			"?=",
+			"php",
+			"eg-poc_avatar",
+			"php",
+			"rootScope",
+			"showAddress",
+			"content",
+			"$avatar",
+			"current",
+			".compan",
+			"currentCompany",
+			"$scope.currentCompany",
+			"currentCompany",
+			"currentc",
+			"modifiedCompanies",
+			"currentCompany",
+			"log",
+			"currentCompany",
+			"companyFromCollection",
+			"currentCompany",
+			".com",
+			"currentCompany",
+			"modifiedCompanies",
+			"currentCompany",
+			".company",
+			"companyFromCollection",
+			".company",
+			"currentCompany",
+			"overlay",
+			"urlResponse",
+			"companyFromCollection",
+			"console",
+			"openCard",
+			"$scope.modifiedCompanies",
+			"company",
+			"alreadyInCollection",
+			"scroll",
+			"foo",
+			"modifiedCompanies",
+			"ResultCtrl",
+			"visibleBookmarkClass",
+			"company-detail",
+			"ng-view",
+			"viewModel",
+			"url",
+			"viewModel",
+			"openCard",
+			"bookmark",
+			"{{",
+			"get",
+			"url",
+			"initCards",
+			"openCard",
 			"Unternehmensform",
 			"eg-logo",
 			"'meta",
@@ -322,92 +423,7 @@
 			"collapsable-trigger",
 			"<span class=\"fa fa-link\"></span>",
 			"title",
-			"kurzbeschreibung",
-			"gs",
-			"Mehr über",
-			"Kurzbeschreibung",
-			"fa ",
-			"Mehr über uns",
-			"      <a href=\"#\">gi</a>\n",
-			"flex-6",
-			"\"front",
-			"56",
-			"images",
-			"initBookmarkIcon",
-			"toggleBookmarkState",
-			"initMoreBtns",
-			".fa",
-			"fa",
-			"advanced-search-controls",
-			"btn-wrap",
-			"Finden",
-			"front",
-			"op",
-			".no-link-highligh",
-			"internet",
-			"inter",
-			"content-section",
-			"adresse",
-			"Kurzbeschreibung",
-			"more-info",
-			"-sele",
-			"defult",
-			"user-select",
-			"select",
-			"a\n",
-			"a",
-			"more-info",
-			"setResponsiveHeader",
-			"alternative",
-			"setResponsiveHeader",
-			"more-info",
-			"fa fa",
-			"profil",
-			"results",
-			"initBookmarkIcon",
-			"overlay",
-			"overlay-placeholder",
-			"overlay",
-			"initBookmarkIcon",
-			"toggleBookmarkState",
-			"initCards",
-			"toggleBookmarkState",
-			"results",
-			"$p-",
-			"$p ",
-			"$p",
-			"PRÄAMBEL",
-			"p",
-			"on-open-profile",
-			"no-vertical",
-			"flex-center",
-			"flex-",
-			"center",
-			"bookma",
-			"activeContent",
-			"toggleBookmarkState",
-			"addClass",
-			"toggleBookmarkState",
-			"bookma",
-			"bookmark",
-			":before",
-			"header",
-			"css",
-			"css_concat",
-			"eg-",
-			"eg-sidebar",
-			"mail",
-			"icon",
-			"page-",
-			"-secondary",
-			"footer",
-			"1200px",
-			"main",
-			"decoline",
-			"section",
-			"header",
-			"section",
-			"header"
+			"kurzbeschreibung"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -486,6 +502,38 @@
 		"selected_items":
 		[
 			[
+				"script.",
+				"assets/pre_js/script.js"
+			],
+			[
+				"json",
+				"site/templates/json.php"
+			],
+			[
+				"grun",
+				"gruntfile.coffee"
+			],
+			[
+				"grunt",
+				"gruntfile.coffee"
+			],
+			[
+				"search-",
+				"site/templates/search-results.php"
+			],
+			[
+				"result",
+				"site/snippets/results.php"
+			],
+			[
+				"results",
+				"site/snippets/results.php"
+			],
+			[
+				"search-re",
+				"site/templates/search-results.php"
+			],
+			[
 				"meta",
 				"site/snippets/meta.php"
 			],
@@ -562,10 +610,6 @@
 				"site/snippets/searchparams.php"
 			],
 			[
-				"result",
-				"site/snippets/result-list-item.php"
-			],
-			[
 				"resu",
 				"site/snippets/result-list-item.php"
 			],
@@ -580,10 +624,6 @@
 			[
 				"packa",
 				"package.json"
-			],
-			[
-				"grunt",
-				"gruntfile.coffee"
 			],
 			[
 				"eg-",
@@ -718,16 +758,8 @@
 				"site/snippets/search-controls.php"
 			],
 			[
-				"search-",
-				"site/snippets/search-controls.php"
-			],
-			[
 				"advanced-search-controls",
 				"site/snippets/advanced-search-controls.php"
-			],
-			[
-				"results",
-				"site/snippets/results.php"
 			],
 			[
 				"sec-",
@@ -832,10 +864,6 @@
 			[
 				"autho",
 				"site/snippets/sec-author.php"
-			],
-			[
-				"script.",
-				"assets/js/script.js"
 			],
 			[
 				"comment.",

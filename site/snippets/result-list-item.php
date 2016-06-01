@@ -6,7 +6,7 @@
       </h3>
     </div>
     <div class="flex-11">
-      <h3 class="eg-name"><a class="no-link-highlighting" href="<?= $company->url() ?>" ng-click="openCard('<?= $company->url() ?>')" onclick="event.preventDefault()"><?= $company->title() ?></a></h3>
+      <h3 class="eg-name"><a class="no-link-highlighting" href="#<?= $company->id() ?>"><?= $company->title() ?></a></h3>
 
       <?php snippet("interactive", array('company' => $company)) ?>
 
