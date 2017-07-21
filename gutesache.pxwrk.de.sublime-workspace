@@ -124,16 +124,13 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/content",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets",
-		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/templates"
+		"/Users/nils/S/gutesache.pxwrk.de",
+		"/Users/nils/S/gutesache.pxwrk.de/assets"
 	],
 	"file_history":
 	[
+		"/Users/nils/S/gutesache.pxwrk.de/assets/sass/styles.sass",
+		"/Users/nils/S/gutesache.pxwrk.de/assets/css/styles.css",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/assets/sass/styles.sass",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/blueprints/company-detail.php",
 		"/Users/derzyklop/BitTorrent Sync/S/gutesache.pxwrk.de/site/snippets/searchparams.php",
@@ -259,13 +256,11 @@
 		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/snippets/article-teaser-small.php",
 		"/Volumes/Macintosh HD/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/tweetnest/.htaccess",
 		"/Volumes/Macintosh HD/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/tweetnest/maintenance/.htaccess",
-		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/assets/js/script.js",
-		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/panel/app/views/editor/link.php",
-		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/site/plugins/comments/library/view/form.php"
+		"/Users/derzyklop/BitTorrent Sync/S/der-zyklop.de/assets/js/script.js"
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 45.0
 	},
 	"find_in_files":
 	{
@@ -280,6 +275,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$space1",
+			"flex",
+			"grid",
 			"Unternehmensform",
 			"eg-logo",
 			"'meta",
@@ -404,10 +402,7 @@
 			"1200px",
 			"main",
 			"decoline",
-			"section",
-			"header",
-			"section",
-			"header"
+			"section"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -485,6 +480,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"style",
+				"assets/sass/styles.sass"
+			],
 			[
 				"meta",
 				"site/snippets/meta.php"
@@ -860,10 +859,6 @@
 			[
 				"comments.add.form",
 				"site/snippets/comments.add.form.php"
-			],
-			[
-				"style",
-				"sass/styles.sass"
 			],
 			[
 				"blogarti",
